@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body {
+	background: #1D202B;
+	color: #fff;
+	font-family: 'Poppins', 'Roboto', sans-serif;
+}
