@@ -4,7 +4,67 @@
     border: none;
 }
 body {
-	background: #1D202B;
-	color: #fff;
-	font-family: 'Poppins', 'Roboto', sans-serif;
+	background: #ffffff;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', 'Open Sans', 'Roboto', 
+    'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Verdana,  sans-serif;
+    box-sizing: border-box;
 }
+/**=================================================
+Header 
+================================================**/
+header {
+    width: 100%;
+}
+header div.logo-lectv{
+    
+    text-align: center;
+    margin-top: 15px;
+}
+/**=================================================
+Navigation bar
+================================================**/
+header nav{
+    width: 90%;
+    max-width:1200px;
+	margin:20px auto;
+	background:#000000;
+}
+header nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+header nav ul li {
+    float: left;   
+}
+header nav ul li a{
+    padding: 20px;
+    display: block;
+
+    /* Color temporal */
+    color: #fff;
+
+    font-family: 'Montserrat', 'Lato', 
+    'Gill Sans', 'Gill Sans MT', sans-serif;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    background-color: rgb(43, 43, 43);
+}
+header nav ul li>ul.nav-element{
+    display: none;
+} 
+header nav ul li:hover>ul.nav-element{
+    overflow: hidden;
+    display: block;
+}
+
+/**================================================
+Typography
+================================================**/
+
+
+
+/**================================================
+Sections
+===================================================**/
