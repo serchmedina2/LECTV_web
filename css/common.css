@@ -32,7 +32,10 @@ header nav{
 }
 header nav ul{
     list-style: none;
-    overflow: hidden;
+    overflow: hidden; 
+    /* El overflow hace que se muestren 
+    todas las columnas dentro del nav 
+    Pero si se quita ya no aparece*/
 }
 header nav ul li {
     float: left;   
