@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LECTV Laboratorio de Ecología y Conservados Terrestres</title>
 
+    <!--Scripts-->
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/92886b6a4f.js" crossorigin="anonymous"></script>
+    
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +21,11 @@
 	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" type="text/css" rel="stylesheet" >
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
-    <!--Bootsrtap 5-->
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+
+    <!--Bootstrap 5-->
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.min.css" >
 
     <!--Personalized Styles-->
@@ -26,43 +34,96 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="logo-lectv"><img src="img/logo_LECTV.png" alt="logo del LECTV :D"></div>
+        <div class="mobile-header">
+            <div class="social-media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <!--Togle menu button-->
+            <div id="toggle-btn"></div>
+        </div>
+        <!--Logo-->
+        <div class="logo-lectv"><img src="img/logo_LECTV.png" alt="logo del LECTV :D"></div> 
+        <!--Navbar-->
         <nav>
-            <ul>
-                <li><a href="">¿Quienes somos?<span></span></a>
-                    <ul class="nav-element">
-                        <li><a href="">Académicos</a></li>
-                        <li><a href="">Estudiantes de posgrado</a></li>
-                        <li><a href="">Estudiantes de posgrado</a></li>
-                        <li><a href="">Posdoctorados</a></li>
-                        <li><a href="">Asociados</a></li>
-                        <li><a href="">Servicio Social y otros</a></li>
-                        <li><a href="">Egresados</a></li>
-                    </ul>
+            <ul class="nav-menu">
+                <li class="active"><i class="fa fa-users" aria-hidden="true"></i><a href="">¿Quiénes somos</a>
+                    <div class="sub-menu">  
+                        <ul>
+                            <li><a href="">Académicos</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="">Estudiantes de posgrado</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="">Posdoctorados</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="">Asociados</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="">Servicio Social y otros</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="">Egresados</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>  
                 </li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="">Publicaciones</a><span></span>
-                    <ul class="nav-element">
-                        <li><a href="">Artículos en revistas indizadas en el ISI</a></li>
-                        <li><a href="">Artículos en revistas arbitradas no indizadas</a></li>    
-                        <li><a href="">Libros y capítulos de libros extranjeros</a></li>    
-                        <li><a href="">Libros y capítulos de libros nacionales</a></li>    
-                        <li><a href="">Ensayos y revisión de libros en revistas arbitradas</a></li>  
-                        <li><a href="">Artículos de divulgación</a></li>    
-                        <li><a href="">Otros trabajos</a></li>
-                    </ul>
+                <li><i class="fa-solid fa-diagram-project"></i><a href="">Proyectos</a></li>
+                <li><i class="fa-solid fa-newspaper"></i><a href="">Publicaciones</a>
+                    <div class="sub-menu"> 
+                        <ul>
+                            <li><a href="">Artículos en revistas indizadas en el ISI</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="">Artículos en revistas arbitradas no indizadas</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>    
+                            <li><a href="">Libros y capítulos de libros extranjeros</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>    
+                            <li><a href="">Libros y capítulos de libros nacionales</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>    
+                            <li><a href="">Ensayos y revisión de libros en revistas arbitradas</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>  
+                            <li><a href="">Artículos de divulgación</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>    
+                            <li><a href="">Otros trabajos</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
                 </li>
-                <li><a href="">Actividades<span></span></a>
-
+                <li><i class="fa-solid fa-video"></i><a href="">Multimedia</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="">Videos</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="">Redes sociales</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="">Infografías</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="">Entrevistas</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
                 </li>
-                <li><a href="">Cursos</a><span></span>
-
+                <li><i class="fa-solid fa-person-walking"></i><a href="">Actividades</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="">Actividades Académicas</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href=""> Actividades de Vinculación</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
                 </li>
-                <li><a href="">Ciencia Ciudadana</a></li>
-                <li><a href="">Blog: La huella del jaguar</a></li>
+                <li><i class="fa-solid fa-chalkboard-user"></i><a href="">Cursos</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="">Nacionales</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="">Internacionales</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><i class="fa-solid fa-tree-city"></i><a href="">Ciencia Ciudadana</a></li>
+                <li><i class="fa-solid fa-paw"></i><a href="">La huella del jaguar</a></li>
             </ul>
         </nav>
     </header>
+    <section id="activity-grid">
+        <div class="container">
+
+            <div class="row g-1">
+                <div class="col-lg-4 d-flex justify-content-center align-items-start"><img src="img/" alt=""></div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">H</div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-end">H</div>
+            </div>
+
+            <!-- <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div> -->
+        </div>
+    </section>
+    <div>Laboratorio de Ecología y Conservación de Vertebrados Terrestres</div>
+
+    <!--Scripts-->
+    <script src="js/toggle-button.js"></script>
 
 </body>
 </html>

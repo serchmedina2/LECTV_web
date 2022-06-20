@@ -1,70 +1,250 @@
+/* Agregar prefijos de navegador -o-, -moz-, -webkit- ... */
 * {
     padding: 0;
     margin: 0;
     border: none;
+    box-sizing: border-box;
 }
 body {
 	background: #ffffff;
 	color: rgb(0, 0, 0);
 	font-family: 'Poppins', 'Open Sans', 'Roboto', 
     'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Verdana,  sans-serif;
-    box-sizing: border-box;
 }
 /**=================================================
-Header 
+Header Styles
 ================================================**/
 header {
     width: 100%;
+    margin-bottom:15px;
 }
 header div.logo-lectv{
-    
-    text-align: center;
-    margin-top: 15px;
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+}
+header div.logo-lectv img{
+    height:auto;
+    max-width: 100%;
+}
+/**=================================================
+Mobile Header Styles
+================================================**/
+header div.mobile-header{
+    display: none;
 }
 /**=================================================
 Navigation bar
 ================================================**/
-header nav{
-    width: 90%;
-    max-width:1200px;
-	margin:20px auto;
-	background:#000000;
+header nav {
+    background-color:black;
+    border-radius:5px;
+    min-height: 8vh;
+    margin: 0 30px;
+    display:flex;
+    align-items: stretch;
+    justify-content: space-around;
 }
-header nav ul{
+header nav ul.nav-menu {
+    display: flex;
     list-style: none;
-    overflow: hidden; 
-    /* El overflow hace que se muestren 
-    todas las columnas dentro del nav 
-    Pero si se quita ya no aparece*/
 }
-header nav ul li {
-    float: left;   
+header nav ul.nav-menu li{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
 }
-header nav ul li a{
-    padding: 20px;
-    display: block;
 
-    /* Color temporal */
-    color: #fff;
-
-    font-family: 'Montserrat', 'Lato', 
-    'Gill Sans', 'Gill Sans MT', sans-serif;
+header nav ul.nav-menu li a{
+    font-family: 'Montserrat', 'Trebuchet MS', 
+    'Lucida Sans Unicode', Arial, sans-serif;
     text-decoration: none;
+    color:white;
+    font-size: clamp(0.75em,2vh,1em);
 }
-header nav ul li a:hover{
-    background-color: rgb(43, 43, 43);
+.active, header nav ul.nav-menu li:hover{
+    background-color:gray;
+    border-radius: 5px;
 }
-header nav ul li>ul.nav-element{
+/* Icon separation */
+header nav i {
+    margin-right: 4px;
+}
+.sub-menu {
     display: none;
-} 
-header nav ul li:hover>ul.nav-element{
-    overflow: hidden;
+}
+header nav ul li:hover .sub-menu {
     display: block;
+    transform:translateX(-100%) translateY(3vh);
+}
+header nav ul li:hover .sub-menu ul{
+    display:block;
+    position:absolute;
+    width: 300px;
+    font-size: 0.75em;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: -15px;
+    border-radius: 5px;
+    overflow: hidden;
+    transform: translateX(-40%);
 }
 
-/**================================================
+
+/* Little animations for nav bar */
+header nav ul li:hover .sub-menu li {
+    display: flex;
+    justify-content:space-between;
+    transition: 250ms all 250ms linear;
+    transform: translateX(0%);
+}
+header nav ul li:hover .sub-menu li:hover {
+    transform: translateX(10%);
+
+    -webkit-transform: translateX(10%);
+    -moz-transform: translateX(10%);
+    -o-transform: translateX(10%);
+    -ms-transform: translateX(10%);
+}
+header nav ul li:hover .sub-menu li a{
+    transition: 250ms all 250ms ease;
+    transform: translateY(-25%);
+}
+header nav ul li:hover .sub-menu li a:hover {
+    transform: translateY(0%);
+}
+/* Si los elementos son mas grandes 
+que el viewport el resto de las cosas se echa a 
+perdder */
+@media (max-width: 1020px) {
+    /**=================================================
+    Mobile Header Styles
+    ================================================**/
+    header div.mobile-header{
+        display:flex;
+        justify-content:space-between;
+        background-color: black;
+        height: 6vh;
+    }
+    div.social-media {
+        display: flex;
+        flex-direction:row;
+        align-items:center;
+    }
+    div.social-media i{
+        margin: 0 5px;
+        color:#ffffff;
+    }
+    /**=================================================
+    Display menu-button Styles
+    ================================================**/
+    #toggle-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5vh;
+        background-color: gray;
+        width: 5vh;
+        height: 5vh;     
+        border-radius: 5px; 
+        transition: 200ms;
+    }
+    #toggle-btn::before {
+        content: '';
+        position: absolute;
+        width:15px;
+        height:2px;
+        background-color:#fff;
+        transform: translateY(-5px);
+        box-shadow:0 5px 0 #fff;
+        transition: 200ms;
+    }
+    #toggle-btn::after {
+        content: '';
+        position: absolute;
+        width:15px;
+        height:2px;
+        transform: translateY(5px);
+        background-color:#fff;
+        transition: 200ms;
+    }
+    /* When active */
+    #toggle-btn.active {
+        background-color:#fff;
+    }
+    #toggle-btn.active::before {
+        transform: translateY(0px) rotate(-45deg);
+        background-color:#000;
+        box-shadow: 0 0 0 #000;
+    }
+    #toggle-btn.active::after {
+        transform: translateY(0px) rotate(45deg);
+        background-color: #000;
+    }
+    /**=================================================
+    Hamburguer Menu Styles
+    ================================================**/
+    header nav { 
+        height:94vh;
+        position: absolute;
+        top: 6vh;
+        right: 0;
+        display:block;
+        margin: 0;
+    }
+    header nav ul.nav-menu {
+        display: none;
+        list-style: none;
+    }
+    header nav ul.nav-menu.toggle {
+        display: block;
+        padding:0 16px;
+    }
+    header nav ul.nav-menu li{
+        display: flex;
+        align-items: flex-start;
+        color: white;
+    }
+
+    header nav ul li:hover .sub-menu ul{
+        display:block;
+        position:absolute;
+        transform: translateX(-100%);
+    }
+    header nav ul li:hover .sub-menu ul li {
+        display: flex;
+        justify-content:space-between;
+    }
+    header nav ul li:hover .sub-menu ul li a{
+        text-align: right;
+    }
+    /* Little animations for nav bar - In reverse*/
+    header nav ul li:hover .sub-menu ul li {
+        display:flex;
+        flex-direction: row-reverse;
+        transition: all 250ms linear;
+        transform: translateX(0%);
+    }
+    header nav ul li:hover .sub-menu ul li:hover {
+        transform: translateX(-10%);
+
+        -webkit-transform: translateX(-10%);
+        -moz-transform: translateX(-10%);
+        -o-transform: translateX(-10%);
+        -ms-transform: translateX(-10%);
+    }
+    header nav ul li:hover .sub-menu ul li i {
+        transform: rotate(180deg);
+        padding:0 10px; 
+    }
+}
+
+
+/* *================================================
 Typography
-================================================**/
+================================================ * */
 
 
 
