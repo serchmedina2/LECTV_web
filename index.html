@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,20 +16,30 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,800;1,200;1,300;1,500;1,800&family=Poppins:ital,wght@0,200;0,300;0,500;0,800;1,200;1,300;1,500;1,800&display=swap" type="text/css" rel="stylesheet">
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" type="text/css" rel="stylesheet" >
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300,300italic,300italic,600,600italic,700,700italic,800,800italic" type="text/css" rel="stylesheet" >
 
-	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" type="text/css" rel="stylesheet" >
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,100,100italic,300,300italic,300italic,500,500italic,700,700italic,900,900italic" type="text/css" rel="stylesheet" >
 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
     
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
     <!--Font Awesome-->
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
 
     <!--Bootstrap 5-->
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.min.css" >
 
+    <!--Animations-->
+        <!--Animate CSS-->
+        <link rel="stylesheet" href="css/animation/animate.css">
+
+
     <!--Personalized Styles-->
-    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/nav-bar-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/pagina-principal.css">
 
 </head>
 <body>
@@ -88,7 +98,7 @@
                     <div class="sub-menu">
                         <ul>
                             <li><a href="">Actividades Académicas</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                            <li><a href=""> Actividades de Vinculación</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="">Actividades de Vinculación</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
                         </ul>
                     </div>
                 </li>
@@ -105,34 +115,94 @@
             </ul>
         </nav>
     </header>
-    <section id="activity-grid">
-        <div class="container">
-
-            <div class="row d-flex">
-                <div class="col-lg-4 col-md-5">
-                    <p>Divulgación</p>
-                    <img src="img/400x600.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-4 col-md-5">
-                    <p>Investigación</p>
-                    <img src="img/400x600.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-4 col-md-5">
-                    <p>Vinculación</p>
-                    <img src="img/400x600.png" class="img-fluid" alt="">
-                </div>
+    <!-- Quienes somos -->
+    <div class="container d-flex justify-content-center">
+        <p class="presentation-title">El Laboratorio de Ecología y Conservación de Vertebrados Terrestres, se presenta:</p>
+    </div>
+    <section id="presentation-grid">
+        <div class="animate__animated animate__fadeInLeft animate__delay-1s">
+            <div class="title">
+                Nuestra visión
             </div>
-
-            <!-- <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div> -->
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, vel! Quos expedita quod excepturi, laboriosam exercitationem ea ut voluptatibus architecto enim. Impedit sed doloribus, tenetur illo harum eos voluptatum laborum?
+                Aliquam, nam quo fuga, commodi non et ea mollitia repellendus nihil quibusdam dolorem. Expedita quas ducimus laborum in ipsum eveniet magnam harum delectus. Voluptatibus eaque vitae alias illo, consectetur doloribus!
+                Quis mollitia minima earum voluptas. Minima dolorem recusandae ad doloremque quis aperiam veritatis hic voluptatum. Recusandae accusamus facilis voluptatibus molestiae quae, tenetur, ex nesciunt voluptates fuga id veritatis quo deserunt?</p>
+            </div>
+        </div>
+        <div class="animate__animated animate__fadeInRight animate__delay-2s">
+            <div class="title">
+                Objetivo
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, vel! Quos expedita quod excepturi, laboriosam exercitationem ea ut voluptatibus architecto enim. Impedit sed doloribus, tenetur illo harum eos voluptatum laborum?
+                Aliquam, nam quo fuga, commodi non et ea mollitia repellendus nihil quibusdam dolorem. Expedita quas ducimus laborum in ipsum eveniet magnam harum delectus. Voluptatibus eaque vitae alias illo, consectetur doloribus!
+                Quis mollitia minima earum voluptas. Minima dolorem recusandae ad doloremque quis aperiam veritatis hic voluptatum. Recusandae accusamus facilis voluptatibus molestiae quae, tenetur, ex nesciunt voluptates fuga id veritatis quo deserunt?</p>
+            </div>
+        </div>
+        <div class="animate__animated animate__fadeInLeft animate__delay-3s">
+            <div class="title">
+                Investigación Rigurosa
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, vel! Quos expedita quod excepturi, laboriosam exercitationem ea ut voluptatibus architecto enim. Impedit sed doloribus, tenetur illo harum eos voluptatum laborum?
+                Aliquam, nam quo fuga, commodi non et ea mollitia repellendus nihil quibusdam dolorem. Expedita quas ducimus laborum in ipsum eveniet magnam harum delectus. Voluptatibus eaque vitae alias illo, consectetur doloribus!
+                Quis mollitia minima earum voluptas. Minima dolorem recusandae ad doloremque quis aperiam veritatis hic voluptatum. Recusandae accusamus facilis voluptatibus molestiae quae, tenetur, ex nesciunt voluptates fuga id veritatis quo deserunt?</p>
+            </div>
         </div>
     </section>
-    <div>Laboratorio de Ecología y Conservación de Vertebrados Terrestres</div>
-
+    <!-- Seccion de Actividades -->
+    <section id="activity-grid">
+        <!-- Contenedor largo -->
+        <div class="banner-container">
+            <div class="banner animate__animated">
+                <div class="title">Investigación</div> 
+                <div id="img-investigation"><img src="img/300x600.png" alt=""></div>
+            </div>
+            <div class="banner animate__animated">
+                <div class="title">Divulgación</div>
+                <div id= "img-divulgation"><img src="img/300x600.png" alt=""></div>
+            </div>
+            <div class="banner animate__animated">
+                <div class="title">Vinculación</div>
+                <div id="img-vinculation"><img  src="img/300x600.png" alt=""></div>
+            </div>
+        </div>
+        <!-- Contenedor Medio -->
+        <div class="banner-container">
+            <div class="banner">
+                <div class="title">Investigación</div> 
+                <div id="img-investigation"><img src="img/300x300.png" alt=""></div>
+            </div>
+            <div class="banner">
+                <div class="title">Divulgación</div>
+                <div id= "img-divulgation"><img src="img/300x300.png" alt=""></div>
+            </div>
+            <div class="banner">
+                <div class="title">Vinculación</div>
+                <div id="img-vinculation"><img  src="img/300x300.png" alt=""></div>
+            </div>
+        </div>
+        <!-- Contenedor chico -->
+        <div class="banner-container">
+            <div class="banner">
+                <div class="title">Investigación</div> 
+                <div id="img-investigation"><img src="img/200x200.png" alt=""></div>
+            </div>
+            <div class="banner">
+                <div class="title">Divulgación</div>
+                <div id= "img-divulgation"><img src="img/200x200.png" alt=""></div>
+            </div>
+            <div class="banner">
+                <div class="title">Vinculación</div>
+                <div id="img-vinculation"><img  src="img/200x200.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <div class="foot-img">Laboratorio de Ecología y Conservación de Vertebrados Terrestres</div>
+    
     <!--Scripts-->
     <script src="js/toggle-button.js"></script>
-
+    <script src="js/animations-vw-int.js"></script>
 </body>
 </html>
