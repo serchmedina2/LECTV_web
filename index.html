@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--Página desarrollada por Sergio Javier Medina Cruz 
+    Evelyn Vazquez Hernandez y Mariela Castillo como parte
+    de los requisitos para la liberacion de su servicio social -->
+
+    <!-- This page uses diferent libreries and API's in order to work
+    and provide a great UX experience
+    If you don't know them is highly recommendable that you check
+    documentation of the following technologies:
+    
+    => Google Fonts
+
+    => Font Awesome Icons
+
+    => Bootstrap Frontend library
+    => Grid and Flexbox CSS 
+
+    => Animate CSS
+    => Shake CSS
+    -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,6 +54,8 @@
     <!--Animations-->
         <!--Animate CSS-->
         <link rel="stylesheet" href="css/animation/animate.css">
+        <!--Shake CSS-->
+        <link rel="stylesheet" href="css/animation/csshake.min.css">
 
 
     <!--Personalized Styles-->
@@ -46,10 +67,14 @@
     <header class="main-header">
         <div class="mobile-header">
             <div class="social-media">
+                <div>
+                    <p class="nav-font">Redes sociales:</p>
+                </div>
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-twitter"></i>
             </div>
+            <div><img src="" alt="Logo del Intituto de Ecología"></div>
             <!--Togle menu button-->
             <div id="toggle-btn"></div>
         </div>
@@ -199,6 +224,108 @@
             </div>
         </div>
     </section>
+    <!--Seccion de noticias & calendario-->
+    <section id="news-calendar">
+        <div class="news">
+            <div class="title">Noticias</div>
+            <div class="news-grid">
+                <div>
+                    <div>Titulo Noticia</div>
+                    <img class="img-new shake" src="img/300x200.png" alt="">
+                    <div>Descripción</div>
+                    <div>
+                        <p>Contenido de la Descripción</p>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+            
+                </div>
+                <div>
+                    <div>Titulo Noticia</div>
+                    <img class="img-new shake" src="img/300x200.png" alt="">
+                    <div>Descripción</div>
+                    <div>
+                        <p>Contenido de la Descripción</p>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <div>Titulo Noticia</div>
+                    <img class="img-new shake" src="img/300X200.png" alt="">
+                    <div>Descripción</div>
+                    <div>
+                        <p>Contenido de la Descripción</p>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </div>
+                <div>
+                    <div>Titulo Noticia</div>
+                    <img class="img-new shake" src="img/300x200.png" alt="">
+                    <div>Descripción</div>
+                    <div>
+                        <p>Contenido de la Descripción</p>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </div>
+                <div>
+                    <div>Titulo Noticia</div>
+                    <img class="img-new shake" src="img/300x200.png" alt="">
+                    <div>Descripción</div>
+                    <div>
+                        <p>Contenido de la Descripción</p>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </div>
+                <div>
+                    <div>Titulo Noticia</div>
+                    <img class="img-new shake" src="img/300x200.png" alt="">
+                    <div>Descripción</div>
+                    <div>
+                        <p>Contenido de la Descripción</p>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </div>
+                <div>
+                    <div>Titulo Noticia</div>
+                    <img class="img-new shake shake" src="img/300x200.png" alt="">
+                    <div>Descripción</div>
+                    <div>
+                        <p>Contenido de la Descripción</p>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </div>
+                <div>
+                    <div>Titulo Noticia</div>
+                    <img class="img-new shake" src="img/300x200.png" alt="">
+                    <div>Descripción</div>
+                    <div>
+                        <p>Contenido de la Descripción</p>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </div>
+                <div>
+                    <div>Titulo Noticia</div>
+                    <img class="img-new shake" src="img/300x200.png" alt="">
+                    <div>Descripción</div>
+                    <div>
+                        <p>Contenido de la Descripción</p>
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="title">Calendario</div>
+            <div class="">¡Checa nuestra lista de murci-ventos!</div>
+            <div>
+                <iframe 
+                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FMexico_City&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&title=LECTV%20events&mode=MONTH&hl=es_419&src=dDc0dHV0dDU2M2o2dGFxdGNoazUyNGxnNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%238E24AA"
+                 style="border:solid 1px #777" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </section>
+    <!--Centrar noticias y agregar animaciones de entrada a noticias y calendario
+    al realizar un scroll-->
     <div class="foot-img">Laboratorio de Ecología y Conservación de Vertebrados Terrestres</div>
     
     <!--Scripts-->

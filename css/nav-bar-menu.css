@@ -126,9 +126,7 @@ perdder */
         height: 6vh;
     }
     div.social-media {
-        display: flex;
-        flex-direction:row;
-        align-items:center;
+        flex-wrap: wrap;
     }
     div.social-media i{
         margin: 0 5px;
