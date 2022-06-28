@@ -43,6 +43,7 @@ header nav {
     display:flex;
     align-items: stretch;
     justify-content: space-around;
+    z-index:1000;
 }
 header nav ul.nav-menu {
     display: flex;
@@ -75,6 +76,7 @@ header nav i {
     display: none;
 }
 header nav ul li:hover .sub-menu {
+    z-index:1000;
     display: block;
     transform:translateX(-100%) translateY(2vh);
 }
@@ -120,10 +122,19 @@ perdder */
     Mobile Header Styles
     ================================================**/
     header div.mobile-header{
+        position:fixed;
         display:flex;
         justify-content:space-between;
         background-color: black;
         height: 6vh;
+        transform: translateY(calc(-6vh)) ;
+        min-width: 100vw;
+        z-index:1000;
+    }
+    header div.logo-lectv{
+        display: flex;
+        margin: 6vh 15px 15px;
+        justify-content: center;
     }
     div.social-media {
         flex-wrap: wrap;
@@ -132,6 +143,7 @@ perdder */
         margin: 0 5px;
         color:#ffffff;
     }
+    
     /**=================================================
     Display menu-button Styles
     ================================================**/

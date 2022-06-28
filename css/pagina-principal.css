@@ -17,20 +17,34 @@ body {
     font-family: 'Montserrat', 'Trebuchet MS', 
     'Lucida Sans Unicode', Arial, sans-serif;
     font-size: clamp(1em,4vh,2em);
-    color: #000;
+    color: rgb(69, 46, 133);
     text-align: center;
     margin: 10px 0;
 } 
-.presentation-title{
+.subtitle {
+    font-family: 'Montserrat', 'Trebuchet MS', 
+    'Lucida Sans Unicode', Arial, sans-serif;
+    font-size: clamp(1em,3.5vh,1.5em);
+    color: rgb(69, 46, 133);
+    text-align: center;
+    margin: 5px 0;
+}
+.presentation-title {
     font-family: 'DM Sans' Arial, sans-serif;
     font-size: clamp(1em,4vh,2em);
     color: #000;
     text-align: center;
     margin: 20px 0;
 }
-.content{
+.presentation-content{
+    font-family: 'DM Sans', Arial;
+    padding: 15px;
     text-align: justify;
     font-size: clamp(0.75em,4vh,1em);
+}
+.main-content{
+    font-family: 'Nunito', sans-serif;
+    font-size:clamp(0.25em,0.75em, 1em);
 }
 .nav-font{
     font-family: 'Poiret One';
@@ -39,6 +53,7 @@ body {
     text-align: center;
 }
 .foot-img {
+    font-family: 'Raleway', sans-serif;
     margin: 5vh auto;
     text-align: center;
 }
@@ -74,6 +89,17 @@ Activity Grid
 section#activity-grid {
     margin: 0px 10px;
     overflow: hidden;
+}
+.activity-margins {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color:#000;
+    width: 100%;
+    height: clamp(5.5vh, 8vh, 11.5vh);
+    margin-top: 2.5vh;
 }
 .banner-container:nth-child(1) {
     display: grid;
@@ -153,6 +179,7 @@ News Grid
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 #news-calendar div.title {
     width: 100%;
@@ -201,11 +228,15 @@ Calendar Grid
 ================================================*/
 
 /* Calendar API */
+#news-calendar div.calendar-container {
+    display: flex;
+    justify-content:center;
+}
 #news-calendar div.calendar iframe{
     width: 350px;
     margin: 10px auto;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1360px) {
     #news-calendar div.calendar iframe{
         width:  90vw;
     }

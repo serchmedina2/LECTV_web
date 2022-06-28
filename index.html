@@ -18,7 +18,7 @@
     => Grid and Flexbox CSS 
 
     => Animate CSS
-    => Shake CSS
+    => shake CSS
     -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,6 +44,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
+
     <!--Font Awesome-->
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
@@ -54,7 +57,7 @@
     <!--Animations-->
         <!--Animate CSS-->
         <link rel="stylesheet" href="css/animation/animate.css">
-        <!--Shake CSS-->
+        <!--shake CSS-->
         <link rel="stylesheet" href="css/animation/csshake.min.css">
 
 
@@ -147,9 +150,9 @@
     <section id="presentation-grid">
         <div class="animate__animated animate__fadeInLeft animate__delay-1s">
             <div class="title">
-                Nuestra visión
+                ¿Quienes somos?
             </div>
-            <div class="content">
+            <div class="presentation-content">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, vel! Quos expedita quod excepturi, laboriosam exercitationem ea ut voluptatibus architecto enim. Impedit sed doloribus, tenetur illo harum eos voluptatum laborum?
                 Aliquam, nam quo fuga, commodi non et ea mollitia repellendus nihil quibusdam dolorem. Expedita quas ducimus laborum in ipsum eveniet magnam harum delectus. Voluptatibus eaque vitae alias illo, consectetur doloribus!
                 Quis mollitia minima earum voluptas. Minima dolorem recusandae ad doloremque quis aperiam veritatis hic voluptatum. Recusandae accusamus facilis voluptatibus molestiae quae, tenetur, ex nesciunt voluptates fuga id veritatis quo deserunt?</p>
@@ -157,9 +160,9 @@
         </div>
         <div class="animate__animated animate__fadeInRight animate__delay-2s">
             <div class="title">
-                Objetivo
+                Historia
             </div>
-            <div class="content">
+            <div class="presentation-content"
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, vel! Quos expedita quod excepturi, laboriosam exercitationem ea ut voluptatibus architecto enim. Impedit sed doloribus, tenetur illo harum eos voluptatum laborum?
                 Aliquam, nam quo fuga, commodi non et ea mollitia repellendus nihil quibusdam dolorem. Expedita quas ducimus laborum in ipsum eveniet magnam harum delectus. Voluptatibus eaque vitae alias illo, consectetur doloribus!
                 Quis mollitia minima earum voluptas. Minima dolorem recusandae ad doloremque quis aperiam veritatis hic voluptatum. Recusandae accusamus facilis voluptatibus molestiae quae, tenetur, ex nesciunt voluptates fuga id veritatis quo deserunt?</p>
@@ -167,9 +170,19 @@
         </div>
         <div class="animate__animated animate__fadeInLeft animate__delay-3s">
             <div class="title">
-                Investigación Rigurosa
+                Objetivos
             </div>
-            <div class="content">
+            <div class="presentation-content"
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, vel! Quos expedita quod excepturi, laboriosam exercitationem ea ut voluptatibus architecto enim. Impedit sed doloribus, tenetur illo harum eos voluptatum laborum?
+                Aliquam, nam quo fuga, commodi non et ea mollitia repellendus nihil quibusdam dolorem. Expedita quas ducimus laborum in ipsum eveniet magnam harum delectus. Voluptatibus eaque vitae alias illo, consectetur doloribus!
+                Quis mollitia minima earum voluptas. Minima dolorem recusandae ad doloremque quis aperiam veritatis hic voluptatum. Recusandae accusamus facilis voluptatibus molestiae quae, tenetur, ex nesciunt voluptates fuga id veritatis quo deserunt?</p>
+            </div>
+        </div>
+        <div class="animate__animated animate__fadeInRight animate__delay-4s">
+            <div class="title">
+                ¿Qué hacemos?
+            </div>
+            <div class="presentation-content"
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, vel! Quos expedita quod excepturi, laboriosam exercitationem ea ut voluptatibus architecto enim. Impedit sed doloribus, tenetur illo harum eos voluptatum laborum?
                 Aliquam, nam quo fuga, commodi non et ea mollitia repellendus nihil quibusdam dolorem. Expedita quas ducimus laborum in ipsum eveniet magnam harum delectus. Voluptatibus eaque vitae alias illo, consectetur doloribus!
                 Quis mollitia minima earum voluptas. Minima dolorem recusandae ad doloremque quis aperiam veritatis hic voluptatum. Recusandae accusamus facilis voluptatibus molestiae quae, tenetur, ex nesciunt voluptates fuga id veritatis quo deserunt?</p>
@@ -177,6 +190,11 @@
         </div>
     </section>
     <!-- Seccion de Actividades -->
+    <div class="activity-margins">
+        <!-- cambiar por title -->
+        <p>¿A qué se dedica un laboratorio?</p>
+        <p class="main-content">Checa nuestro trabajo ✨🌿</p>
+    </div>
     <section id="activity-grid">
         <!-- Contenedor largo -->
         <div class="banner-container">
@@ -195,41 +213,42 @@
         </div>
         <!-- Contenedor Medio -->
         <div class="banner-container">
-            <div class="banner">
+            <div class="banner animate__animated">
                 <div class="title">Investigación</div> 
                 <div id="img-investigation"><img src="img/300x300.png" alt=""></div>
             </div>
-            <div class="banner">
+            <div class="banner animate__animated">
                 <div class="title">Divulgación</div>
                 <div id= "img-divulgation"><img src="img/300x300.png" alt=""></div>
             </div>
-            <div class="banner">
+            <div class="banner animate__animated">
                 <div class="title">Vinculación</div>
                 <div id="img-vinculation"><img  src="img/300x300.png" alt=""></div>
             </div>
         </div>
         <!-- Contenedor chico -->
         <div class="banner-container">
-            <div class="banner">
+            <div class="banner animate__animated">
                 <div class="title">Investigación</div> 
                 <div id="img-investigation"><img src="img/200x200.png" alt=""></div>
             </div>
-            <div class="banner">
+            <div class="banner animate__animated">
                 <div class="title">Divulgación</div>
                 <div id= "img-divulgation"><img src="img/200x200.png" alt=""></div>
             </div>
-            <div class="banner">
+            <div class="banner animate__animated">
                 <div class="title">Vinculación</div>
                 <div id="img-vinculation"><img  src="img/200x200.png" alt=""></div>
             </div>
         </div>
     </section>
+    <div class="activity-margins"></div>
     <!--Seccion de noticias & calendario-->
     <section id="news-calendar">
         <div class="news">
-            <div class="title">Noticias</div>
+            <div class="title">¡Checa nuestras novedades!</div>
             <div class="news-grid">
-                <div>
+                <div class="new-container">
                     <div>Titulo Noticia</div>
                     <img class="img-new shake" src="img/300x200.png" alt="">
                     <div>Descripción</div>
@@ -239,7 +258,7 @@
                     </div>
             
                 </div>
-                <div>
+                <div class="new-container">
                     <div>Titulo Noticia</div>
                     <img class="img-new shake" src="img/300x200.png" alt="">
                     <div>Descripción</div>
@@ -249,7 +268,7 @@
                     </div>
                     
                 </div>
-                <div>
+                <div class="new-container">
                     <div>Titulo Noticia</div>
                     <img class="img-new shake" src="img/300X200.png" alt="">
                     <div>Descripción</div>
@@ -258,7 +277,7 @@
                         <p>Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div>
+                <div class="new-container">
                     <div>Titulo Noticia</div>
                     <img class="img-new shake" src="img/300x200.png" alt="">
                     <div>Descripción</div>
@@ -267,7 +286,7 @@
                         <p>Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div>
+                <div class="new-container">
                     <div>Titulo Noticia</div>
                     <img class="img-new shake" src="img/300x200.png" alt="">
                     <div>Descripción</div>
@@ -276,7 +295,7 @@
                         <p>Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div>
+                <div class="new-container">
                     <div>Titulo Noticia</div>
                     <img class="img-new shake" src="img/300x200.png" alt="">
                     <div>Descripción</div>
@@ -285,7 +304,7 @@
                         <p>Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div>
+                <div class="new-container">
                     <div>Titulo Noticia</div>
                     <img class="img-new shake shake" src="img/300x200.png" alt="">
                     <div>Descripción</div>
@@ -294,7 +313,7 @@
                         <p>Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div>
+                <div class="new-container">
                     <div>Titulo Noticia</div>
                     <img class="img-new shake" src="img/300x200.png" alt="">
                     <div>Descripción</div>
@@ -303,7 +322,7 @@
                         <p>Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-                <div>
+                <div class="new-container">
                     <div>Titulo Noticia</div>
                     <img class="img-new shake" src="img/300x200.png" alt="">
                     <div>Descripción</div>
@@ -316,8 +335,8 @@
         </div>
         <div class="calendar">
             <div class="title">Calendario</div>
-            <div class="">¡Checa nuestra lista de murci-ventos!</div>
-            <div>
+            <div class="subtitle">¡Checa nuestra lista de murci-ventos!</div>
+            <div class="calendar-container">
                 <iframe 
                  src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FMexico_City&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&title=LECTV%20events&mode=MONTH&hl=es_419&src=dDc0dHV0dDU2M2o2dGFxdGNoazUyNGxnNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%238E24AA"
                  style="border:solid 1px #777" height="600" frameborder="0" scrolling="no"></iframe>
