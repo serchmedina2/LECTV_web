@@ -10,53 +10,7 @@ body {
 	font-family: 'Poppins', 'Open Sans', 'Roboto', 
     'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Verdana,  sans-serif;
 }
-/* 
-    Content-Typography
-*/
-.title {
-    font-family: 'Montserrat', 'Trebuchet MS', 
-    'Lucida Sans Unicode', Arial, sans-serif;
-    font-size: clamp(1em,4vh,2em);
-    color: rgb(69, 46, 133);
-    text-align: center;
-    margin: 10px 0;
-} 
-.subtitle {
-    font-family: 'Montserrat', 'Trebuchet MS', 
-    'Lucida Sans Unicode', Arial, sans-serif;
-    font-size: clamp(1em,3.5vh,1.5em);
-    color: rgb(69, 46, 133);
-    text-align: center;
-    margin: 5px 0;
-}
-.presentation-title {
-    font-family: 'DM Sans' Arial, sans-serif;
-    font-size: clamp(1em,4vh,2em);
-    color: #000;
-    text-align: center;
-    margin: 20px 0;
-}
-.presentation-content{
-    font-family: 'DM Sans', Arial;
-    padding: 15px;
-    text-align: justify;
-    font-size: clamp(0.75em,4vh,1em);
-}
-.main-content{
-    font-family: 'Nunito', sans-serif;
-    font-size:clamp(0.25em,0.75em, 1em);
-}
-.nav-font{
-    font-family: 'Poiret One';
-    font-size:0.75em;
-    color: white;
-    text-align: center;
-}
-.foot-img {
-    font-family: 'Raleway', sans-serif;
-    margin: 5vh auto;
-    text-align: center;
-}
+
 /*=================================================
 Presentation Grid
 ===================================================*/
