@@ -52,7 +52,7 @@ section#activity-grid {
     color: #fff;
     background-color:#000;
     width: 100%;
-    height: clamp(5.5vh, 8vh, 11.5vh);
+    height: clamp(5.5vh, 10vh, 12.5vh);
     margin-top: 2.5vh;
 }
 .banner-container:nth-child(1) {

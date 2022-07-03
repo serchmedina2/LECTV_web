@@ -1,11 +1,29 @@
 /* 
     Content-Typography
 */
+body {
+    color: rgb(0, 0, 0);
+	font-family: 'Poppins', 'Open Sans', 'Roboto', 
+    'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Verdana,  sans-serif;
+}
+.body-font {
+    color: rgb(0, 0, 0);
+	font-family: 'Poppins', 'Open Sans', 'Roboto', 
+    'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Verdana,  sans-serif;
+}
 .title {
     font-family: 'Montserrat', 'Trebuchet MS', 
     'Lucida Sans Unicode', Arial, sans-serif;
     font-size: clamp(1em,4vh,2em);
     color: rgb(69, 46, 133);
+    text-align: center;
+    margin: 10px 0;
+} 
+.title-2{
+    font-family: 'Montserrat', 'Trebuchet MS', 
+    'Lucida Sans Unicode', Arial, sans-serif;
+    font-size: clamp(1em,5vh,2.75em);
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: 10px 0;
 } 
@@ -17,6 +35,13 @@
     text-align: center;
     margin: 5px 0;
 }
+.subtitle-2{
+    font-family: 'Montserrat', 'Trebuchet MS', 
+    'Lucida Sans Unicode', Arial, sans-serif;
+    font-size: clamp(1em,3.5vh,1.5em);
+    color: rgb(255, 255, 255);
+    text-align: center;
+} 
 .presentation-title {
     font-family: 'DM Sans' Arial, sans-serif;
     font-size: clamp(1em,4vh,2em);
@@ -32,7 +57,7 @@
 }
 .main-content{
     font-family: 'Nunito', sans-serif;
-    font-size:clamp(0.25em,0.75em, 1em);
+    font-size:clamp(0.25em,1em, 1.25em);
 }
 .nav-font{
     font-family: 'Poiret One';
@@ -43,5 +68,14 @@
 .foot-img {
     font-family: 'Raleway', sans-serif;
     margin: 5vh auto;
+    text-align: center;
+}
+.footer-font {
+    font-family: 'Nunito', sans-serif;
+    font-size:clamp(0.25em,0.75em, 1em);
+}
+.footer-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size:clamp(0.5em, 1.25em, 1.5em);
     text-align: center;
 }
