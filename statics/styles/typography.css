@@ -11,6 +11,12 @@ body {
 	font-family: 'Poppins', 'Open Sans', 'Roboto', 
     'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Verdana,  sans-serif;
 }
+.main-title {
+    font-family: 'Montserrat', 'Trebuchet MS', 
+    'Lucida Sans Unicode', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 2.25em;
+}
 .title {
     font-family: 'Montserrat', 'Trebuchet MS', 
     'Lucida Sans Unicode', Arial, sans-serif;
@@ -42,6 +48,12 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
 } 
+.initial-content {
+    font-family: 'DM Sans', Arial;
+    padding: 15px;
+    text-align: justify;
+    font-size: clamp(1em,5vh,1.25em);
+}
 .presentation-title {
     font-family: 'DM Sans' Arial, sans-serif;
     font-size: clamp(1em,4vh,2em);

@@ -18,6 +18,7 @@ footer a{
     transform: translateY(-5px);
     transition: all 0.3s;
 }
+footer a:focus-within,
 footer a:hover{
     color: rgb(22, 196, 219);
     transform: translateY(0px);
@@ -28,6 +29,15 @@ footer p {
 footer img {
     width: 75%;
     margin: 0 12.5%;
+}
+footer div.hr {
+    content: '';
+    width: 45%;
+    border-bottom: 1px solid rgb(146, 145, 145);
+}
+.pin-icon {
+    display: flex;
+    justify-content: space-evenly;
 }
 .footer-grid {
     display:grid;
