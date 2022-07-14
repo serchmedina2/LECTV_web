@@ -1,49 +1,3 @@
-html {
-    overflow-x: hidden;
-} 
-body {
-    overflow-x: hidden;
-}
-#collage-1{
-    position: absolute;
-    left: -8vw;
-    z-index: -1000;
-}
-#collage-1 .collage{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-#collage-1 .collage img {
-    z-index: -1000;
-}
-.collage >:nth-child(odd) {
-    margin: 0 auto 10px;
-    transform:translateX(2vw);
-}
-.collage >:nth-child(even) {
-    margin: 0 auto 10px;
-    transform:translateX(-1vw);
-}
-
-#collage-2{
-    position: absolute;
-    right: -8vw;
-    overflow: hidden;
-    z-index: -1000;
-}
-#collage-2 .collage{
-    /* transform:translateX(8vw); */
-    display: flex;
-    flex-direction: column;
-}
-#collage-2 .collage img {
-    z-index: -1000;
-}
-.collage img {
-    width: 100%;
-    height:auto;
-}
 .staff-grid {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
@@ -55,17 +9,23 @@ body {
     "asociated asociated post-doc post-doc";
     gap: 0.35em;
     margin-bottom:45px;
+    background-color: rgba(128, 128, 128, 0.795);
+    border-radius: 15px;
 }
 .staff-grid > div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(255, 228, 196, 0.842);
+    border-radius: 15px;
+    margin: 10px;
 }
 .staff-grid > div img {
     width: 100%;
     height: auto;
     z-index: -1000;
+    padding:10px;
 }
 @media (max-width:992px) {
     .staff-grid {

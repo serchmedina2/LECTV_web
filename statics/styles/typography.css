@@ -107,4 +107,6 @@ section.main-title {
     font-family: 'DM Sans', sans-serif;
     font-size:clamp(0.5em, 1.25em, 1.5em);
     text-align: center;
+    background: rgba(148, 135, 135, 0.795);
+    border-radius: 9px;
 }
