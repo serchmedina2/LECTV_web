@@ -9,6 +9,7 @@
  *  animation name. This can work with personalized css
  *  animations too.
  * */
+
 function scrollAnimation(parent, elementClass, animation) {
   const observer = new IntersectionObserver(entries => {
     entries.forEach((entry) =>{

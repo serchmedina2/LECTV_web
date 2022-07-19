@@ -1,14 +1,16 @@
-
 .labour-cathegory {
     background-color: rgba(128, 128, 128, 0.750);
     display: block;
-    width: clamp(25%, 20vw, 100%);
+    width:  max-content;
     margin: 10px auto ;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
 }
+
 section.biography {
     display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 15px 2.5vw;
 }
 .name {
@@ -18,16 +20,15 @@ section.biography {
 }
 .bio-image {
     grid-area: bio-image;
+    background-color: rgba(128, 128, 128, 0.60);
+    border-radius: 15px;
 }
-.bio-image > img {
-    max-width: 75%;
+.bio-image > div > img {
+    width:100%;
     height:auto;
 }
 .biography {
     grid-area: biography;
-}
-.research-lines {
-    grid-area: research-lines;
 }
 .personal-interest {
     grid-area: personal-interest;
@@ -49,7 +50,7 @@ section.biography {
     grid-template-rows: repeat(3, max-content);
     grid-template-areas: 
     "bio-image  biography"
-    "research-lines personal-interest"
+    "personal-interest personal-interest"
     "contact-data contact-data";
     gap: 5px;
 }
@@ -57,6 +58,7 @@ section.biography {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 15px;
 }
 .bio-content {
@@ -73,7 +75,7 @@ section.biography {
     grid-template-rows: repeat(4, max-content);
     grid-template-areas: 
     "bio-image bio-image"
-    "biography research-lines"
+    "biography biography"
     "personal-interest personal-interest"
     "contact-data contact-data";
     gap: 5px;
@@ -83,11 +85,10 @@ section.biography {
     .biography-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, max-content);
+        grid-template-rows: repeat(4, max-content);
         grid-template-areas: 
         "bio-image"
         "biography"
-        "research-lines"
         "personal-interest"
         "contact-data";
         gap: 5px;

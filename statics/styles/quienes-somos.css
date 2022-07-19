@@ -1,3 +1,29 @@
+
+.graduated {
+    grid-area: graduated;
+}
+.academics {
+    grid-area: academics;
+}
+.undergraduates {
+    grid-area: undergraduates;
+}
+.social-service {
+    grid-area: social-service;
+}
+.post-grad-students {
+    grid-area: post-grad-students;
+}
+
+.doctor {
+grid-area: doctor;
+}
+.asociated {
+    grid-area: asociated;
+}
+.post-doc {
+    grid-area: post-doc;
+}
 .staff-grid {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
@@ -72,30 +98,5 @@
         "post-doc";
        } 
     }
-}
-.graduated {
-    grid-area: graduated;
-}
-.academics {
-    grid-area: academics;
-}
-.undergraduates {
-    grid-area: undergraduates;
-}
-.social-service {
-    grid-area: social-service;
-}
-.post-grad-students {
-    grid-area: post-grad-students;
-}
-
-.doctor {
-grid-area: doctor;
-}
-.asociated {
-    grid-area: asociated;
-}
-.post-doc {
-    grid-area: post-doc;
 }
 
