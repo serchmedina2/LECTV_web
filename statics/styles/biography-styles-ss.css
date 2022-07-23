@@ -38,11 +38,18 @@ section.biography {
 }
 .contact-data > div {
     width: 100%;
+    margin-bottom: 15px;
 }
 .data {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+}
+.data > div {
+    padding: 5px;
+    margin: 0px 5vw;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .biography-grid {
     display: grid;
