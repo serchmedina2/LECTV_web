@@ -1,6 +1,12 @@
-/* 
-    Content-Typography
-*/
+:root {
+    --azul-claro: #6DCCB0;  
+    --ver-oscuro-1: #80C97B;
+    --ver-oscuro-2: #538b2c;
+    --ver-claro-1: #B5D181;
+    --ver-claro-2: #7bdb38;
+    --ocre-1: #ffea9c;
+    --ocre-2: #F5D08F;
+}
 body {
     color: rgb(0, 0, 0);
 	font-family: 'Poppins', 'Open Sans', 'Roboto', 
@@ -54,7 +60,7 @@ section.main-title {
     font-family: 'Montserrat', 'Trebuchet MS', 
     'Lucida Sans Unicode', Arial, sans-serif;
     font-size: clamp(1em,3.5vw,1.5em);
-    color: rgb(69, 46, 133);
+    color: rgb(0, 0, 0);
     text-align: center;
     margin: 5px 0;
 }
@@ -97,7 +103,7 @@ section.main-title {
 }
 .foot-img {
     font-family: 'Raleway', sans-serif;
-    margin: 5vh auto;
+    margin: 5vw auto;
     text-align: center;
 }
 .footer-font {
@@ -116,10 +122,12 @@ section.main-title {
 	font-family: 'Poppins', 'Open Sans', 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', Verdana,  sans-serif;
     font-size: clamp(0.85em,4vw,1em);
     font-weight: 350;
+    text-align: justify;
 }
 .bio-title {
-    font-family: 'DM Sans' Arial, sans-serif;
+    font-family: 'DM Sans', Arial, sans-serif;
     font-size: clamp(1em,5vw,1.25em);
+    font-weight: 500;
     color: #000;
-    text-align: justify;
+    text-align: center;
 }

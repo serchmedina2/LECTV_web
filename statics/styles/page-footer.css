@@ -71,7 +71,7 @@ footer div.hr {
 .footer-social-media>div{
     display: flex;
     align-items: center;
-    min-height: 5vh;
+    min-height: 5vw;
 }
 
 footer .lectv-map {

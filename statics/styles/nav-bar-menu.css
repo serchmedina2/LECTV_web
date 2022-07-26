@@ -60,7 +60,7 @@ header nav ul.nav-menu li a{
     'Lucida Sans Unicode', Arial, sans-serif;
     text-decoration: none;
     color:white;
-    font-size: clamp(0.75em,3vh,1em);
+    font-size: clamp(0.75em,3vw,1em);
 }
 
 .active, 
@@ -77,13 +77,13 @@ header nav i {
 .sub-menu {
     display: none;
 }
-header nav ul li:hover .sub-menu {
+header nav ul li:hover .sub-menu,
+header nav ul li:focus-within .sub-menu {
     z-index:1000;
     display: block;
     transform:translateX(-100%) translateY(2vh);
 }
 header nav ul li:hover .sub-menu ul,
-header nav ul li:focus .sub-menu ul,
 header nav ul li:focus-within .sub-menu ul{
     display:block;
     position:absolute;
@@ -98,7 +98,6 @@ header nav ul li:focus-within .sub-menu ul{
 }
 /* Little animations for nav bar */
 header nav ul li:hover .sub-menu li,
-header nav ul li:focus .sub-menu li,
 header nav ul li:focus-within .sub-menu li {
     display: flex;
     justify-content:space-between;
@@ -107,14 +106,13 @@ header nav ul li:focus-within .sub-menu li {
     transform: translateX(0%);
 }
 header nav ul li:hover .sub-menu li:hover,
-header nav ul li:focus .sub-menu li:focus,
 header nav ul li:focus-within  .sub-menu li:focus-within {
     transform: translateX(5%);
 
     -webkit-transform: translateX(5%);
-    -moz-transform: translateX(50%);
-    -o-transform: translateX(50%);
-    -ms-transform: translateX(50%);
+    -moz-transform: translateX(5%);
+    -o-transform: translateX(5%);
+    -ms-transform: translateX(5%);
 }
 header nav ul li:hover .sub-menu li a{
     transition: 250ms all 250ms ease;
@@ -126,9 +124,13 @@ header nav ul li:hover .sub-menu li a{
     -ms-transform:  translateY(-25%);
 }
 header nav ul li:hover .sub-menu li a:hover,
-header nav ul li:focus .sub-menu li a:focus,
 header nav ul li:focus-within .sub-menu li a:focus-within {
     transform: translateY(0%);
+
+    -webkit-transform:  translateY(0%);
+    -moz-transform:  translateY(0%);
+    -o-transform:  translateY(0%);
+    -ms-transform:  translateY(0%);
 }
 /* Si los elementos son mas grandes 
 que el viewport el resto de las cosas se echa a 

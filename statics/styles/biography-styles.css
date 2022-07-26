@@ -1,5 +1,14 @@
+:root {
+    --azul-claro: #6DCCB0;  
+    --ver-oscuro-1: #80C97B;
+    --ver-oscuro-2: #538b2c;
+    --ver-claro-1: #B5D181;
+    --ver-claro-2: #7bdb38;
+    --ocre-1: #ffea9c;
+    --ocre-2: #F5D08F;
+}
 .labour-cathegory {
-    background-color: rgba(128, 128, 128, 0.750);
+    background-color: #80C97B;
     display: block;
     width:  max-content;
     margin: 10px auto ;
@@ -14,13 +23,13 @@ section.biography {
     margin: 15px 2.5vw;
 }
 .name {
-    background-color: rgba(128, 128, 128, 0.850);
+    background-color: #d1df96e8;
     padding: 15px;
     border-radius: 15px;
 }
 .bio-image {
     grid-area: bio-image;
-    background-color: rgba(128, 128, 128, 0.60);
+    background-color: #d1df96e8;
     border-radius: 15px;
 }
 .bio-image > div > img {
@@ -39,6 +48,7 @@ section.biography {
 .contact-data > div {
     width: 100%;
     margin-bottom: 15px;
+    border: 1px solid #7bdb38;
 }
 .research-lines{
     grid-area: research-lines;
@@ -51,7 +61,7 @@ section.biography {
 .data > div {
     padding: 5px;
     margin: 0px 5vw;
-    border: 1px solid black;
+    border: 1px solid #7bdb38;
     border-radius: 10px;
 }
 .biography-grid {
@@ -71,8 +81,14 @@ section.biography {
     justify-content: center;
     margin: 15px;
 }
+.biography-grid > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
 .bio-content {
-    background-color: rgba(128, 128, 128, 0.850);
+    background-color:#d1df96e8;
     padding: 15px;
     border-radius: 15px;
     height: 100%;

@@ -54,7 +54,7 @@ section#activity-grid {
     color: #fff;
     background-color:#000;
     width: 100%;
-    height: clamp(5.5vh, 10vh, 12.5vh);
+    height: clamp(5.5vh, 12vh, 16vh);
     margin-top: 2.5vh;
 }
 .banner-container:nth-child(1) {
