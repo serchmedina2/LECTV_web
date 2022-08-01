@@ -1,0 +1,82 @@
+:root {
+    --azul-claro: #6DCCB0;  
+    --ver-oscuro-1: #80C97B;
+    --ver-oscuro-2: #538b2c;
+    --ver-oscuro-3: #294615;
+    --ver-claro-1: #B5D181;
+    --ver-claro-2:#a4e676;
+    --ver-claro-3: #7bdb38;
+    --ver-claro-4: #d0df96;
+    --ocre-1: #ffea9c;
+    --ocre-2: #F5D08F;
+    --marron: rgb(57, 43, 11);
+}
+.img-doctor {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto 0px;
+    padding: 15px;
+    background-color: var(--ver-claro-1);
+}
+.img-doctor a {
+    width: 100%;
+    height: auto;
+}
+section#presentation-grid { 
+    background: var(--ver-claro-1); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size:contain;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+#presentation-grid>div:nth-child(even){ 
+    margin:2.5vh 10vw 2.5vh 1vw;
+    background-color:var(--ocre-2);
+
+}
+#presentation-grid>div:nth-child(odd){
+    margin:2.5vh 1vw 2.5vh 10vw;
+    background-color: var(--ocre-2);
+}
+section#contact {
+    display: block;
+    margin: 2rem auto;
+    width: clamp(35vw, 75vw ,90vw);
+    border: 2px var(--ver-oscuro-2) solid;
+    border-radius: 10px;
+}
+.data {
+    font-family: 'Poppins', 'Open Sans', 'Roboto', 
+    'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Verdana,  sans-serif;
+    font-size: clamp(0.75rem, 1.3rem, 1.8rem);
+    color: black;
+    padding:0.5rem;
+}
+.data > div {
+    margin: 0 15px;
+    padding: 2rem; 
+
+    background-color: var(--ocre-2);
+    border: 1px solid var(--marron);
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+.data > div:hover {
+    background-color: var(--ocre-1);
+}
+.data > div a {
+    color: rgb(0, 5, 82);
+    transition: all 0.3s;
+}
+.data > div a:hover,
+.data > div a:focus  {
+    color: rgb(22, 196, 219);
+}
+
+
+
+
+

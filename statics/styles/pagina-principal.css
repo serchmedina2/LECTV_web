@@ -1,3 +1,16 @@
+:root {
+    --azul-claro: #6DCCB0;  
+    --ver-oscuro-1: #80C97B;
+    --ver-oscuro-2: #538b2c;
+    --ver-oscuro-3: #294615;
+    --ver-claro-1: #B5D181;
+    --ver-claro-2:#a4e676;
+    --ver-claro-3: #7bdb38;
+    --ver-claro-4: #d0df96;
+    --ocre-1: #ffea9c;
+    --ocre-2: #F5D08F;
+    --marron: rgb(57, 43, 11);
+}
 * {
     padding: 0;
     margin: 0;
@@ -17,7 +30,7 @@ Presentation Grid
 ===================================================*/
 section#presentation-grid { 
     /* Agregar imagenes de fondo dependiendo del tamanyo */
-    background: url('../img/background-grid.png') gray;
+    background: url('../img/background-grid.png') var(--ver-claro-1);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -28,12 +41,12 @@ section#presentation-grid {
 }
 #presentation-grid>div:nth-child(even){ 
     margin:5vh 10vw 5vh 1vw;
-    background-color:rgb(160, 160, 160);
+    background-color:var(--ocre-1);
 
 }
 #presentation-grid>div:nth-child(odd){
     margin:5vh 1vw 5vh 10vw;
-    background-color: rgb(160, 160, 160);
+    background-color: var(--ocre-1);
 }
 div > .content {
     padding: 5vh;
@@ -52,7 +65,7 @@ section#activity-grid {
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-color:#000;
+    background-color:var(--ver-oscuro-3);
     width: 100%;
     height: clamp(5.5vh, 12vh, 16vh);
     margin-top: 2.5vh;
@@ -120,12 +133,29 @@ section#activity-grid {
         padding: 0;
     }
 }
-
+.news {
+    grid-area: news;
+}
+.calendar {
+    grid-area: calendar;
+}
 section#news-calendar {
     margin: 10vh 0 0 0;
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "news news news calendar";
+}
+@media (max-width:1200px) { 
+    section#news-calendar {
+        margin: 10vh 0 0 0;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, max-content);
+        grid-template-areas:
+        "news news news news"
+        "calendar calendar calendar calendar";
+    }
 }
 /*================================================= 
 News Grid
@@ -135,17 +165,17 @@ News Grid
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    overflow: hidden;
+    
 }
 #news-calendar div.title {
     width: 100%;
 }
-/* Chance the repeat number to create more columns*/
 .news-grid {
     display:grid;
     gap:0.75em;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-columns: minmax(10vh,max-content);
+    margin-left: 15px;
 } 
 .news-grid >div:nth-child(even){
     margin-top: 50px;
@@ -189,13 +219,9 @@ Calendar Grid
     justify-content:center;
 }
 #news-calendar div.calendar iframe{
-    width: 350px;
+    width: 90%;
     margin: 10px auto;
 }
-@media (max-width: 1360px) {
-    #news-calendar div.calendar iframe{
-        width:  90vw;
-    }
-}
+
 
 

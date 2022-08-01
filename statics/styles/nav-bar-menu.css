@@ -1,4 +1,17 @@
 /* Agregar prefijos de navegador -o-, -moz-, -webkit- ... */
+:root {
+    --azul-claro: #6DCCB0;  
+    --ver-oscuro-1: #80C97B;
+    --ver-oscuro-2: #538b2c;
+    --ver-oscuro-3: #294615;
+    --ver-claro-1: #B5D181;
+    --ver-claro-2:#a4e676;
+    --ver-claro-3: #7bdb38;
+    --ver-claro-4: #d0df96;
+    --ocre-1: #ffea9c;
+    --ocre-2: #F5D08F;
+    --marron: rgb(57, 43, 11);
+}
 * {
     padding: 0;
     margin: 0;
@@ -31,7 +44,7 @@ header div.mobile-header{
 Navigation bar
 ================================================**/
 header nav {
-    background-color:black;
+    background-color:var(--ver-claro-1);
     border-radius:5px;
     min-height: 8vh;
     margin: 0 30px;
@@ -49,7 +62,7 @@ header nav ul.nav-menu li{
     margin: 5px;
     display: flex;
     align-items: center;
-    color: white;
+    color: black;
 }
 /*Desaparece la opcion del home*/
 header nav ul.nav-menu li.home {
@@ -59,15 +72,15 @@ header nav ul.nav-menu li a{
     font-family: 'Montserrat', 'Trebuchet MS', 
     'Lucida Sans Unicode', Arial, sans-serif;
     text-decoration: none;
-    color:white;
-    font-size: clamp(0.75em,3vw,1em);
+    color:black;
+    font-size: clamp(0.75em,5vw,1em);
 }
 
 .active, 
 header nav ul.nav-menu li:hover, 
 header nav ul.nav-menu li:focus,
 header nav ul.nav-menu li:focus-within{
-    background-color:gray;
+    background-color:var(--ver-claro-4);
     border-radius: 5px;
 }
 /* Icon separation */
@@ -89,12 +102,17 @@ header nav ul li:focus-within .sub-menu ul{
     position:absolute;
     width: 300px;
     font-size: 0.75em;
-    background-color: black;
+    background-color: var(--ver-claro-1);
     margin-top: 10px;
     margin-left: -15px;
     border-radius: 5px;
     overflow: hidden;
     transform: translateX(-40%);
+
+    -webkit-transform: translateX(-40%);
+    -moz-transform: translateX(-40%);
+    -o-transform: translateX(-40%);
+    -ms-transform: translateX(-40%);
 }
 /* Little animations for nav bar */
 header nav ul li:hover .sub-menu li,
@@ -104,6 +122,11 @@ header nav ul li:focus-within .sub-menu li {
     transition: 250ms all 250ms linear;
 
     transform: translateX(0%);
+
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    -ms-transform: translateX(0%);
 }
 header nav ul li:hover .sub-menu li:hover,
 header nav ul li:focus-within  .sub-menu li:focus-within {
@@ -143,8 +166,8 @@ perdder */
         position:fixed;
         display:flex;
         justify-content:space-between;
-        background-color: black;
-        height: 7vh;
+        background-color: var(--ver-claro-1);
+        height: 4vh;
         transform: translateY(calc(-6.1vh)) ;
         min-width: 100vw;
         z-index:1000;
@@ -159,7 +182,7 @@ perdder */
     }
     div.social-media i{
         margin: 0 5px;
-        color:#ffffff;
+        color:black;
     }
     
     /**=================================================
@@ -170,11 +193,14 @@ perdder */
         justify-content: center;
         align-items: center;
         margin: 0.5vh;
-        background-color: gray;
-        width: 5vh;
-        height: 5vh;     
+        background-color: var(--ver-oscuro-2);
+        width: 3vh;
+        height: 3vh;     
         border-radius: 5px; 
         transition: 200ms;
+    }
+    #toggle-btn:focus-within {
+        background-color:var(--ver-claro-2);
     }
     #toggle-btn::before {
         content: '';
@@ -197,7 +223,7 @@ perdder */
     }
     /* When active */
     #toggle-btn.active {
-        background-color:#fff;
+        background-color: var(--ver-claro-2);
     }
     #toggle-btn.active::before {
         transform: translateY(0px) rotate(-45deg);
@@ -214,7 +240,7 @@ perdder */
     header nav { 
         height:94vh;
         position: fixed;
-        top: 6vh;
+        top: 5vh;
         right: 0;
         display:block;
         margin: 0;
@@ -230,7 +256,7 @@ perdder */
     header nav ul.nav-menu li{
         display: flex;
         align-items: flex-start;
-        color: white;
+        color: black;
     }
     /*Reaparece la opcion de home en el menu de navegacion*/
     header nav ul.nav-menu li.home {

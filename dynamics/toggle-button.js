@@ -8,3 +8,7 @@ toggle.addEventListener('click',function(){
     toggle.classList.toggle('active');
     menu.classList.toggle('toggle');
 })
+toggle.addEventListener('focus', function(){
+    toggle.classList.toggle('active');
+    menu.classList.toggle('toggle');
+})

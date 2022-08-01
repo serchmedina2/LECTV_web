@@ -2,11 +2,14 @@
     --azul-claro: #6DCCB0;  
     --ver-oscuro-1: #80C97B;
     --ver-oscuro-2: #538b2c;
+    --ver-oscuro-3: #294615;
     --ver-claro-1: #B5D181;
     --ver-claro-2:#a4e676;
     --ver-claro-3: #7bdb38;
+    --ver-claro-4: #d0df96;
     --ocre-1: #ffea9c;
     --ocre-2: #F5D08F;
+    --marron: rgb(57, 43, 11);
 }
 section#publication-section {
     display: flex;
@@ -18,8 +21,8 @@ section#publication-section {
 }
 .publication-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows:minmax(50px, max-content);
+    grid-template-columns:  3fr;
+    grid-auto-rows:minmax(75px, max-content);
     gap: 15px;
     padding: 15px;
 }

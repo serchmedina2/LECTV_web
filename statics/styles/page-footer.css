@@ -1,7 +1,20 @@
+:root {
+    --azul-claro: #6DCCB0;  
+    --ver-oscuro-1: #80C97B;
+    --ver-oscuro-2: #538b2c;
+    --ver-oscuro-3: #294615;
+    --ver-claro-1: #B5D181;
+    --ver-claro-2:#a4e676;
+    --ver-claro-3: #7bdb38;
+    --ver-claro-4: #d0df96;
+    --ocre-1: #ffea9c;
+    --ocre-2: #F5D08F;
+    --marron: rgb(57, 43, 11);
+}
 footer {
     width: 100%;
     color: #fff;
-    background-color: #000;
+    background: var(--ver-oscuro-3);
     display: flex;
     justify-content:center;
     padding: 2.5vh 2.5vw;

@@ -1,5 +1,18 @@
+:root {
+    --azul-claro: #6DCCB0;  
+    --ver-oscuro-1: #80C97B;
+    --ver-oscuro-2: #538b2c;
+    --ver-oscuro-3: #294615;
+    --ver-claro-1: #B5D181;
+    --ver-claro-2:#a4e676;
+    --ver-claro-3: #7bdb38;
+    --ver-claro-4: #d0df96;
+    --ocre-1: #ffea9c;
+    --ocre-2: #F5D08F;
+    --marron: rgb(57, 43, 11);
+}
 .labour-cathegory {
-    background-color: rgba(128, 128, 128, 0.750);
+    background-color: var(--ver-claro-1);
     display: block;
     width:  max-content;
     margin: 10px auto ;
@@ -14,13 +27,13 @@ section.biography {
     margin: 15px 2.5vw;
 }
 .name {
-    background-color: rgba(128, 128, 128, 0.850);
+    background-color: var(--ver-claro-1);
     padding: 15px;
     border-radius: 15px;
 }
 .bio-image {
     grid-area: bio-image;
-    background-color: rgba(128, 128, 128, 0.60);
+    background-color: #d1df96e8;
     border-radius: 15px;
 }
 .bio-image > div > img {
@@ -48,7 +61,7 @@ section.biography {
 .data > div {
     padding: 5px;
     margin: 0px 5vw;
-    border: 1px solid black;
+    border: 1px solid #7bdb38;
     border-radius: 10px;
 }
 .biography-grid {
@@ -69,7 +82,7 @@ section.biography {
     margin: 15px;
 }
 .bio-content {
-    background-color: rgba(128, 128, 128, 0.850);
+    background-color: var(--ver-oscuro-1);
     padding: 15px;
     border-radius: 15px;
     height: 100%;
