@@ -107,12 +107,12 @@ header nav ul li:focus-within .sub-menu ul{
     margin-left: -15px;
     border-radius: 5px;
     overflow: hidden;
-    transform: translateX(-40%);
+    transform: translateX(-40%) translateY(-5px);
 
-    -webkit-transform: translateX(-40%);
-    -moz-transform: translateX(-40%);
-    -o-transform: translateX(-40%);
-    -ms-transform: translateX(-40%);
+    -webkit-transform: translateX(-40%) translateY(-5px);
+    -moz-transform: translateX(-40%) translateY(-5px);
+    -o-transform: translateX(-40%) translateY(-5px);
+    -ms-transform: translateX(-40%) translateY(-5px);
 }
 /* Little animations for nav bar */
 header nav ul li:hover .sub-menu li,
@@ -167,7 +167,7 @@ perdder */
         display:flex;
         justify-content:space-between;
         background-color: var(--ver-claro-1);
-        height: 4vh;
+        height: 6vh;
         transform: translateY(calc(-6.1vh)) ;
         min-width: 100vw;
         z-index:1000;
@@ -192,10 +192,10 @@ perdder */
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0.5vh;
+        margin: 1.5vh 3.5vh;
         background-color: var(--ver-oscuro-2);
-        width: 3vh;
-        height: 3vh;     
+        width: 3.5vh;
+        height: 3.5vh;     
         border-radius: 5px; 
         transition: 200ms;
     }
@@ -240,7 +240,7 @@ perdder */
     header nav { 
         height:94vh;
         position: fixed;
-        top: 5vh;
+        top: 5.5vh;
         right: 0;
         display:block;
         margin: 0;
