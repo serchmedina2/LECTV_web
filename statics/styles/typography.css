@@ -16,6 +16,9 @@ body {
 	font-family: 'Poppins', 'Open Sans', 'Roboto', 
     'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Verdana,  sans-serif;
 }
+p {
+    margin-bottom: 0px;
+}
 .body-font {
     color: rgb(0, 0, 0);
 	font-family: 'Poppins', 'Open Sans', 'Roboto', 

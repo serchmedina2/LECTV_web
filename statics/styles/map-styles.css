@@ -11,11 +11,13 @@ body {
 }
 
 /* =================================================================
-    Seccion de Mapa
+    Seccion de Mapa SVG
  =================================================================*/
- #map-container {
-    margin: 20px 15px;
- }
+#map-container-svg {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 .mexico-map {
     display: flex;
     background-color: rgb(30, 136, 136);
@@ -53,3 +55,10 @@ body {
     background-color:rgb(200, 209, 78);
 }
 
+#map-container {
+    padding: 1rem;
+    height: 65vh;
+}
+#map {
+    height: 100%;
+}

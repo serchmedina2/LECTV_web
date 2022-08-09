@@ -7,28 +7,27 @@
 
     <!-- This page uses diferent libreries and API's in order to work
     and provide a great UX experience
-    If you don't know them is highly recommendable that you check
-    documentation of the following technologies:
+    If you don't know them is highly recommendable that you 
+    previously check the documentation of the following technologies:
     
-    => Google Fonts
+    =>Fonts and Icons 
+        => Google FontS
+        => Font Awesome Icons
 
-    => Font Awesome Icons
-
-    => Bootstrap Frontend library
-    => Grid and Flexbox CSS 
-
-    => Animate CSS
-    => shake CSS
+    => API's and Frameworks 
+        => Bootstrap Frontend library
+        => Leaflet
+        => Grid and Flexbox CSS 
+    
+    => Animations
+        => Animate CSS
+        => shake CSS
     -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LECTV Laboratorio de Ecología y Conservados Terrestres | LECTV - IE</title>
 
-    <!--Scripts-->
-    <!--Font Awesome-->
-    <script type="text/javascript" src="https://kit.fontawesome.com/92886b6a4f.js" crossorigin="anonymous"></script>
-    
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,6 +50,9 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
 
+    <!--Bootstrap 5-->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
     <!--Animations-->
         <!--Animate CSS-->
         <link rel="stylesheet" href="statics/styles/animate.css">
@@ -62,6 +64,13 @@
     <link rel="stylesheet" type="text/css" href="statics/styles/pagina-principal.css">
     <link rel="stylesheet" type="text/css" href="statics/styles/page-footer.css">
     <link rel="stylesheet" type="text/css" href="statics/styles/typography.css">
+    
+    <!--Scripts-->
+    <!--Font Awesome-->
+    <script type="text/javascript" src="https://kit.fontawesome.com/92886b6a4f.js" crossorigin="anonymous"></script>
+    <!--Bootstrap 5--> 
+    <script type="text/javascript"  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
 </head>
 <body>
@@ -85,7 +94,7 @@
         <nav aria-hidden="false">
             <ul class="nav-menu">
                 <li class="home"><i class="fa-solid fa-house" aria-hidden="true"></i><a href="index.html">Página Principal</a></li>
-                <li class="active"><i class="fa fa-users" aria-hidden="true"></i><a href="templates/quienes-somos.html">¿Quiénes somos</a>
+                <li class="activo"><i class="fa fa-users" aria-hidden="true"></i><a href="templates/quienes-somos.html">¿Quiénes somos</a>
                     <div class="sub-menu">  
                         <ul>
                             <li><a href="templates/biographies/doctor-rodrigo/rodrigo-antonio-medellin-legorreta.html">Doctor Rodrigo</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
@@ -119,9 +128,9 @@
                 <li><i class="fa-solid fa-video"></i><a href="">Multimedia</a>
                     <div class="sub-menu">
                         <ul>
-                            <li><a href="">Videos</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
                             <li><a href="">Galería</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                            <li><a href="">Infografías</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="templates/multimedia-section/videos.html">Videos</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            <li><a href="templates/multimedia-section/infografias.html">Infografías</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
                             <li><a href="">Entrevistas</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
                         </ul>
                     </div>
@@ -367,11 +376,133 @@
             </div>
         </div>
     </section>
-    <div class="foot-img">Laboratorio de Ecología y Conservación de Vertebrados Terrestres</div>
 
     <section class="sponsors">
-
+        <div id="sponsors-carousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-keyboard="true">
+            <!-- Controls -->
+            <div class="d-flex justify-content-center mb-4">
+                <button
+                    class="carousel-control-prev position-relative"
+                    type="button"
+                    data-bs-target="#sponsors-carousel"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next position-relative"
+                    type="button"
+                    data-bs-target="#sponsors-carousel"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <div class="carousel-inner text-center">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row mt-4">
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-block mb-4">
+                                <div class="card">
+                                    <img
+                                    src="statics/img/300x200.png"
+                                    class="card-img-top"
+                                    alt="Waterfall"
+                                    />
+                                    <div class="card-body">
+                                    <h5 class="card-title">Patrocinador 1</h5>
+                                    <a href="#!" class="btn btn-success">¡Checa su página!</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-block mb-4">
+                                <div class="card">
+                                    <img
+                                    src="statics/img/300x200.png"
+                                    class="card-img-top"
+                                    alt="Sunset Over the Sea"
+                                    />
+                                    <div class="card-body">
+                                    <h5 class="card-title">Patrocinador 2</h5>
+                                    <a href="#!" class="btn btn-success">¡Checa su página!</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-12 col-md-8 col-lg-4 me-md-auto ms-md-auto d-block mb-4">
+                                <div class="card">
+                                    <img
+                                    src="statics/img/300x200.png"
+                                    class="card-img-top"
+                                    alt="Sunset over the Sea"
+                                    />
+                                    <div class="card-body">
+                                    <h5 class="card-title">Patrocinador 1</h5>
+                                    <a href="#!" class="btn btn-success">¡Checa su página!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row mt-4">
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-block mb-4">
+                                <div class="card">
+                                    <img
+                                    src="statics/img/300x200.png"
+                                    class="card-img-top"
+                                    alt="Waterfall"
+                                    />
+                                    <div class="card-body">
+                                    <h5 class="card-title">Patrocinador 1</h5>
+                                    <a href="#!" class="btn btn-success">¡Checa su página!</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-block mb-4">
+                                <div class="card">
+                                    <img
+                                    src="statics/img/300x200.png"
+                                    class="card-img-top"
+                                    alt="Sunset Over the Sea"
+                                    />
+                                    <div class="card-body">
+                                    <h5 class="card-title">Patrocinador 2</h5>
+                                    <a href="#!" class="btn btn-success">¡Checa su página!</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-12 col-md-8 col-lg-4 me-md-auto ms-md-auto d-block mb-4">
+                                <div class="card">
+                                    <img
+                                    src="statics/img/300x200.png"
+                                    class="card-img-top"
+                                    alt="Sunset over the Sea"
+                                    />
+                                    <div class="card-body">
+                                    <h5 class="card-title">Patrocinador 1</h5>
+                                    <a href="#!" class="btn btn-success">¡Checa su página!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </section>
+
+    <div class="foot-img">Laboratorio de Ecología y Conservación de Vertebrados Terrestres</div>
 
     <!--Footer de la pagina-->
     <footer class="footer-font">
@@ -449,6 +580,7 @@
         </div>
     </footer>
     <!--Scripts-->
+
     <script type="text/javascript"  src="dynamics/toggle-button.js"></script>
     <script type="text/javascript"  src="dynamics/animations-vw-int.js"></script>
 </body>

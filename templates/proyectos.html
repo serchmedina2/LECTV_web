@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos | LECTV - IE</title>
 
-    <!--Scripts-->
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/92886b6a4f.js" crossorigin="anonymous"></script>
-    
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +24,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
 
+    <!--Animations-->
+        <!--Animate CSS-->
+        <link rel="stylesheet" href="../statics/styles/animate.css">
+        <!--shake CSS-->
+        <link rel="stylesheet" href="../statics/styles/csshake.min.css">
+
+    <!--Leaflet-->
+    <link rel="stylesheet" type="text/css" href="../node_modules/leaflet/dist/leaflet.css">
+
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
 
@@ -42,9 +47,14 @@
 
     <link rel="stylesheet" href="../statics/styles/main-titles.css">
 
+    <!--Scripts-->
+    <!--Font Awesome-->
+    <script type="text/javascript" src="https://kit.fontawesome.com/92886b6a4f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../node_modules/leaflet/dist/leaflet.js"></script>
+
     <!-- Obtener  coordenadas de grafico svg
      desplazar caja de texto generado al hacer click x, e y coordenadas
-     -->
+    -->
 
 </head>
 <body>
@@ -68,7 +78,7 @@
         </div>
     </section>
 
-    <section id="map-container">
+    <section id="map-container-svg">
         <div class="mexico-map">
             <?xml version="1.0"?>
                 <!--
@@ -76,8 +86,7 @@
                 ************* Free for Commercial Use, full terms at  http://simplemaps.com/resources/svg-license ************
                 ************* Attribution is appreciated! http://simplemaps.com ***************************
                 -->
-                
-                <svg version="1.2" viewbox="0 0 1000 631" width="1000" xmlns="http://www.w3.org/2000/svg">
+                <svg version="1.2" viewbox="0 0 1000 631" width="900" xmlns="http://www.w3.org/2000/svg">
                 
                 <path d="M901.9 362.5l0 0.2-0.2-0.1-0.3 0.1 0.3-0.2 0.2 0z m2.8 0.4l1.1 0.9 1 1.5 0.5 1.2-0.4 1.8-0.4 1-0.5 0.4-0.4-0.1-0.6-0.3-0.3-0.3 0.1-0.4-0.3-0.6 0.2-0.2 0.5-0.2 0.6-0.6 0.1-0.8-0.6-0.7-0.4-0.5-0.1-0.8-0.8-0.4-0.7-0.3-0.6 0.2-0.2 0.5-0.3-0.1 0.2-0.5 0.3-0.5 0.3-0.5 0.5-0.2 1.2 0.5z" id="MEX99" name="">
                 </path>
@@ -220,72 +229,41 @@
                 </circle>
                 <circle cx="832.6" cy="533.5" id="2">
                 </circle>
-            </svg>
+                </svg>
         </div>
 </section>
-<!--Footer de la pagina-->
-<footer class="footer-font">
-    <div class="footer-grid">
-        <div>
-            <!--Logo del LECTV-->
-            <a href="#"><img src="statics/img/logo_LECTV.png" alt=""></a>
-            <!--Creditos y copyrigth-->
-            <div>
-                <div>
-                    <p class="footer-title">
-                        Creditos:
-                    </p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus at maxime eveniet modi qui, nostrum obcaecati, facere suscipit officia veritatis perspiciatis minus tempora voluptatum est tempore sequi incidunt eius expedita!
-                </div>
-                <div>Copyright:
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae neque, cumque eius architecto esse vero dignissimos assumenda sint animi minima voluptatem incidunt culpa perferendis delectus, unde dolor nulla rem. Cum.
-                </div>
-            </div>
-        </div>
-        <!--Info de contacto, telefono, correo, y ubicacion-->
-        <div>
-            <p class="footer-title">Información de Contacto</p>
-            <div>
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i> Teléfono:</li>
-                    <li><i class="fa-solid fa-envelopes-bulk"></i> Correo:</li>
-                    <li><i class="fa-solid fa-map-location-dot"></i> Ubicacion:</li>
-                </ul>
-            </div>
-            <!--Mapa del LECTV-->
-            <div class="lectv-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.096047828551!2d-99.19460705017143!3d19.3216380491636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdffe2ff0e5607%3A0xdbbd4ad7ceb4c578!2sInstituto%20de%20Ecolog%C3%ADa%2C%20UNAM!5e0!3m2!1ses-419!2smx!4v1654713495821!5m2!1ses-419!2smx">
-                </iframe>
-            </div>
-        </div>
-        <!--Redes sociales-->
-        <div>
-            <p>¡Checa nuestras redes sociales! :)</p>
-            <div class="footer-social-media">
-                <div id="facebook-lectv">
-                    <a href="https://www.facebook.com/LECVTunam">
-                        <i class="fa-brands fa-facebook"></i> Facebook del LECTV
-                    </a>
-                </div>
-                <div id="proyecto-cacomixtle">
-                    <a href="https://www.facebook.com/CacomixtleEcolog%C3%ADa-100276905068563/">
-                        <i class="fa-brands fa-facebook"></i> Proyecto Cacomixtle
-                    </a>
-                </div>
-                <div id="twitter-lectv">
-                    <a href="">
-                        <i class="fa-brands fa-twitter"></i> Twitter del LECTV
-                    </a>
-                </div>
-                <div>
-                    <a href="http://bioconciencia.org.mx/index.php/sample-page/">
-                        <i class="fa-solid fa-earth-americas"></i> Bio Conciencia </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
-<script src="../dynamics/toggle-button.js"></script>
+<section id="map-container">
+    <select name="select-project" id="select-project">
+        <option value="1">Ciudad de México</option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10"></option>
+        <option value="11"></option>
+        <option value="12"></option>
+        <option value="13"></option>
+        <option value="14"></option>
+        <option value="15"></option>
+        <option value="16"></option>
+        <option value="17"></option>
+        <option value="18"></option>
+        <option value="19"></option>
+        <option value="20"></option>
+    </select>
+    <div id="map">
+        
+    </div>
+</section>
+
+
+<script type="text/javascript" src="../dynamics/toggle-button.js"></script>
+<script type="module" src="../dynamics/mexicoStates.js"></script>
+<script type="module" src="../dynamics/projects-map.js"></script>
 </body>
 </html>

@@ -18,6 +18,13 @@
     border: none;
     box-sizing: border-box;
 }
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+  }
+  ol, ul {
+    padding-left: 0rem;
+  }
 /**=================================================
 Header Styles
 ================================================**/
@@ -76,7 +83,7 @@ header nav ul.nav-menu li a{
     font-size: clamp(0.75em,5vw,1em);
 }
 
-.active, 
+.activo, 
 header nav ul.nav-menu li:hover, 
 header nav ul.nav-menu li:focus,
 header nav ul.nav-menu li:focus-within{
@@ -178,7 +185,12 @@ perdder */
         justify-content: center;
     }
     div.social-media {
+        font-size: 1em;
+        line-height: normal;
         flex-wrap: wrap;
+    }
+    div.social-media p {
+        margin-bottom: 0px;
     }
     div.social-media i{
         margin: 0 5px;
