@@ -1,318 +1,318 @@
 /* Agregar prefijos de navegador -o-, -moz-, -webkit- ... */
 :root {
-    --azul-claro: #6DCCB0;  
-    --ver-oscuro-1: #80C97B;
-    --ver-oscuro-2: #538b2c;
-    --ver-oscuro-3: #294615;
-    --ver-claro-1: #B5D181;
-    --ver-claro-2:#a4e676;
-    --ver-claro-3: #7bdb38;
-    --ver-claro-4: #d0df96;
-    --ocre-1: #ffea9c;
-    --ocre-2: #F5D08F;
-    --marron: rgb(57, 43, 11);
+  --azul-claro: #6dccb0;
+  --ver-oscuro-1: #80c97b;
+  --ver-oscuro-2: #538b2c;
+  --ver-oscuro-3: #294615;
+  --ver-claro-1: #b5d181;
+  --ver-claro-2: #a4e676;
+  --ver-claro-3: #7bdb38;
+  --ver-claro-4: #d0df96;
+  --ocre-1: #ffea9c;
+  --ocre-2: #f5d08f;
+  --marron: rgb(57, 43, 11);
 }
 * {
-    padding: 0;
-    margin: 0;
-    border: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
 }
-dl, ol, ul {
-    margin-top: 0;
-    margin-bottom: 0rem;
-  }
-  ol, ul {
-    padding-left: 0rem;
-  }
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+ol,
+ul {
+  padding-left: 0rem;
+}
 /**=================================================
 Header Styles
 ================================================**/
 header {
-    width: 100%;
-    margin-bottom:15px;
+  width: 100%;
+  margin-bottom: 15px;
 }
-header div.logo-lectv{
-    display: flex;
-    margin: 15px;
-    justify-content: center;
+header div.logo-lectv {
+  display: flex;
+  margin: 15px;
+  justify-content: center;
 }
-header div.logo-lectv img{
-    height:auto;
-    max-width: 100%;
+header div.logo-lectv img {
+  height: auto;
+  max-width: 100%;
 }
 /**=================================================
 Mobile Header Styles
 ================================================**/
-header div.mobile-header{
-    display: none;
+header div.mobile-header {
+  display: none;
 }
 /**=================================================
 Navigation bar
 ================================================**/
 header nav {
-    background-color:var(--ver-claro-1);
-    border-radius:5px;
-    min-height: 8vh;
-    margin: 0 30px;
-    display:flex;
-    align-items: stretch;
-    justify-content: space-around;
-    z-index:1000;
+  background-color: var(--ver-claro-1);
+  border-radius: 5px;
+  min-height: 8vh;
+  margin: 0 30px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  z-index: 1000;
 }
 header nav ul.nav-menu {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
-header nav ul.nav-menu li{
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    color: black;
+header nav ul.nav-menu li {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  color: black;
 }
 /*Desaparece la opcion del home*/
 header nav ul.nav-menu li.home {
-    display: none;
+  display: none;
 }
-header nav ul.nav-menu li a{
-    font-family: 'Montserrat', 'Trebuchet MS', 
-    'Lucida Sans Unicode', Arial, sans-serif;
-    text-decoration: none;
-    color:black;
-    font-size: clamp(0.75em,5vw,1em);
+header nav ul.nav-menu li a {
+  font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", Arial,
+    sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: clamp(0.75em, 5vw, 1em);
 }
 
-.activo, 
-header nav ul.nav-menu li:hover, 
+.activo,
+header nav ul.nav-menu li:hover,
 header nav ul.nav-menu li:focus,
-header nav ul.nav-menu li:focus-within{
-    background-color:var(--ver-claro-4);
-    border-radius: 5px;
+header nav ul.nav-menu li:focus-within {
+  background-color: var(--ver-claro-4);
+  border-radius: 5px;
 }
 /* Icon separation */
 header nav i {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 .sub-menu {
-    display: none;
+  display: none;
 }
 header nav ul li:hover .sub-menu,
 header nav ul li:focus-within .sub-menu {
-    z-index:1000;
-    display: block;
-    transform:translateX(-100%) translateY(2vh);
+  z-index: 1000;
+  display: block;
+  transform: translateX(-100%) translateY(2vh);
 }
 header nav ul li:hover .sub-menu ul,
-header nav ul li:focus-within .sub-menu ul{
-    display:block;
-    position:absolute;
-    width: 300px;
-    font-size: 0.75em;
-    background-color: var(--ver-claro-1);
-    margin-top: 10px;
-    margin-left: -15px;
-    border-radius: 5px;
-    overflow: hidden;
-    transform: translateX(-40%) translateY(-5px);
+header nav ul li:focus-within .sub-menu ul {
+  display: block;
+  position: absolute;
+  width: 300px;
+  font-size: 0.75em;
+  background-color: var(--ver-claro-1);
+  margin-top: 10px;
+  margin-left: -15px;
+  border-radius: 5px;
+  overflow: hidden;
+  transform: translateX(-40%) translateY(-5px);
 
-    -webkit-transform: translateX(-40%) translateY(-5px);
-    -moz-transform: translateX(-40%) translateY(-5px);
-    -o-transform: translateX(-40%) translateY(-5px);
-    -ms-transform: translateX(-40%) translateY(-5px);
+  -webkit-transform: translateX(-40%) translateY(-5px);
+  -moz-transform: translateX(-40%) translateY(-5px);
+  -o-transform: translateX(-40%) translateY(-5px);
+  -ms-transform: translateX(-40%) translateY(-5px);
 }
 /* Little animations for nav bar */
 header nav ul li:hover .sub-menu li,
 header nav ul li:focus-within .sub-menu li {
-    display: flex;
-    justify-content:space-between;
-    transition: 250ms all 250ms linear;
+  display: flex;
+  justify-content: space-between;
+  transition: 250ms all 250ms linear;
 
-    transform: translateX(0%);
+  transform: translateX(0%);
 
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -o-transform: translateX(0%);
-    -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
 }
 header nav ul li:hover .sub-menu li:hover,
-header nav ul li:focus-within  .sub-menu li:focus-within {
-    transform: translateX(5%);
+header nav ul li:focus-within .sub-menu li:focus-within {
+  transform: translateX(5%);
 
-    -webkit-transform: translateX(5%);
-    -moz-transform: translateX(5%);
-    -o-transform: translateX(5%);
-    -ms-transform: translateX(5%);
+  -webkit-transform: translateX(5%);
+  -moz-transform: translateX(5%);
+  -o-transform: translateX(5%);
+  -ms-transform: translateX(5%);
 }
-header nav ul li:hover .sub-menu li a{
-    transition: 250ms all 250ms ease;
-    transform: translateY(-25%);
+header nav ul li:hover .sub-menu li a {
+  transition: 250ms all 250ms ease;
+  transform: translateY(-25%);
 
-    -webkit-transform:  translateY(-25%);
-    -moz-transform:  translateY(-25%);
-    -o-transform:  translateY(-25%);
-    -ms-transform:  translateY(-25%);
+  -webkit-transform: translateY(-25%);
+  -moz-transform: translateY(-25%);
+  -o-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
 }
 header nav ul li:hover .sub-menu li a:hover,
 header nav ul li:focus-within .sub-menu li a:focus-within {
-    transform: translateY(0%);
+  transform: translateY(0%);
 
-    -webkit-transform:  translateY(0%);
-    -moz-transform:  translateY(0%);
-    -o-transform:  translateY(0%);
-    -ms-transform:  translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
 }
 /* Si los elementos son mas grandes 
 que el viewport el resto de las cosas se echa a 
 perdder */
 @media (max-width: 992px) {
-    /**=================================================
+  /**=================================================
     Mobile Header Styles
     ================================================**/
-    header div.mobile-header{
-        position:fixed;
-        display:flex;
-        justify-content:space-between;
-        background-color: var(--ver-claro-1);
-        height: 6vh;
-        transform: translateY(calc(-6.1vh)) ;
-        min-width: 100vw;
-        z-index:1000;
-    }
-    header div.logo-lectv{
-        display: flex;
-        margin: 6vh 15px 15px;
-        justify-content: center;
-    }
-    div.social-media {
-        font-size: 1em;
-        line-height: normal;
-        flex-wrap: wrap;
-    }
-    div.social-media p {
-        margin-bottom: 0px;
-    }
-    div.social-media i{
-        margin: 0 5px;
-        color:black;
-    }
-    
-    /**=================================================
+  header div.mobile-header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--ver-claro-1);
+    height: 6vh;
+    transform: translateY(calc(-6.1vh));
+    min-width: 100vw;
+    z-index: 1000;
+  }
+  header div.logo-lectv {
+    display: flex;
+    margin: 6vh 15px 15px;
+    justify-content: center;
+  }
+  div.social-media {
+    font-size: 1em;
+    line-height: normal;
+    flex-wrap: wrap;
+  }
+  div.social-media p {
+    margin-bottom: 0px;
+  }
+  div.social-media i {
+    margin: 0 5px;
+    color: black;
+  }
+
+  /**=================================================
     Display menu-button Styles
     ================================================**/
-    #toggle-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1.5vh 3.5vh;
-        background-color: var(--ver-oscuro-2);
-        width: 3.5vh;
-        height: 3.5vh;     
-        border-radius: 5px; 
-        transition: 200ms;
-    }
-    #toggle-btn:focus-within {
-        background-color:var(--ver-claro-2);
-    }
-    #toggle-btn::before {
-        content: '';
-        position: absolute;
-        width:15px;
-        height:2px;
-        background-color:#fff;
-        transform: translateY(-5px);
-        box-shadow:0 5px 0 #fff;
-        transition: 200ms;
-    }
-    #toggle-btn::after {
-        content: '';
-        position: absolute;
-        width:15px;
-        height:2px;
-        transform: translateY(5px);
-        background-color:#fff;
-        transition: 200ms;
-    }
-    /* When active */
-    #toggle-btn.active {
-        background-color: var(--ver-claro-2);
-    }
-    #toggle-btn.active::before {
-        transform: translateY(0px) rotate(-45deg);
-        background-color:#000;
-        box-shadow: 0 0 0 #000;
-    }
-    #toggle-btn.active::after {
-        transform: translateY(0px) rotate(45deg);
-        background-color: #000;
-    }
-    /**=================================================
+  #toggle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5vh 3.5vh;
+    background-color: var(--ver-oscuro-2);
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 5px;
+    transition: 200ms;
+  }
+  #toggle-btn:focus-within {
+    background-color: var(--ver-claro-2);
+  }
+  #toggle-btn::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 0 #fff;
+    transition: 200ms;
+  }
+  #toggle-btn::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    transform: translateY(5px);
+    background-color: #fff;
+    transition: 200ms;
+  }
+  /* When active */
+  #toggle-btn.active {
+    background-color: var(--ver-claro-2);
+  }
+  #toggle-btn.active::before {
+    transform: translateY(0px) rotate(-45deg);
+    background-color: #000;
+    box-shadow: 0 0 0 #000;
+  }
+  #toggle-btn.active::after {
+    transform: translateY(0px) rotate(45deg);
+    background-color: #000;
+  }
+  /**=================================================
     Hamburguer Menu Styles
     ================================================**/
-    header nav { 
-        height:94vh;
-        position: fixed;
-        top: 5.5vh;
-        right: 0;
-        display:block;
-        margin: 0;
-    }
-    header nav ul.nav-menu {
-        display: none;
-        list-style: none;
-    }
-    header nav ul.nav-menu.toggle {
-        display: block;
-        padding:0 16px;
-    }
-    header nav ul.nav-menu li{
-        display: flex;
-        align-items: flex-start;
-        color: black;
-    }
-    /*Reaparece la opcion de home en el menu de navegacion*/
-    header nav ul.nav-menu li.home {
-        display: flex;
-    }
-    header nav ul li:hover .sub-menu ul{
-        display:block;
-        position:absolute;
-        transform: translateX(-100%);
-    }
-    header nav ul li:hover .sub-menu ul li {
-        display: flex;
-        justify-content:space-between;
-    }
-    header nav ul li:hover .sub-menu ul li a{
-        text-align: right;
-    }
-    /* Little animations for nav bar - In reverse*/
-    header nav ul li:hover .sub-menu ul li {
-        display:flex;
-        flex-direction: row-reverse;
-        transition: all 250ms linear;
-        transform: translateX(0%);
-    }
-    header nav ul li:hover .sub-menu ul li:hover {
-        transform: translateX(-10%);
+  header nav {
+    height: 94vh;
+    position: fixed;
+    top: 5.5vh;
+    right: 0;
+    display: block;
+    margin: 0;
+  }
+  header nav ul.nav-menu {
+    display: none;
+    list-style: none;
+  }
+  header nav ul.nav-menu.toggle {
+    display: block;
+    padding: 0 16px;
+  }
+  header nav ul.nav-menu li {
+    display: flex;
+    align-items: flex-start;
+    color: black;
+  }
+  /*Reaparece la opcion de home en el menu de navegacion*/
+  header nav ul.nav-menu li.home {
+    display: flex;
+  }
+  header nav ul li:hover .sub-menu ul {
+    display: block;
+    position: absolute;
+    transform: translateX(-100%);
+  }
+  header nav ul li:hover .sub-menu ul li {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav ul li:hover .sub-menu ul li a {
+    text-align: right;
+  }
+  /* Little animations for nav bar - In reverse*/
+  header nav ul li:hover .sub-menu ul li {
+    display: flex;
+    flex-direction: row-reverse;
+    transition: all 250ms linear;
+    transform: translateX(0%);
+  }
+  header nav ul li:hover .sub-menu ul li:hover {
+    transform: translateX(-10%);
 
-        -webkit-transform: translateX(-10%);
-        -moz-transform: translateX(-10%);
-        -o-transform: translateX(-10%);
-        -ms-transform: translateX(-10%);
-    }
-    header nav ul li:hover .sub-menu ul li i {
-        transform: rotate(180deg);
-        padding:0 10px; 
-    }
+    -webkit-transform: translateX(-10%);
+    -moz-transform: translateX(-10%);
+    -o-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
+  }
+  header nav ul li:hover .sub-menu ul li i {
+    transform: rotate(180deg);
+    padding: 0 10px;
+  }
 }
-
 
 /* *================================================
 Typography
 ================================================ * */
-
-
 
 /**================================================
 Sections

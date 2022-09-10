@@ -1,6 +1,6 @@
-// Version 2.0 
+// Version 2.0
 /**
- *  A function that adds an Animate CSS' class to 
+ *  A function that adds an Animate CSS' class to
  *  a specific class of the elements inside of it
  *  in a container selected, when the container
  *  is visible on screen.
@@ -11,10 +11,10 @@
  * */
 
 function scrollAnimation(parent, elementClass, animation) {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach((entry) =>{
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
       const banners = entry.target.querySelectorAll(elementClass);
-      if(entry.isIntersecting){
+      if (entry.isIntersecting) {
         banners.forEach((banner) => banner.classList.add(animation));
         return;
       }
@@ -25,7 +25,6 @@ function scrollAnimation(parent, elementClass, animation) {
   parentElements.forEach((parentE) => observer.observe(parentE));
 }
 
-scrollAnimation('.banner-container', '.banner', 'animate__backInUp');
+scrollAnimation(".banner-container", ".banner", "animate__backInUp");
 
-scrollAnimation('.news-grid', '.new-container', 'animate__bounceIn')
-
+scrollAnimation(".news-grid", ".new-container", "animate__bounceIn");

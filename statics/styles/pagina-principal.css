@@ -1,213 +1,210 @@
 :root {
-    --azul-claro: #6DCCB0;  
-    --ver-oscuro-1: #80C97B;
-    --ver-oscuro-2: #538b2c;
-    --ver-oscuro-3: #294615;
-    --ver-claro-1: #B5D181;
-    --ver-claro-2:#a4e676;
-    --ver-claro-3: #7bdb38;
-    --ver-claro-4: #d0df96;
-    --ocre-1: #ffea9c;
-    --ocre-2: #F5D08F;
-    --marron: rgb(57, 43, 11);
+  --azul-claro: #6dccb0;
+  --ver-oscuro-1: #80c97b;
+  --ver-oscuro-2: #538b2c;
+  --ver-oscuro-3: #294615;
+  --ver-claro-1: #b5d181;
+  --ver-claro-2: #a4e676;
+  --ver-claro-3: #7bdb38;
+  --ver-claro-4: #d0df96;
+  --ocre-1: #ffea9c;
+  --ocre-2: #f5d08f;
+  --marron: rgb(57, 43, 11);
 }
 * {
-    padding: 0;
-    margin: 0;
-    border: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
 }
 body {
-	color: rgb(0, 0, 0);
-	font-family: 'Poppins', 'Open Sans', 'Roboto', 
-    'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Verdana,  sans-serif;
-     overflow:initial;
-
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", "Open Sans", "Roboto", "Lucida Sans",
+    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana,
+    sans-serif;
+  overflow: initial;
 }
 
 /*=================================================
 Presentation Grid
 ===================================================*/
-section#presentation-grid { 
-    /* Agregar imagenes de fondo dependiendo del tamanyo */
-    background: url('../img/background-grid.png') var(--ver-claro-1);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size:contain;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
+section#presentation-grid {
+  /* Agregar imagenes de fondo dependiendo del tamanyo */
+  background: url("../img/background-grid.png") var(--ver-claro-1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: contain;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
-#presentation-grid>div:nth-child(even){ 
-    margin:5vh 10vw 5vh 1vw;
-    background-color:var(--ocre-1);
-
+#presentation-grid > div:nth-child(even) {
+  margin: 5vh 10vw 5vh 1vw;
+  background-color: var(--ocre-1);
 }
-#presentation-grid>div:nth-child(odd){
-    margin:5vh 1vw 5vh 10vw;
-    background-color: var(--ocre-1);
+#presentation-grid > div:nth-child(odd) {
+  margin: 5vh 1vw 5vh 10vw;
+  background-color: var(--ocre-1);
 }
 div > .content {
-    padding: 5vh;
-
+  padding: 5vh;
 }
 /*================================================= 
 Activity Grid
 ================================================*/
 section#activity-grid {
-    margin: 0px 10px;
-    overflow: hidden;
+  margin: 0px 10px;
+  overflow: hidden;
 }
 .activity-margins {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background-color:var(--ver-oscuro-3);
-    width: 100%;
-    height: clamp(5.5vh, 12vh, 16vh);
-    margin-top: 2.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: var(--ver-oscuro-3);
+  width: 100%;
+  height: clamp(5.5vh, 12vh, 16vh);
+  margin-top: 2.5vh;
 }
 .banner-container:nth-child(1) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: calc(1.5em - 15px);
-    grid-auto-rows:minmax(5vh, max-content);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(1.5em - 15px);
+  grid-auto-rows: minmax(5vh, max-content);
 }
-.banner-container:nth-child(2){
-    display: none;
+.banner-container:nth-child(2) {
+  display: none;
 }
-.banner-container:nth-child(3){
-    display: none;
+.banner-container:nth-child(3) {
+  display: none;
 }
-.banner-container .banner>div {
-    display: flex;
-    justify-content: center;
+.banner-container .banner > div {
+  display: flex;
+  justify-content: center;
 }
-.banner>div>img {
-    overflow: hidden;
-    display: block;
-    margin: 0 auto;
+.banner > div > img {
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
 }
 /* Media Query's */
 /* programar para 745px */
 @media (max-width: 992px) {
-    .banner-container:nth-child(1){
-        display: none;
-    }
-    .banner-container:nth-child(2){
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .banner-container div.banner:nth-child(3){
-        grid-column: 1 / 3; /* Primer valor donde inicia la columna
+  .banner-container:nth-child(1) {
+    display: none;
+  }
+  .banner-container:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .banner-container div.banner:nth-child(3) {
+    grid-column: 1 / 3; /* Primer valor donde inicia la columna
                                Segundo valor donde termina. Se puede
                                usar "span" para unir el numero de columnas indicado*/
-    }
-    .banner>div>img {
-        max-height: 400px;
-        padding: 0;
-    }
+  }
+  .banner > div > img {
+    max-height: 400px;
+    padding: 0;
+  }
 }
 @media (max-width: 576px) {
-    .banner-container:nth-child(1){
-        display: none;
-    }
-    .banner-container:nth-child(2){
-        display: none;
-    }
-    .banner-container:nth-child(3){
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .banner-container div.banner:nth-child(3){
-        grid-column: 1;
-    }
-    .banner>div>img {
-        max-height: 200px;
-    }
-    .banner>div>img {
-        max-height: 400px;
-        padding: 0;
-    }
+  .banner-container:nth-child(1) {
+    display: none;
+  }
+  .banner-container:nth-child(2) {
+    display: none;
+  }
+  .banner-container:nth-child(3) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .banner-container div.banner:nth-child(3) {
+    grid-column: 1;
+  }
+  .banner > div > img {
+    max-height: 200px;
+  }
+  .banner > div > img {
+    max-height: 400px;
+    padding: 0;
+  }
 }
 .news {
-    grid-area: news;
+  grid-area: news;
 }
 .calendar {
-    grid-area: calendar;
+  grid-area: calendar;
 }
 section#news-calendar {
+  margin: 10vh 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "news news news calendar";
+}
+@media (max-width: 1200px) {
+  section#news-calendar {
     margin: 10vh 0 0 0;
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "news news news calendar";
-}
-@media (max-width:1200px) { 
-    section#news-calendar {
-        margin: 10vh 0 0 0;
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, max-content);
-        grid-template-areas:
-        "news news news news"
-        "calendar calendar calendar calendar";
-    }
+    grid-template-rows: repeat(2, max-content);
+    grid-template-areas:
+      "news news news news"
+      "calendar calendar calendar calendar";
+  }
 }
 /*================================================= 
 News Grid
 ================================================*/
-#news-calendar div.news{
-    max-width: 924px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+#news-calendar div.news {
+  max-width: 924px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #news-calendar div.title {
-    width: 100%;
+  width: 100%;
 }
 .news-grid {
-    display:grid;
-    gap:0.75em;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-columns: minmax(10vh,max-content);
-    margin-left: 15px;
-} 
-.news-grid >div:nth-child(even){
-    margin-top: 50px;
+  display: grid;
+  gap: 0.75em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: minmax(10vh, max-content);
+  margin-left: 15px;
 }
-.news-grid >div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.news-grid > div:nth-child(even) {
+  margin-top: 50px;
 }
-.news-grid >div p {
-    max-width: clamp(100vw,33vw,90vw);
-    text-align: justify;
+.news-grid > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-@media (max-width:992px) {
-    .news-grid {
-        gap:0.5em;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-columns: minmax(10vh,max-content);
-    } 
-    .news-grid >div:nth-child(even){
-        margin-top: 30px;
-    }
+.news-grid > div p {
+  max-width: clamp(100vw, 33vw, 90vw);
+  text-align: justify;
 }
-@media (max-width:576px) {
-    .news-grid {
-        gap:0.25em;
-        grid-template-columns:1fr;
-        grid-auto-columns: minmax(10vh,max-content);
-    } 
-    .news-grid >div:nth-child(even){
-        margin-top: none;
-    }
+@media (max-width: 992px) {
+  .news-grid {
+    gap: 0.5em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-columns: minmax(10vh, max-content);
+  }
+  .news-grid > div:nth-child(even) {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .news-grid {
+    gap: 0.25em;
+    grid-template-columns: 1fr;
+    grid-auto-columns: minmax(10vh, max-content);
+  }
+  .news-grid > div:nth-child(even) {
+    margin-top: none;
+  }
 }
 /*================================================= 
 Calendar Grid
@@ -215,13 +212,10 @@ Calendar Grid
 
 /* Calendar API */
 #news-calendar div.calendar-container {
-    display: flex;
-    justify-content:center;
+  display: flex;
+  justify-content: center;
 }
-#news-calendar div.calendar iframe{
-    width: 90%;
-    margin: 10px auto;
+#news-calendar div.calendar iframe {
+  width: 90%;
+  margin: 10px auto;
 }
-
-
-

@@ -6,145 +6,162 @@ See https://github.com/eduardofierropro/Lightbox-con-HTML-CSS-y-Javascript-para-
 */
 
 :root {
-    --negro: #393939;
-    --blanco: #ececec;
-    --sombra-ppal: #c9c9c9;
-    --sombra-sec: #ffffff;
-    --borde-negro: #00000050;
-    --marcado: rgb(127, 195, 255);
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #ffffff;
+  --borde-negro: #00000050;
+  --marcado: rgb(127, 195, 255);
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+    --blanco: #303030;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #ffffff50;
   }
-  
-  /* Las adaptamos al modo oscuro */
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --negro: #ececec;
-      --blanco: #303030;
-      --sombra-ppal: #242424;
-      --sombra-sec: #3c3c3c;
-      --borde-negro: #FFFFFF50;
-    }
-  }
+}
 
 .ul {
-    margin: 0 auto;
-    width: 80%;
-    background: lightgrey;
-    padding: 1em;
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-    gap: 1em;
-    color: var(--negro);
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    border-radius: 1em;
-    background-color: var(--blanco);
-  }
-  
-  .ul .li {
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: orange;
-    overflow: hidden;
-    color: var(--negro);
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    border-radius: 1em;
-    background-color: var(--blanco);
-    -webkit-box-shadow: 0.4em 0.4em 0.8em var(--sombra-ppal), -0.4em -0.4em 0.8em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-            box-shadow: 0.4em 0.4em 0.8em var(--sombra-ppal), -0.4em -0.4em 0.8em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  }
-  
-  .ul .img {
-    min-height: 100%;
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.5s ease;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    width: 500px;
-  }
-  
-  .ul .li:hover .img {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  
-  .lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.4);
-    z-index: 2000;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    opacity: 0;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.5s ease;
-    pointer-events: none;
-  }
-  
-  .lightbox.activo {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    pointer-events: auto;
-  }
-  .lightbox.activo>div {
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
-  }
-  .lightbox .cerrar {
-    width: 5em;
-    height: 3em;
-    background: orange;
-    margin: 0 0 0.5em;
-    color: var(--negro);
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    border-radius: 1em;
-    background-color: var(--blanco);
-    -webkit-box-shadow: 0.25em 0.25em 0.6em var(--sombra-ppal), -0.25em -0.25em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-            box-shadow: 0.25em 0.25em 0.6em var(--sombra-ppal), -0.25em -0.25em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-    cursor: pointer;
-  }
-  
-  .lightbox .cerrar:hover {
-    color: var(--negro);
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    border-radius: 1em;
-    background-color: var(--blanco);
-    -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.25em 0.25em 0.6em var(--sombra-ppal), inset -0.25em -0.25em 0.6em var(--sombra-sec);
-            box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.25em 0.25em 0.6em var(--sombra-ppal), inset -0.25em -0.25em 0.6em var(--sombra-sec);
-  }
-  
-  .lightbox .grande {
-    max-width: 75%;
-    max-height: 75%;
-    background: lightblue;
-    color: var(--negro);
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    border-radius: 1em;
-    background-color: var(--blanco);
-    -webkit-box-shadow: 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-            box-shadow: 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-    margin-bottom: 0.5em;
-  }
+  margin: 0 auto;
+  width: 80%;
+  background: lightgrey;
+  padding: 1em;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  gap: 1em;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+}
+
+.ul .li {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: orange;
+  overflow: hidden;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0.4em 0.4em 0.8em var(--sombra-ppal),
+    -0.4em -0.4em 0.8em var(--sombra-sec), inset 0 0 0 transparent,
+    inset 0 0 0 transparent;
+  box-shadow: 0.4em 0.4em 0.8em var(--sombra-ppal),
+    -0.4em -0.4em 0.8em var(--sombra-sec), inset 0 0 0 transparent,
+    inset 0 0 0 transparent;
+}
+
+.ul .img {
+  min-height: 100%;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  width: 500px;
+}
+
+.ul .li:hover .img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 2000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.lightbox.activo {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  pointer-events: auto;
+}
+.lightbox.activo > div {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  max-width: 100%;
+  max-height: 100%;
+}
+.lightbox .cerrar {
+  width: 5em;
+  height: 3em;
+  background: orange;
+  margin: 0 0 0.5em;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0.25em 0.25em 0.6em var(--sombra-ppal),
+    -0.25em -0.25em 0.6em var(--sombra-sec), inset 0 0 0 transparent,
+    inset 0 0 0 transparent;
+  box-shadow: 0.25em 0.25em 0.6em var(--sombra-ppal),
+    -0.25em -0.25em 0.6em var(--sombra-sec), inset 0 0 0 transparent,
+    inset 0 0 0 transparent;
+  cursor: pointer;
+}
+
+.lightbox .cerrar:hover {
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent,
+    inset 0.25em 0.25em 0.6em var(--sombra-ppal),
+    inset -0.25em -0.25em 0.6em var(--sombra-sec);
+  box-shadow: 0 0 0 transparent, 0 0 0 transparent,
+    inset 0.25em 0.25em 0.6em var(--sombra-ppal),
+    inset -0.25em -0.25em 0.6em var(--sombra-sec);
+}
+
+.lightbox .grande {
+  max-width: 75%;
+  max-height: 75%;
+  background: lightblue;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 1em 2em var(--sombra-ppal),
+    -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent,
+    inset 0 0 0 transparent;
+  box-shadow: 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec),
+    inset 0 0 0 transparent, inset 0 0 0 transparent;
+  margin-bottom: 0.5em;
+}

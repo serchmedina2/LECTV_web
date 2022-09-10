@@ -1,127 +1,127 @@
 :root {
-    --azul-claro: #6DCCB0;  
-    --ver-oscuro-1: #80C97B;
-    --ver-oscuro-2: #538b2c;
-    --ver-oscuro-3: #294615;
-    --ver-claro-1: #B5D181;
-    --ver-claro-2:#a4e676;
-    --ver-claro-3: #7bdb38;
-    --ver-claro-4: #d0df96;
-    --ocre-1: #ffea9c;
-    --ocre-2: #F5D08F;
-    --marron: rgb(57, 43, 11);
+  --azul-claro: #6dccb0;
+  --ver-oscuro-1: #80c97b;
+  --ver-oscuro-2: #538b2c;
+  --ver-oscuro-3: #294615;
+  --ver-claro-1: #b5d181;
+  --ver-claro-2: #a4e676;
+  --ver-claro-3: #7bdb38;
+  --ver-claro-4: #d0df96;
+  --ocre-1: #ffea9c;
+  --ocre-2: #f5d08f;
+  --marron: rgb(57, 43, 11);
 }
 .labour-cathegory {
-    background-color: var(--ver-claro-1);
-    display: block;
-    width:  max-content;
-    margin: 10px auto ;
-    padding: 10px;
-    border-radius: 10px;
+  background-color: var(--ver-claro-1);
+  display: block;
+  width: max-content;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 section.biography {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 15px 2.5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px 2.5vw;
 }
 .name {
-    background-color: var(--ver-claro-1);
-    padding: 15px;
-    border-radius: 15px;
+  background-color: var(--ver-claro-1);
+  padding: 15px;
+  border-radius: 15px;
 }
 .bio-image {
-    grid-area: bio-image;
-    background-color: #d1df96e8;
-    border-radius: 15px;
+  grid-area: bio-image;
+  background-color: #d1df96e8;
+  border-radius: 15px;
 }
 .bio-image > div > img {
-    width:100%;
-    height:auto;
+  width: 100%;
+  height: auto;
 }
 .biography {
-    grid-area: biography;
+  grid-area: biography;
 }
 .personal-interest {
-    grid-area: personal-interest;
+  grid-area: personal-interest;
 }
 .contact-data {
-    grid-area: contact-data;
+  grid-area: contact-data;
 }
 .contact-data > div {
-    width: 100%;
-    margin-bottom: 15px;
-    border: 1px solid #7bdb38;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #7bdb38;
 }
-.research-lines{
-    grid-area: research-lines;
+.research-lines {
+  grid-area: research-lines;
 }
 .data {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .data > div {
-    padding: 5px;
-    margin: 0px 5vw;
-    border: 1px solid #7bdb38;
-    border-radius: 10px;
+  padding: 5px;
+  margin: 0px 5vw;
+  border: 1px solid #7bdb38;
+  border-radius: 10px;
 }
 .biography-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, max-content);
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  grid-template-areas:
     "bio-image  biography"
     "research-lines personal-interest"
     "contact-data contact-data";
-    gap: 5px;
+  gap: 5px;
 }
 .biography-grid > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
 }
 .biography-grid > div > div {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .bio-content {
-    background-color: var(--ver-oscuro-1);
-    padding: 15px;
-    border-radius: 15px;
-    height: 100%;
+  background-color: var(--ver-oscuro-1);
+  padding: 15px;
+  border-radius: 15px;
+  height: 100%;
 }
 /* Tablet's screen size */
-@media (max-width:768px) {
-    .biography-grid {
+@media (max-width: 768px) {
+  .biography-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, max-content);
-    grid-template-areas: 
-    "bio-image bio-image"
-    "biography research-lines"
-    "personal-interest personal-interest"
-    "contact-data contact-data";
+    grid-template-areas:
+      "bio-image bio-image"
+      "biography research-lines"
+      "personal-interest personal-interest"
+      "contact-data contact-data";
     gap: 5px;
-    }
+  }
 }
-@media (max-width:554px) {
-    .biography-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, max-content);
-        grid-template-areas: 
-        "bio-image"
-        "biography"
-        "research-lines"
-        "personal-interest"
-        "contact-data";
-        gap: 5px;
-        }
+@media (max-width: 554px) {
+  .biography-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-areas:
+      "bio-image"
+      "biography"
+      "research-lines"
+      "personal-interest"
+      "contact-data";
+    gap: 5px;
+  }
 }

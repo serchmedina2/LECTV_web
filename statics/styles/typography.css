@@ -1,148 +1,151 @@
 @import url(fonts.css);
 
 :root {
-    --azul-claro: #6DCCB0;  
-    --ver-oscuro-1: #80C97B;
-    --ver-oscuro-2: #538b2c;
-    --ver-oscuro-3: #294615;
-    --ver-claro-1: #B5D181;
-    --ver-claro-2:#a4e676;
-    --ver-claro-3: #7bdb38;
-    --ver-claro-4: #d0df96;
-    --ocre-1: #ffea9c;
-    --ocre-2: #F5D08F;
-    --marron: rgb(57, 43, 11);
+  --azul-claro: #6dccb0;
+  --ver-oscuro-1: #80c97b;
+  --ver-oscuro-2: #538b2c;
+  --ver-oscuro-3: #294615;
+  --ver-claro-1: #b5d181;
+  --ver-claro-2: #a4e676;
+  --ver-claro-3: #7bdb38;
+  --ver-claro-4: #d0df96;
+  --ocre-1: #ffea9c;
+  --ocre-2: #f5d08f;
+  --marron: rgb(57, 43, 11);
 }
 body {
-    color: rgb(0, 0, 0);
-	font-family: 'Poppins', 'Open Sans', 'Roboto', 
-    'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Verdana,  sans-serif;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", "Open Sans", "Roboto", "Lucida Sans",
+    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana,
+    sans-serif;
 }
 p {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .body-font {
-    color: rgb(0, 0, 0);
-	font-family: 'Poppins', 'Open Sans', 'Roboto', 
-    'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Verdana,  sans-serif;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", "Open Sans", "Roboto", "Lucida Sans",
+    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana,
+    sans-serif;
 }
 .main-title {
-    color: var(--ver-oscuro-2);
-    font-family: 'Montserrat', 'Trebuchet MS', 
-    'Lucida Sans Unicode', Arial, sans-serif;
-    font-weight: 500;
-    font-size: 2.25em;
+  color: var(--ver-oscuro-2);
+  font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", Arial,
+    sans-serif;
+  font-weight: 500;
+  font-size: 2.25em;
 }
 section.main-title {
-    width: 98vw;
+  width: 98vw;
 }
 .main-title div.title {
-    display:flex; 
-    align-items: center;
-    justify-content:center;
-    text-align: center;
-    flex-wrap: wrap;
-    width:60%;
-    margin: 2.5vw auto 2.5vw;
-    padding: 5.5px 0;
-    color: var(--ver-oscuro-2);
-    background: #d1df96e8;
-    border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 2.5vw auto 2.5vw;
+  padding: 5.5px 0;
+  color: var(--ver-oscuro-2);
+  background: #d1df96e8;
+  border-radius: 15px;
 }
 .title {
-    font-family: 'Montserrat', 'Trebuchet MS', 
-    'Lucida Sans Unicode', Arial, sans-serif;
-    font-size: clamp(0.75em,4vw,2.75em);
-    color: var(--marron);
-    text-align: center;
-    margin: 10px 0;
-} 
-.title-2{
-    font-family: 'Montserrat', 'Trebuchet MS', 
-    'Lucida Sans Unicode', Arial, sans-serif;
-    font-size: clamp(0.75em,5vw,2.75em);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    margin: 10px 0;
-} 
-.subtitle {
-    font-family: 'Montserrat', 'Trebuchet MS', 
-    'Lucida Sans Unicode', Arial, sans-serif;
-    font-size: clamp(0.9em,3.5vw,1.5em);
-    color: black;
-    text-align: center;
-    margin: 5px 0;
+  font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", Arial,
+    sans-serif;
+  font-size: clamp(0.75em, 4vw, 2.75em);
+  color: var(--marron);
+  text-align: center;
+  margin: 10px 0;
 }
-.subtitle-2{
-    font-family: 'Montserrat', 'Trebuchet MS', 
-    'Lucida Sans Unicode', Arial, sans-serif;
-    font-size: clamp(0.9em,3.5vw,1.5em);
-    color: rgb(255, 255, 255);
-    text-align: center;
-} 
+.title-2 {
+  font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", Arial,
+    sans-serif;
+  font-size: clamp(0.75em, 5vw, 2.75em);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 10px 0;
+}
+.subtitle {
+  font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", Arial,
+    sans-serif;
+  font-size: clamp(0.9em, 3.5vw, 1.5em);
+  color: black;
+  text-align: center;
+  margin: 5px 0;
+}
+.subtitle-2 {
+  font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", Arial,
+    sans-serif;
+  font-size: clamp(0.9em, 3.5vw, 1.5em);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
 .initial-content {
-    font-family: 'DM Sans', Arial;
-    padding: 15px;
-    text-align: justify;
-    font-size: clamp(0.75em,5vw,1.25em);
-    background-color:rgba(255, 255, 255, 0.801);
+  font-family: "DM Sans", Arial;
+  padding: 15px;
+  text-align: justify;
+  font-size: clamp(0.75em, 5vw, 1.25em);
+  background-color: rgba(255, 255, 255, 0.801);
 }
 .presentation-title {
-    font-family: 'DM Sans' Arial, sans-serif;
-    font-size: clamp(0.9em,4vw,2em);
-    color: var(--ver-oscuro-2);
-    text-align: center;
-    margin: 20px 0;
+  font-family: "DM Sans" Arial, sans-serif;
+  font-size: clamp(0.9em, 4vw, 2em);
+  color: var(--ver-oscuro-2);
+  text-align: center;
+  margin: 20px 0;
 }
-.presentation-content{
-    font-family: 'DM Sans', Arial;
-    padding: 15px;
-    text-align: justify;
-    font-size: clamp(0.85em,5vw,1.65em);
+.presentation-content {
+  font-family: "DM Sans", Arial;
+  padding: 15px;
+  text-align: justify;
+  font-size: clamp(0.85em, 5vw, 1.65em);
 }
-.main-content{
-    font-family: 'Nunito', sans-serif;
-    font-size:clamp(0.35rem,1.2rem, 1.4rem);
+.main-content {
+  font-family: "Nunito", sans-serif;
+  font-size: clamp(0.35rem, 1.2rem, 1.4rem);
 }
-.main-content-2{
-    font-family: 'Nunito', sans-serif;
-    font-size:clamp(0.35rem,1.2rem, 1.4rem);
-    color: #000;
-    text-align: justify;
+.main-content-2 {
+  font-family: "Nunito", sans-serif;
+  font-size: clamp(0.35rem, 1.2rem, 1.4rem);
+  color: #000;
+  text-align: justify;
 }
-.nav-font{
-    font-family: 'Poiret One';
-    font-size:0.75em;
-    color: rgb(0, 0, 0);
-    text-align: center;
+.nav-font {
+  font-family: "Poiret One";
+  font-size: 0.75em;
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 .foot-img {
-    font-family: 'Raleway', sans-serif;
-    margin: 5vw auto;
-    text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin: 5vw auto;
+  text-align: center;
 }
 .footer-font {
-    font-family: 'Nunito', sans-serif;
-    font-size:clamp(0.25em,0.75em, 1em);
+  font-family: "Nunito", sans-serif;
+  font-size: clamp(0.25em, 0.75em, 1em);
 }
 .footer-title {
-    font-family: 'DM Sans', sans-serif;
-    font-size:clamp(0.5em, 1.25em, 1.5em);
-    text-align: center;
-    background: var(--ver-oscuro-1);
-    border-radius: 9px;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(0.5em, 1.25em, 1.5em);
+  text-align: center;
+  background: var(--ver-oscuro-1);
+  border-radius: 9px;
 }
 .bio-typo {
-    color: rgb(0, 0, 0);
-	font-family: 'Poppins', 'Open Sans', 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', Verdana,  sans-serif;
-    font-size: clamp(0.85em,4vw,1em);
-    font-weight: 350;
-    text-align: justify;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", "Open Sans", "Roboto", "Lucida Sans",
+    "Lucida Sans Regular", Verdana, sans-serif;
+  font-size: clamp(0.85em, 4vw, 1em);
+  font-weight: 350;
+  text-align: justify;
 }
 .bio-title {
-    font-family: 'DM Sans', Arial, sans-serif;
-    font-size: clamp(1em,5vw,1.25em);
-    font-weight: 500;
-    color: #000;
-    text-align: center;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: clamp(1em, 5vw, 1.25em);
+  font-weight: 500;
+  color: #000;
+  text-align: center;
 }
