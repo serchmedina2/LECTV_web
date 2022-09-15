@@ -1,5 +1,8 @@
 {
-  "dependencies": {
-    "leaflet": "^1.8.0"
-  }
+	"dependencies": {
+		"leaflet": "^1.8.0"
+	},
+	"devDependencies": {
+		"prettier": "2.7.1"
+	}
 }

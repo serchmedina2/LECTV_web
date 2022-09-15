@@ -1,56 +1,56 @@
 :root {
-  --azul-claro: #6dccb0;
-  --ver-oscuro-1: #80c97b;
-  --ver-oscuro-2: #538b2c;
-  --ver-oscuro-3: #294615;
-  --ver-oscuro-4: #117014;
-  --ver-claro-1: #b5d181;
-  --ver-claro-2: #a4e676;
-  --ver-claro-3: #7bdb38;
-  --ver-claro-4: #d0df96;
-  --ocre-1: #ffea9c;
-  --ocre-2: #f5d08f;
-  --marron: rgb(57, 43, 11);
+	--azul-claro: #6dccb0;
+	--ver-oscuro-1: #80c97b;
+	--ver-oscuro-2: #538b2c;
+	--ver-oscuro-3: #294615;
+	--ver-oscuro-4: #117014;
+	--ver-claro-1: #b5d181;
+	--ver-claro-2: #a4e676;
+	--ver-claro-3: #7bdb38;
+	--ver-claro-4: #d0df96;
+	--ocre-1: #ffea9c;
+	--ocre-2: #f5d08f;
+	--marron: rgb(57, 43, 11);
 }
 .course-category {
-  display: block;
-  width: 95%;
-  margin: 10px auto;
-  padding: 10px;
-  background-color: var(--ver-claro-1);
-  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
-  border: 3px solid var(--ver-claro-3);
+	display: block;
+	width: 95%;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: var(--ver-claro-1);
+	clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+	border: 3px solid var(--ver-claro-3);
 }
 .nombre-curso-nacional {
-  border-radius: 20px;
-  background-color: var(--ver-oscuro-4);
+	border-radius: 20px;
+	background-color: var(--ver-oscuro-4);
 }
 .nombre-curso-internacional {
-  border-radius: 20px;
-  background-color: var(--ocre-2);
+	border-radius: 20px;
+	background-color: var(--ocre-2);
 }
 div.row.nacional {
-  background-color: var(--ver-claro-2);
+	background-color: var(--ver-claro-2);
 }
 div.row.internacional {
-  background-color: var(--ocre-1);
+	background-color: var(--ocre-1);
 }
 div.card {
-  transition: all 0.3s;
-  transform: translateY(-10px);
+	transition: all 0.3s;
+	transform: translateY(-10px);
 }
 div.card:hover,
 div.card:focus,
 div.card:focus-within {
-  transform: translateY(0px);
-  box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
-  -webkit-box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
-  -moz-box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
+	transform: translateY(0px);
+	box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
+	-webkit-box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
+	-moz-box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
 }
 p.card-text {
-  text-align: center;
+	text-align: center;
 }
 h3,
 h5 {
-  text-align: center;
+	text-align: center;
 }

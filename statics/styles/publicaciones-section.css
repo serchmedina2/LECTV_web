@@ -1,81 +1,81 @@
 :root {
-  --azul-claro: #6dccb0;
-  --ver-oscuro-1: #80c97b;
-  --ver-oscuro-2: #538b2c;
-  --ver-oscuro-3: #294615;
-  --ver-claro-1: #b5d181;
-  --ver-claro-2: #a4e676;
-  --ver-claro-3: #7bdb38;
-  --ver-claro-4: #d0df96;
-  --ocre-1: #ffea9c;
-  --ocre-2: #f5d08f;
-  --marron: rgb(57, 43, 11);
-  counter-reset: entry 0;
+	--azul-claro: #6dccb0;
+	--ver-oscuro-1: #80c97b;
+	--ver-oscuro-2: #538b2c;
+	--ver-oscuro-3: #294615;
+	--ver-claro-1: #b5d181;
+	--ver-claro-2: #a4e676;
+	--ver-claro-3: #7bdb38;
+	--ver-claro-4: #d0df96;
+	--ocre-1: #ffea9c;
+	--ocre-2: #f5d08f;
+	--marron: rgb(57, 43, 11);
+	counter-reset: entry 0;
 }
 .publication-category {
-  display: block;
-  width: 95%;
-  margin: 10px auto;
-  padding: 10px;
-  background-color: var(--ver-claro-1);
-  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+	display: block;
+	width: 95%;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: var(--ver-claro-1);
+	clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
 }
 @media (max-width: 992px) {
-  .publication-category {
-    clip-path: none;
-    border-radius: 10px;
-  }
+	.publication-category {
+		clip-path: none;
+		border-radius: 10px;
+	}
 }
 .publication-grid {
-  background: var(--ver-claro-1);
-  overflow: hidden;
-  /* Si se quiere que cada publicacion se cuente respecto 
+	background: var(--ver-claro-1);
+	overflow: hidden;
+	/* Si se quiere que cada publicacion se cuente respecto 
     a cada año usar el: counter-reset:entry 0; aquí */
 }
 .publication-grid > div {
-  border: 3px solid var(--marron);
-  border-radius: 7px;
-  transition: all 0.4s;
-  box-shadow: none;
+	border: 3px solid var(--marron);
+	border-radius: 7px;
+	transition: all 0.4s;
+	box-shadow: none;
 }
 .publication-grid > div:hover,
 .publication-grid > div:focus-within {
-  box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
-  -webkit-box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
-  -moz-box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
+	box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
+	-webkit-box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
+	-moz-box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
 }
 .publication-grid > div:nth-child(odd) {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2.5vh 1vw 2.5vh 10vw;
-  background-color: var(--ocre-2);
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2.5vh 1vw 2.5vh 10vw;
+	background-color: var(--ocre-2);
 }
 .publication-grid > div:nth-child(even) {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2.5vh 10vw 2.5vh 1vw;
-  background-color: var(--ocre-2);
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2.5vh 10vw 2.5vh 1vw;
+	background-color: var(--ocre-2);
 }
 .publication-grid > div > div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 7px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-radius: 7px;
 }
 .publication-grid > div > div::before {
-  counter-increment: entry;
-  content: counter(entry);
-  padding: 0.5rem;
+	counter-increment: entry;
+	content: counter(entry);
+	padding: 0.5rem;
 }
 .publication-item div {
-  background-color: var(--ocre-2);
+	background-color: var(--ocre-2);
 }
 .year {
-  background-color: var(--ver-claro-3);
+	background-color: var(--ver-claro-3);
 }
 .download {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }

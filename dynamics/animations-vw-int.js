@@ -11,18 +11,18 @@
  * */
 
 function scrollAnimation(parent, elementClass, animation) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const banners = entry.target.querySelectorAll(elementClass);
-      if (entry.isIntersecting) {
-        banners.forEach((banner) => banner.classList.add(animation));
-        return;
-      }
-      banners.forEach((banner) => banner.classList.remove(animation));
-    });
-  });
-  const parentElements = document.querySelectorAll(parent);
-  parentElements.forEach((parentE) => observer.observe(parentE));
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			const banners = entry.target.querySelectorAll(elementClass);
+			if (entry.isIntersecting) {
+				banners.forEach((banner) => banner.classList.add(animation));
+				return;
+			}
+			banners.forEach((banner) => banner.classList.remove(animation));
+		});
+	});
+	const parentElements = document.querySelectorAll(parent);
+	parentElements.forEach((parentE) => observer.observe(parentE));
 }
 
 scrollAnimation(".banner-container", ".banner", "animate__backInUp");

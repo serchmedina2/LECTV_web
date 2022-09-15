@@ -1,113 +1,113 @@
 :root {
-  --azul-claro: #6dccb0;
-  --ver-oscuro-1: #80c97b;
-  --ver-oscuro-2: #538b2c;
-  --ver-oscuro-3: #294615;
-  --ver-claro-1: #b5d181;
-  --ver-claro-2: #a4e676;
-  --ver-claro-3: #7bdb38;
-  --ver-claro-4: #d0df96;
-  --ocre-1: #ffea9c;
-  --ocre-2: #f5d08f;
-  --marron: rgb(57, 43, 11);
+	--azul-claro: #6dccb0;
+	--ver-oscuro-1: #80c97b;
+	--ver-oscuro-2: #538b2c;
+	--ver-oscuro-3: #294615;
+	--ver-claro-1: #b5d181;
+	--ver-claro-2: #a4e676;
+	--ver-claro-3: #7bdb38;
+	--ver-claro-4: #d0df96;
+	--ocre-1: #ffea9c;
+	--ocre-2: #f5d08f;
+	--marron: rgb(57, 43, 11);
 }
 .graduated {
-  grid-area: graduated;
+	grid-area: graduated;
 }
 .academics {
-  grid-area: academics;
+	grid-area: academics;
 }
 .undergraduates {
-  grid-area: undergraduates;
+	grid-area: undergraduates;
 }
 .social-service {
-  grid-area: social-service;
+	grid-area: social-service;
 }
 .post-grad-students {
-  grid-area: post-grad-students;
+	grid-area: post-grad-students;
 }
 
 .doctor {
-  grid-area: doctor;
+	grid-area: doctor;
 }
 .asociated {
-  grid-area: asociated;
+	grid-area: asociated;
 }
 .post-doc {
-  grid-area: post-doc;
+	grid-area: post-doc;
 }
 .staff-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:
-    "post-grad-students academics academics undergraduates"
-    "social-service doctor doctor graduated"
-    "social-service doctor doctor graduated"
-    "asociated asociated post-doc post-doc";
-  gap: 0.35em;
-  margin-bottom: 45px;
-  background-color: var(--ver-oscuro-2);
-  border-radius: 15px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas:
+		"post-grad-students academics academics undergraduates"
+		"social-service doctor doctor graduated"
+		"social-service doctor doctor graduated"
+		"asociated asociated post-doc post-doc";
+	gap: 0.35em;
+	margin-bottom: 45px;
+	background-color: var(--ver-oscuro-2);
+	border-radius: 15px;
 }
 .staff-grid > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--ver-claro-4);
-  border-radius: 15px;
-  margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--ver-claro-4);
+	border-radius: 15px;
+	margin: 10px;
 }
 .staff-grid > div img {
-  width: 100%;
-  height: auto;
-  z-index: -1000;
-  padding: 10px;
+	width: 100%;
+	height: auto;
+	z-index: -1000;
+	padding: 10px;
 }
 @media (max-width: 992px) {
-  .staff-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, max-content);
-    grid-template-areas:
-      "doctor doctor social-service"
-      "doctor doctor social-service"
-      "graduated graduated graduated"
-      "academics academics asociated"
-      "undergraduates post-grad-students post-doc";
-    gap: 0.25em;
-  }
+	.staff-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(5, max-content);
+		grid-template-areas:
+			"doctor doctor social-service"
+			"doctor doctor social-service"
+			"graduated graduated graduated"
+			"academics academics asociated"
+			"undergraduates post-grad-students post-doc";
+		gap: 0.25em;
+	}
 }
 @media (max-width: 554px) {
-  .staff-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(7, max-content);
-    grid-template-areas:
-      "doctor doctor"
-      "doctor doctor"
-      "social-service social-service"
-      "graduated graduated"
-      "academics asociated"
-      "undergraduates undergraduates"
-      "post-grad-students post-doc";
-    gap: 0.25em;
-  }
-  @media (max-width: 320px) {
-    .staff-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(8, max-content);
-      grid-template-areas:
-        "doctor"
-        "social-service"
-        "graduated"
-        "academics"
-        "asociated"
-        "undergraduates"
-        "post-grad-students"
-        "post-doc";
-    }
-  }
+	.staff-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(7, max-content);
+		grid-template-areas:
+			"doctor doctor"
+			"doctor doctor"
+			"social-service social-service"
+			"graduated graduated"
+			"academics asociated"
+			"undergraduates undergraduates"
+			"post-grad-students post-doc";
+		gap: 0.25em;
+	}
+	@media (max-width: 320px) {
+		.staff-grid {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(8, max-content);
+			grid-template-areas:
+				"doctor"
+				"social-service"
+				"graduated"
+				"academics"
+				"asociated"
+				"undergraduates"
+				"post-grad-students"
+				"post-doc";
+		}
+	}
 }

@@ -16,16 +16,15 @@ const grande = document.querySelector(".grande");
 const cerrar = document.querySelector(".cerrar");
 
 enlaces.forEach((cadaEnlace, i) => {
-  enlaces[i].addEventListener("click", (e) => {
-    e.preventDefault();
-    let ruta = cadaEnlace.querySelector(".img").src;
-    console.log(ruta);
-
-    lightbox.classList.add("activo");
-    grande.setAttribute("src", ruta);
-  });
+	enlaces[i].addEventListener("click", (e) => {
+		e.preventDefault();
+		let ruta = cadaEnlace.querySelector(".img").src;
+		console.log(ruta);
+		lightbox.classList.add("activo");
+		grande.setAttribute("src", ruta);
+	});
 });
 
 cerrar.addEventListener("click", () => {
-  lightbox.classList.remove("activo");
+	lightbox.classList.remove("activo");
 });
