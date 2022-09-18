@@ -12,10 +12,11 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 // Agrega la escala
 new L.control.scale().addTo(map);
 
-// Configurar PopUp
 
-/* Funcion que asigna un popUp a cada estado del pais, cada popUp tiene informacion
- acerca de los proyectos que se llevan a cabo en el pais */
+/* 
+Funcion que asigna un popUp a cada estado del pais, cada popUp tiene informacion
+ acerca de los proyectos que se llevan a cabo en el pais 
+*/
 function popup(feature, layer) {
 	if (feature.properties && feature.properties.sta_name) {
 		switch (Number(feature.properties.sta_code)) {
@@ -30,6 +31,7 @@ function popup(feature, layer) {
 						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
+				
 				break;
 
 			//Baja California Sur
@@ -43,6 +45,7 @@ function popup(feature, layer) {
 						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
+				
 				break;
 			//Campeche
 			case 4:
@@ -56,6 +59,7 @@ function popup(feature, layer) {
 						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
+				
 				break;
 
 			//Coahuila
@@ -353,13 +357,22 @@ function popup(feature, layer) {
 	}
 }
 
-/* Seccion donde se agregan los Estados de la republica  
-    desde un archivo geoJSON*/
-L.geoJSON(mexicoStates).addTo(map);
+/*
+ Seccion donde se agregan los Estados de la republica al mapa
+desde un archivo geoJSON. Se indica que funciones se 
+ejecutan sobre cada feature del geoJSON
+*/
 
-var mexicoStatesJS = L.geoJSON(mexicoStates, {
+var statesLayer = L.geoJSON(mexicoStates, {
 	onEachFeature: popup,
-}).addTo(map);
+	style: {
+        color: '#765d0a',
+		fillColor: 'red',
+		fillOpacity: 0.3
+	}
+})
+
+statesLayer.addTo(map);
 
 /* Zonas de Proyectos y vinculos a cada pagina */
 
@@ -385,8 +398,7 @@ var jaliscoCoord = [20.566666666667, -103.67638888889];
 Unicamente cambiará al usuario a cada zona de la república 
 donde se llevan a cabo proyecos */
 
-// Agregar cambio de color en cada zona
-// Agregar el resto de proyectos
+
 var projectSelect = document.getElementById("select-project");
 projectSelect.addEventListener("change", function (e) {
 	let projectKey = projectSelect.value;
@@ -420,25 +432,13 @@ projectSelect.addEventListener("change", function (e) {
 		case 6:
 			//*Michoacan y Oaxaca
 			map.flyTo(michoacanCoord, 8);
-			map.removeLayer(michoacanZone);
-			michoacanZone = L.circle(michoacanCoord, {
-				color: "green",
-				fillColor: "#0b6904",
-				fillOpacity: 0.5,
-				radius: 52000,
-			}).addTo(map);
+			
 			break;
 		//!
 		case 7:
 			//*Jalisco
 			map.flyTo(jaliscoCoord, 8);
-			map.removeLayer(jaliscoZone);
-			jaliscoZone = L.circle(jaliscoCoord, {
-				color: "green",
-				fillColor: "#0b6904",
-				fillOpacity: 0.5,
-				radius: 52000,
-			}).addTo(map);
+			
 			break;
 		//!
 		case 9:

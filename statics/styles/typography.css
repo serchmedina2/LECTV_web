@@ -1,18 +1,6 @@
 @import url(fonts.css);
 
-:root {
-	--azul-claro: #6dccb0;
-	--ver-oscuro-1: #80c97b;
-	--ver-oscuro-2: #538b2c;
-	--ver-oscuro-3: #294615;
-	--ver-claro-1: #b5d181;
-	--ver-claro-2: #a4e676;
-	--ver-claro-3: #7bdb38;
-	--ver-claro-4: #d0df96;
-	--ocre-1: #ffea9c;
-	--ocre-2: #f5d08f;
-	--marron: rgb(57, 43, 11);
-}
+@import url("root.css");
 body {
 	color: rgb(0, 0, 0);
 	font-family: "Poppins", "Open Sans", "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
@@ -106,7 +94,7 @@ section.main-title {
 	text-align: justify;
 }
 .nav-font {
-	font-family: "Poiret One";
+	font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 0.75em;
 	color: rgb(0, 0, 0);
 	text-align: center;

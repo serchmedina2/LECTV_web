@@ -1,17 +1,5 @@
 /* Agregar prefijos de navegador -o-, -moz-, -webkit- ... */
-:root {
-	--azul-claro: #6dccb0;
-	--ver-oscuro-1: #80c97b;
-	--ver-oscuro-2: #538b2c;
-	--ver-oscuro-3: #294615;
-	--ver-claro-1: #b5d181;
-	--ver-claro-2: #a4e676;
-	--ver-claro-3: #7bdb38;
-	--ver-claro-4: #d0df96;
-	--ocre-1: #ffea9c;
-	--ocre-2: #f5d08f;
-	--marron: rgb(57, 43, 11);
-}
+@import url("root.css");
 * {
 	padding: 0;
 	margin: 0;
@@ -176,7 +164,7 @@ perdder */
 		display: flex;
 		justify-content: space-between;
 		background-color: var(--ver-claro-1);
-		height: 6vh;
+		height: 45px;
 		transform: translateY(calc(-6.1vh));
 		min-width: 100vw;
 		z-index: 1000;
@@ -208,8 +196,8 @@ perdder */
 		align-items: center;
 		margin: 1.5vh 3.5vh;
 		background-color: var(--ver-oscuro-2);
-		width: 3.5vh;
-		height: 3.5vh;
+		width: 30px;
+		height:30px;
 		border-radius: 5px;
 		transition: 200ms;
 	}

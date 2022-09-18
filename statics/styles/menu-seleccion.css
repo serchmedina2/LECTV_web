@@ -1,0 +1,23 @@
+@import url("root.css");
+.publication-category {
+	display: block;
+	width: 95%;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: var(--ver-claro-1);
+	clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+}
+@media (max-width: 992px) {
+	.publication-category {
+		clip-path: none;
+		border-radius: 10px;
+	}
+}
+
+a.scale-efect:hover {
+    transition: all ease 0.3s;
+	transform: scale(1.02);
+    color:rgb(88, 148, 208);
+}
+
+  

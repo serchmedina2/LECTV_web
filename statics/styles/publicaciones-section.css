@@ -1,15 +1,5 @@
+@import url("root.css");
 :root {
-	--azul-claro: #6dccb0;
-	--ver-oscuro-1: #80c97b;
-	--ver-oscuro-2: #538b2c;
-	--ver-oscuro-3: #294615;
-	--ver-claro-1: #b5d181;
-	--ver-claro-2: #a4e676;
-	--ver-claro-3: #7bdb38;
-	--ver-claro-4: #d0df96;
-	--ocre-1: #ffea9c;
-	--ocre-2: #f5d08f;
-	--marron: rgb(57, 43, 11);
 	counter-reset: entry 0;
 }
 .publication-category {
@@ -37,9 +27,11 @@
 	border-radius: 7px;
 	transition: all 0.4s;
 	box-shadow: none;
+	transition: all ease 0.5s;
 }
 .publication-grid > div:hover,
 .publication-grid > div:focus-within {
+	transform: scale(1.01);
 	box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
 	-webkit-box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
 	-moz-box-shadow: 6px 10px 11px 0px rgba(0, 0, 0, 0.41);
@@ -71,6 +63,7 @@
 	background-color: var(--ocre-2);
 }
 .year {
+	border-radius: 15px;
 	background-color: var(--ver-claro-3);
 }
 .download {
