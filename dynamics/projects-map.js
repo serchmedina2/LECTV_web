@@ -1,5 +1,5 @@
 //Se importa el archivo geojason de los estados
-import { mexicoStates } from "./mexicoStates.js";
+import { mexicoStates } from "./georef-mexico-state-millesime.js";
 
 var map = L.map("map", { minZoom: 3 }).setView([20.5931, -100.392], 4);
 
@@ -12,10 +12,31 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 // Agrega la escala
 new L.control.scale().addTo(map);
 
+//* Funcion que cambia el color del estado cuando se pasa el cursor sobre el
+function highlightFeature(e) {
+    var layer = e.target;
 
-/* 
-Funcion que asigna un popUp a cada estado del pais, cada popUp tiene informacion
- acerca de los proyectos que se llevan a cabo en el pais 
+    layer.setStyle({
+        weight: 4,
+		fillColor: "#d61111",
+        color: '#7d0505',
+        dashArray: '',
+        fillOpacity: 0.7
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+ 
+//* Funcion que regresa el mapa a su color original cuando el cursos sale del estado 
+function resetHighlight(e) {
+    statesLayer.resetStyle(e.target);
+}
+
+/*  
+* Funcion que asigna un popUp a cada estado del pais, cada popUp tiene informacion
+* acerca de los proyectos que se llevan a cabo en el pais 
 */
 function popup(feature, layer) {
 	if (feature.properties && feature.properties.sta_name) {
@@ -356,18 +377,27 @@ function popup(feature, layer) {
 		}
 	}
 }
+//* Funcion que recoge las otras tres y les asigna los tipos de eventos que tienen que escuchar para funcionar
+function onEachFeature(feature, layer) {
+    layer.on({
+        mouseover: highlightFeature,
+		mouseout: resetHighlight,
+		click: popup(feature, layer)
+    });
+}
+
 
 /*
- Seccion donde se agregan los Estados de la republica al mapa
-desde un archivo geoJSON. Se indica que funciones se 
-ejecutan sobre cada feature del geoJSON
+* Seccion donde se agregan los Estados de la republica al mapa
+* desde un archivo geoJSON. Se indica que funciones se 
+* ejecutan sobre cada feature del geoJSON
 */
 
 var statesLayer = L.geoJSON(mexicoStates, {
-	onEachFeature: popup,
+	onEachFeature: onEachFeature,
 	style: {
-        color: '#765d0a',
-		fillColor: 'red',
+        color: '#34b82a',
+		fillColor: "#225c1d",
 		fillOpacity: 0.3
 	}
 })
@@ -394,10 +424,12 @@ var michoacanCoord = [19.405838879544717, -102.04578794060347];
 //Zona 6 Jalisco
 var jaliscoCoord = [20.566666666667, -103.67638888889];
 
-/* Ya no cambiará el color de la zona pues ya no existirá
-Unicamente cambiará al usuario a cada zona de la república 
-donde se llevan a cabo proyecos */
 
+/*
+TODO Ya no cambiará el color de la zona pues ya no existirá 
+TODO Unicamente cambiará al usuario a cada zona de la república 
+TODO donde se llevan a cabo proyecos 
+*/
 
 var projectSelect = document.getElementById("select-project");
 projectSelect.addEventListener("change", function (e) {

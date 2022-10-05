@@ -23,8 +23,8 @@
     a cada año usar el: counter-reset:entry 0; aquí */
 }
 .publication-grid > div {
-	border: 3px solid var(--marron);
-	border-radius: 7px;
+	border: 5px solid var(--marron);
+	border-radius: 15px;
 	transition: all 0.4s;
 	box-shadow: none;
 	transition: all ease 0.5s;

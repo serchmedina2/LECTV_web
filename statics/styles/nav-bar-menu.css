@@ -158,7 +158,7 @@ perdder */
 @media (max-width: 992px) {
 	/**=================================================
     Mobile Header Styles
-    ================================================**/
+    **================================================**/
 	header div.mobile-header {
 		position: fixed;
 		display: flex;
@@ -194,7 +194,7 @@ perdder */
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: 1.5vh 3.5vh;
+		margin: 10px 25px;
 		background-color: var(--ver-oscuro-2);
 		width: 30px;
 		height:30px;
