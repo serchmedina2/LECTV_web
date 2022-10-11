@@ -52,6 +52,7 @@
 	height: auto;
 	z-index: -1000;
 	padding: 10px;
+	transition: all 0.3 ease;
 }
 @media (max-width: 992px) {
 	.staff-grid {
@@ -82,20 +83,21 @@
 			"post-grad-students post-doc";
 		gap: 0.25em;
 	}
-	@media (max-width: 320px) {
-		.staff-grid {
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-template-rows: repeat(8, max-content);
-			grid-template-areas:
-				"doctor"
-				"social-service"
-				"graduated"
-				"academics"
-				"asociated"
-				"undergraduates"
-				"post-grad-students"
-				"post-doc";
-		}
+}
+@media (max-width: 360px) {
+	.staff-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(8, max-content);
+		grid-template-areas:
+			"doctor"
+			"social-service"
+			"graduated"
+			"academics"
+			"asociated"
+			"undergraduates"
+			"post-grad-students"
+			"post-doc";
 	}
 }
+

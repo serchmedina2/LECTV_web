@@ -1,12 +1,14 @@
 :root {
 	--azul-claro: #6dccb0;
 	--ver-oscuro-1: #80c97b;
-	--ver-oscuro-2: #538b2c;
+	--ver-oscuro-2: #538b2c; 
 	--ver-oscuro-3: #294615;
+	--ver-oscuro-4: #339936;
 	--ver-claro-1: #b5d181;
 	--ver-claro-2: #a4e676;
 	--ver-claro-3: #7bdb38;
 	--ver-claro-4: #d0df96;
+	--ver-claro-5: #9cd197;
 	--ocre-1: #ffea9c;
 	--ocre-2: #f5d08f;
 	--marron: rgb(57, 43, 11);

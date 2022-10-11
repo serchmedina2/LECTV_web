@@ -12,17 +12,23 @@ section.biography {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 15px 2.5vw;
 }
 .name {
 	background-color: var(--ver-claro-1);
 	padding: 15px;
 	border-radius: 15px;
+	margin-bottom: 2rem;
 }
 .bio-image {
 	grid-area: bio-image;
-	background-color: #d1df96e8;
+	background-color: var(--ver-oscuro-1);
 	border-radius: 15px;
+}
+.bio-title {
+	background-color: #5cdd52 ;
+	padding: 0.5rem;
+	border-radius: 15px;
+	margin-bottom: 1rem;
 }
 .bio-image > div > img {
 	width: 100%;
@@ -40,7 +46,7 @@ section.biography {
 .contact-data > div {
 	width: 100%;
 	margin-bottom: 15px;
-	border: 1px solid #7bdb38;
+	background-color: #7bdb38;
 }
 .research-lines {
 	grid-area: research-lines;
@@ -53,7 +59,6 @@ section.biography {
 .data > div {
 	padding: 5px;
 	margin: 0px 5vw;
-	border: 1px solid #7bdb38;
 	border-radius: 10px;
 }
 .biography-grid {
@@ -77,7 +82,6 @@ section.biography {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 }
 .bio-content {
 	background-color: var(--ver-oscuro-1);
@@ -90,10 +94,11 @@ section.biography {
 	.biography-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(4, max-content);
+		grid-template-rows: repeat(5, max-content);
 		grid-template-areas:
 			"bio-image bio-image"
-			"biography research-lines"
+			"biography biography"
+			"research-lines research-lines"
 			"personal-interest personal-interest"
 			"contact-data contact-data";
 		gap: 5px;

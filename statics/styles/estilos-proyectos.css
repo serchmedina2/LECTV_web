@@ -1,0 +1,174 @@
+@import url("root.css");
+/** ==================================================
+** Estilos seccion de objetivos y descripcion
+** ================================================== */
+section.objetivo-descripcion {
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		"";
+	gap: 0.35em;
+	margin-bottom: 45px;
+	border-radius: 15px;
+    margin: 0 0.5em 3vw;
+}
+.objetivos{
+    grid-area: objetivos;
+    background-color: var(--ver-oscuro-4);
+    text-align: justify;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0.45em 0;
+}
+.descripcion {
+    grid-area: descripcion;
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0.45em 0;
+}
+.imagen {
+    grid-area: imagen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+/** ==================================================
+** Estilos seccion ¿Donde se hace?-¿Que se hace?
+** ================================================== */
+section.donde-y-que {
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		"";
+	gap: 0.35em;
+	margin-bottom: 45px;
+    margin-bottom: 3vw;
+    padding: 1.5vw;
+}
+.donde-se-hace {
+    grid-area: donde-se-hace;
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25em 0.45em 0.25em;
+    border-radius: 15px 0px 0px 15px;
+    border: 6px dotted black;
+    border-right: 5px dashed black;
+}
+.que-se-hace {
+    grid-area: que-se-hace;
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25em 0.45em 0.25em;
+    border-radius: 0px 15px 15px 0px;
+    border: 6px dotted black;
+    border-left: none;
+}
+/** ==================================================
+** Estilos seccion de resultados conclusión e imagenes
+** ================================================== */
+section.resultados-conclusion-imagenes {
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		"";
+	gap: 0.35em;
+	margin-bottom: 45px;
+	border-radius: 15px;
+    margin-bottom: 3vw;
+    padding: 1.5vw;
+}
+.resultados {
+    grid-area: resultados;
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 0.45em 0;
+    border-top: 3px solid black;
+}
+.conclusion {
+    grid-area: conclusion;
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    padding: 0 0.45em 0;
+    border-top: 3px solid black;
+}
+/* !Estilos para la seccion de mimi galeria que ira 
+   !dentro de cada pagina de proyecto */
+.mini-galeria {
+    grid-area: mini-galeria;
+    width: 100%;
+    max-height: 750px;
+    padding: 0.3em 0.6em;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+}
+.mini-galeria .li {
+    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    overflow: hidden;
+}
+.mini-galeria .li .img {
+    min-width: 100%;
+    height: 200px;
+}
+.mini-galeria-2 {
+    grid-area: mini-galeria-2;
+    max-width: 100%;
+    padding: 0.3em 0.6em;
+    display: grid;
+    gap: 0.15em;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.mini-galeria-2 .li {
+    height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    overflow: hidden;
+}
+.mini-galeria-2 .li .img {
+    min-height: 100%;
+    width: 200px;
+}
+@media (max-width: 992px) {
+    section.objetivo-descripcion {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "objetivos objetivos imagen imagen"
+            "descripcion descripcion imagen imagen"
+            "descripcion descripcion imagen imagen";
+    }
+    section.donde-y-que{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "donde-se-hace que-se-hace";
+    }
+    section.resultados-conclusion-imagenes {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "resultados conclusion mini-galeria"
+            "resultados conclusion mini-galeria"
+            "mini-galeria-2 mini-galeria-2 mini-galeria";
+    }
+}

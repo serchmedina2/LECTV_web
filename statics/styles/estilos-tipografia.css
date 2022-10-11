@@ -1,5 +1,4 @@
 @import url(fonts.css);
-
 @import url("root.css");
 body {
 	color: rgb(0, 0, 0);
@@ -63,6 +62,15 @@ section.main-title {
 	color: rgb(255, 255, 255);
 	text-align: center;
 }
+.subtitle-projects {
+	font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
+	font-size: clamp(0.7em, 2.5vw, 1.5em);
+	margin: 0.5em;
+	color: rgb(255, 255, 255);
+	background-color: var(--ver-claro-1) ;
+	border-radius: 5px;
+	text-align: center; 
+}
 .initial-content {
 	font-family: "DM Sans", Arial;
 	padding: 15px;
@@ -102,6 +110,12 @@ section.main-title {
 .foot-img {
 	font-family: "Raleway", sans-serif;
 	margin: 5vw auto;
+	text-align: center;
+}
+.foot-img-wm {
+	font-family: "Raleway", sans-serif;
+	font-size: clamp(0.35em, 3vw, 3em);
+	margin: 0;
 	text-align: center;
 }
 .footer-font {

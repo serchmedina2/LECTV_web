@@ -73,12 +73,12 @@ section#activity-grid {
 	justify-content: center;
 }
 .banner > div > img {
-	overflow: hidden;
-	display: block;
-	margin: 0 auto;
+	width: 100%;
+	min-height: 600px;
 }
+
+
 /* Media Query's */
-/* programar para 745px */
 @media (max-width: 992px) {
 	.banner-container:nth-child(1) {
 		display: none;
@@ -170,6 +170,11 @@ News Grid
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+}
+.img-new {
+	max-width: 300px;
+	height: 200px;
+	object-fit: contain;
 }
 .news-grid > div p {
 	max-width: clamp(100vw, 33vw, 90vw);
