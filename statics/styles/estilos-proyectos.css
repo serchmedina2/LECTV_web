@@ -6,7 +6,7 @@ section.objetivo-descripcion {
     display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-areas:
-		"";
+		"objetivos descripcion imagen imagen imagen";
 	gap: 0.35em;
 	margin-bottom: 45px;
 	border-radius: 15px;
@@ -14,9 +14,8 @@ section.objetivo-descripcion {
 }
 .objetivos{
     grid-area: objetivos;
-    background-color: var(--ver-oscuro-4);
     text-align: justify;
-    color: white !important;
+    color: black !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +23,8 @@ section.objetivo-descripcion {
 }
 .descripcion {
     grid-area: descripcion;
+    background-color: var(--ver-oscuro-4);
+    color: white !important;
     text-align:justify;
     display: flex;
     flex-direction: column;
@@ -47,9 +48,9 @@ section.objetivo-descripcion {
 ** ================================================== */
 section.donde-y-que {
     display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-areas:
-		"";
+		"donde-se-hace que-se-hace";
 	gap: 0.35em;
 	margin-bottom: 45px;
     margin-bottom: 3vw;
@@ -79,14 +80,30 @@ section.donde-y-que {
     border: 6px dotted black;
     border-left: none;
 }
+
+/** ==================================================
+** Estilos seccion quienes-trabajan
+** ================================================== */
+
+section.quienes-trabajan {
+    display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.35em;
+	margin-bottom: 45px;
+    margin-bottom: 3vw;
+    padding: 1.5vw;
+}
+
 /** ==================================================
 ** Estilos seccion de resultados conclusión e imagenes
 ** ================================================== */
 section.resultados-conclusion-imagenes {
     display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-areas:
-		"";
+		"resultados conclusion"
+        "title title"
+        "mini-galeria mini-galeria";
 	gap: 0.35em;
 	margin-bottom: 45px;
 	border-radius: 15px;
@@ -99,8 +116,10 @@ section.resultados-conclusion-imagenes {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    background-color: var(--ver-claro-2);
     padding: 0 0.45em 0;
     border-top: 3px solid black;
+    border-radius: 0px 0px 15px 15px;
 }
 .conclusion {
     grid-area: conclusion;
@@ -108,48 +127,38 @@ section.resultados-conclusion-imagenes {
     display: flex;
     flex-direction: column;
     justify-content:start;
+    background-color: var(--ver-claro-5);
     padding: 0 0.45em 0;
-    border-top: 3px solid black;
+    border-top: 3px solid var(--marron);
+    border-radius: 0px 0px 15px 15px;
 }
 /* !Estilos para la seccion de mimi galeria que ira 
    !dentro de cada pagina de proyecto */
-.mini-galeria {
+.mini-galeria{
     grid-area: mini-galeria;
-    width: 100%;
-    max-height: 750px;
-    padding: 0.3em 0.6em;
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
-}
-.mini-galeria .li {
-    width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    overflow: hidden;
-}
-.mini-galeria .li .img {
-    min-width: 100%;
-    height: 200px;
-}
-.mini-galeria-2 {
-    grid-area: mini-galeria-2;
     max-width: 100%;
     padding: 0.3em 0.6em;
     display: grid;
     gap: 0.15em;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-.mini-galeria-2 .li {
+.mini-galeria .li {
     height: 200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
     overflow: hidden;
+    background-color: #8aa97e;
 }
-.mini-galeria-2 .li .img {
+.mini-galeria .li .img{
     min-height: 100%;
     width: 200px;
+}
+.mini-galeria {
+    grid-area: mini-galeria;
+}
+.title {
+    grid-area: title;
 }
 @media (max-width: 992px) {
     section.objetivo-descripcion {
@@ -165,10 +174,50 @@ section.resultados-conclusion-imagenes {
             "donde-se-hace que-se-hace";
     }
     section.resultados-conclusion-imagenes {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-            "resultados conclusion mini-galeria"
-            "resultados conclusion mini-galeria"
-            "mini-galeria-2 mini-galeria-2 mini-galeria";
+            "resultados conclusion "
+            "resultados conclusion "
+            "title title"
+            "mini-galeria mini-galeria";
+    }
+
+}
+@media (max-width: 554px) {
+    section.objetivo-descripcion {
+        grid-template-columns: repeat();
+        grid-template-areas:
+            "";
+    }
+    section.donde-y-que{
+        grid-template-columns: repeat();
+        grid-template-areas:
+            "";
+    }
+    section.resultados-conclusion-imagenes {
+        grid-template-columns: repeat();
+        grid-template-areas:
+            "";
+    }
+}
+@media (max-width: 360px) {
+    section.objetivo-descripcion {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "imagen objetivo"
+            "imagen descripcion";
+    }
+    section.donde-y-que{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "donde-se-hace"
+            "que-se-hace";
+    }
+    section.resultados-conclusion-imagenes {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "resultados"
+            "title"
+            "conclusion";
     }
 }
