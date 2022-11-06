@@ -1,5 +1,5 @@
 /*
-Credits:ñ
+Credits:
 ================================
 Code taken from @eduardofierropro project on github
 See https://github.com/eduardofierropro/Lightbox-con-HTML-CSS-y-Javascript-para-Youtube 

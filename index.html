@@ -475,12 +475,16 @@
 				<div class="title">Calendario</div>
 				<div class="subtitle">¡Checa nuestra lista de murci-ventos!</div>
 				<div class="calendar-container">
-					<iframe
-						src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FMexico_City&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&title=LECTV%20events&mode=MONTH&hl=es_419&src=dDc0dHV0dDU2M2o2dGFxdGNoazUyNGxnNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%238E24AA"
-						style="border: solid 1px #777"
-						height="600"
-						frameborder="0"
-						scrolling="no"></iframe>
+					<!-- 
+					* Aqui se utiliza una API externa llamada Styled Calendars la cual modifica los estilos de un calendario de Google
+					* La API se tiene que conectar con un calendario existente de google para que funcione y se tienen que pegar, en un 
+					* mismo contenedor, el script y el iframe del calendario. 
+					* El estilo del calendario se enlaza y modifica  desde la pagina web de la API, tambien ofrece estilos mas persona-
+					* lizados si se paga una cuota por el plan premium. 
+					-->
+					<iframe src="https://embed.styledcalendar.com/#s56c324VIQy9kw7EApcA" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+					<!--Script del calendario-->
+					<script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
 				</div>
 			</div>
 		</section>

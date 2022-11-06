@@ -12,4 +12,24 @@
 	--ocre-1: #ffea9c;
 	--ocre-2: #f5d08f;
 	--marron: rgb(57, 43, 11);
+	/*
+	*==============================
+	* Colores galeria
+	*=================================*
+	*/
+	--negro: #393939;
+	--blanco: #ececec;
+	--sombra-ppal: #c9c9c9;
+	--sombra-sec: #ffffff;
+	--borde-negro: #00000050;
+	--marcado: rgb(127, 195, 255);
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--negro: #ececec;
+		--blanco: #303030;
+		--sombra-ppal: #242424;
+		--sombra-sec: #3c3c3c;
+		--borde-negro: #ffffff50;
+	}
 }
