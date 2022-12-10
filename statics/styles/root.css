@@ -23,6 +23,13 @@
 	--sombra-sec: #ffffff;
 	--borde-negro: #00000050;
 	--marcado: rgb(127, 195, 255);
+	/*
+	*==============================
+	* Colores transparentes
+	*=================================*
+	*/
+	--ocre-1-trasnparente: #ffea9cb9;
+	--ocre-2-transparente: #f5d08fd8;
 }
 @media (prefers-color-scheme: dark) {
 	:root {

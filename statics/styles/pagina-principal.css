@@ -28,11 +28,11 @@ section#presentation-grid {
 }
 #presentation-grid > div:nth-child(even) {
 	margin: 5vh 10vw 5vh 1vw;
-	background-color: var(--ocre-1);
+	background-color: var(--ocre-1-trasnparente);
 }
 #presentation-grid > div:nth-child(odd) {
 	margin: 5vh 1vw 5vh 10vw;
-	background-color: var(--ocre-1);
+	background-color: var(--ocre-2-transparente);
 }
 div > .content {
 	padding: 5vh;

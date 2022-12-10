@@ -48,9 +48,9 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				
@@ -63,23 +63,25 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				
 				break;
 			//Campeche
+			//*Se podrian agregar imagenes a los popup's de hecho seria mejor usar documentos html con css embebido para que tuvieran mas estilo. 
 			case 4:
 				layer.bindPopup(
 					"<strong>Proyectos en: </strong><strong>" +
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/conservacion-reserva-de-la-biosfera-calakmul.html>Ecolog&iacute;a y conservaci&oacute;n de murci&eacute;lagos carn&iacute;voros en la Reserva de la Biosfera Calakmul, Campeche</a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				
@@ -92,7 +94,7 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html>Monitoreo de la presencia/ausencia del hongo Pseudogymnoascus destructans en murcielagos hibernantes de México</a></li>" +
 						"</ul>"
 				);
@@ -104,10 +106,10 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/jaguares-en-la-selva-lacandona.html>Jaguares en la selva Lacandona</a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad< </a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad< </a></li>" +
 						"</ul>"
 				);
 				break;
@@ -118,12 +120,13 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html>Monitoreo de la presencia/ausencia del hongo Pseudogymnoascus destructans en murcielagos hibernantes de México</a></li>" +
-						"<li><a href=projects-section/osos.html>Osos</a></li>" +
-						"<li><a href=projects-section/mina-santa-barbara.html>Mina Santa Barbara</a></li>" +
+						"<li><a href=projects-section/conservacion-del-oso-negro.html>Conservaci&oacute;n del Oso Negro</a></li>" +
+						"<li><a href=projects-section/mina-santa-eulalia.html>Mina Santa Eulalia</a></li>" +
 						"</ul>"
 				);
+				break;
 			//Ciudad de Mexico
 			case 9:
 				layer.bindPopup(
@@ -131,10 +134,10 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/cacos-en-la-cdmx.html>Cacos en la CDMX</a></li>" +
 						"<li><a href=projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html>Monitoreo de la presencia/ausencia del hongo Pseudogymnoascus destructans en murcielagos hibernantes de México</a></li>" +
-						"<li><a href=projects-section/murcielago-citadinos.html> Murcielagos citadinos en la CDMX</a></li>" +
+						"<li><a href=projects-section/murcielagos-citadinos.html> Murcielagos citadinos nectar&iacute;voros en la CDMX</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -146,9 +149,9 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -160,9 +163,9 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -174,10 +177,10 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
-												"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
+												"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -189,10 +192,10 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						+"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
-												"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
+												"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -204,7 +207,7 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html>Monitoreo de la presencia/ausencia del hongo Pseudogymnoascus destructans en murcielagos hibernantes de México</a></li>" +
 						"</ul>"
 				);
@@ -217,10 +220,10 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
-						"<li><a href=projects-section/tequilas-y-mezcales.html>Tequilas y mezcales Bat Friendly</a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
+						"<li><a href=projects-section/tequilas-bat-friendly.html>Tequilas y mezcales Bat Friendly</a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -232,10 +235,10 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						+"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/murcielagos-insectivoros-morelos.html>Murciélagos insectívoros como depredadores de mosquitos de los géneros Aedes y Culex (Diptera: Culicidae), evaluación de un servicio ecosistémico</a></li>" +
 						"<li><a href=projects-section/control-de-plagas.html>Control de plagas en arroz y casas de murciélagos</a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -247,10 +250,10 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
-						"<li><a href=projects-section/tequilas-y-mezcales.html>Tequilas y mezcales Bat Friendly</a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
+						"<li><a href=projects-section/tequilas-bat-friendly.html>Tequilas y mezcales Bat Friendly</a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -262,10 +265,10 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html>Monitoreo de la presencia/ausencia del hongo Pseudogymnoascus destructans en murcielagos hibernantes de México</a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -277,10 +280,10 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html>Monitoreo de la presencia/ausencia del hongo Pseudogymnoascus destructans en murcielagos hibernantes de México</a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -292,9 +295,9 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -305,7 +308,7 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html>Monitoreo de la presencia/ausencia del hongo Pseudogymnoascus destructans en murcielagos hibernantes de México</a></li>" +
 						"</ul>"
 				);
@@ -317,12 +320,11 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
-						"<li><a href=projects-section/osos.html>Osos</a></li>" +
-						"<li><a href=projects-section/parasitos-leptos.html>Par&aacute;sitos Leptos</a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
+						"<li><a href=projects-section/conservacion-del-oso-negro.html>Conservaci&oacute;n del Oso Negro</a></li>" +
 						"<li><a href=projects-section/pinacate-sonora.html>Pinacate, Sonora</a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -334,11 +336,11 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=> </a></li>" +
 						"<li><a href=> </a></li>" +
 						"<li><a href=projects-section/area-sitios-de-importancia-para-conservacion.html> <strong> &Aacute;reas y Sitios </strong> de Importancia para la Conservación de Murci&eacute;lagos </a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -349,7 +351,7 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html>Monitoreo de la presencia/ausencia del hongo Pseudogymnoascus destructans en murcielagos hibernantes de México</a></li>" +
 						"</ul>"
 				);
@@ -361,7 +363,7 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html>Monitoreo de la presencia/ausencia del hongo Pseudogymnoascus destructans en murcielagos hibernantes de México</a></li>" +
 						"</ul>"
 				);
@@ -373,9 +375,9 @@ function popup(feature, layer) {
 						feature.properties.sta_name +
 						"</strong>" +
 						"<br> <ul>" +
-						"<li><a href=> Aprovechamiento sustentable del G&uuml;ano </a></li>" +
+						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
 						"<li><a href=projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html>Monitoreo de la presencia/ausencia del hongo Pseudogymnoascus destructans en murcielagos hibernantes de México</a></li>" +
-						"<li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
+						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"
 				);
 				break;
@@ -385,7 +387,7 @@ function popup(feature, layer) {
 					"<strong>Proyecto mantenido en: </strong><strong>" +
 						"Toda la Republica" +
 						"</strong>" +
-						"<div><ul><li><a href=templates/projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad </a></li></ul</div>"
+						"<div><ul><li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad </a></li></ul</div>"
 				);
 				break;
 		}
