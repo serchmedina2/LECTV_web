@@ -37,6 +37,8 @@ function resetHighlight(e) {
 /*  
 * Funcion que asigna un popUp a cada estado del pais, cada popUp tiene informacion
 * acerca de los proyectos que se llevan a cabo en el pais 
+* En los argumentos de la funcion bindPopup va una cadena de texto en formato codigo html y/o css válido
+* para agregar los nuevos proyectos 
 */
 function popup(feature, layer) {
 	if (feature.properties && feature.properties.sta_name) {
@@ -236,7 +238,7 @@ function popup(feature, layer) {
 						"</strong>" +
 						+"<br> <ul>" +
 						"<li><a href=projects-section/aprovechamiento-sustentable-del-guano.html> Aprovechamiento sustentable del G&uuml;ano</a></li>" +
-						"<li><a href=projects-section/murcielagos-insectivoros-morelos.html>Murciélagos insectívoros como depredadores de mosquitos de los géneros Aedes y Culex (Diptera: Culicidae), evaluación de un servicio ecosistémico</a></li>" +
+						"<li><a href=projects-section/murcielagos-insectivoros.html>Murciélagos insectívoros como depredadores de mosquitos de los géneros Aedes y Culex (Diptera: Culicidae), evaluación de un servicio ecosistémico</a></li>" +
 						"<li><a href=projects-section/control-de-plagas.html>Control de plagas en arroz y casas de murciélagos</a></li>" +
 						"<li><a href=projects-section/cuevas-en-mexico-y-su-diversidad.html>Cuevas en M&eacute;xico y su diversidad</a></li>" +
 						"</ul>"

@@ -245,7 +245,7 @@ section.resultados-conclusion-imagenes {
 }
 .mini-galeria .li .img{
     min-height: 100%;
-    width: 200px;
+    width: 400px;
 }
 .title {
     grid-area: title;

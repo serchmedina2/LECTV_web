@@ -54,6 +54,7 @@
 	padding: 10px;
 	transition: all 0.3 ease;
 }
+
 @media (max-width: 992px) {
 	.staff-grid {
 		display: grid;
@@ -83,6 +84,22 @@
 			"post-grad-students post-doc";
 		gap: 0.25em;
 	}
+	/* Truco para que no se muestren la imagenes 1 y 2 
+	en la seccion de egresados cuando la pantalla es mas
+	chica  */
+	.staff-grid  div.graduated > div:nth-child(2) > a:nth-child(1)  {
+		display: none;
+	}
+	.staff-grid  div.graduated > div:nth-child(2) > a:nth-child(2)  {
+		display: none;
+	}
+	.staff-grid  div.social-service > div:nth-child(2) > a:nth-child(1)  {
+		display: none;
+	}
+	.staff-grid  div.social-service > div:nth-child(2) > a:nth-child(2)  {
+		display: none;
+	}
+	
 }
 @media (max-width: 360px) {
 	.staff-grid {
@@ -98,6 +115,18 @@
 			"undergraduates"
 			"post-grad-students"
 			"post-doc";
+	}
+	.staff-grid  div.graduated > div:nth-child(2) > a:nth-child(1)  {
+		display: none;
+	}
+	.staff-grid  div.graduated > div:nth-child(2) > a:nth-child(2)  {
+		display: none;
+	}
+	.staff-grid  div.social-service > div:nth-child(2) > a:nth-child(1)  {
+		display: none;
+	}
+	.staff-grid  div.social-service > div:nth-child(2) > a:nth-child(2)  {
+		display: none;
 	}
 }
 
