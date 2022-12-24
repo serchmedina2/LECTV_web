@@ -2,10 +2,17 @@
 section#publication-section {
 	display: flex;
 	flex-direction: row;
+
+	background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Diego/Pinacate 9-22/DSC07385.jpg");
+	background-size: cover;
+	background-position: center;
 	background-color: var(--ver-claro-1);
+
 	justify-content: space-between;
+	border: 6px solid var(--ver-oscuro-2);
 	padding: 10px;
-	margin: 15px 0px;
+	margin: 15px 0px 0px;
+	
 }
 .publication-grid {
 	display: grid;
