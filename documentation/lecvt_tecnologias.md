@@ -28,7 +28,7 @@ Si se va a trabajar utilizando Visual Studio Code se sugiere hacer uso de las si
 	 -  CSS Shake (Sitio web: http://elrumordelaluz.github.io/csshake/)
 	 -  Animate.css (Sitio web: https://animate.style/)
  - Mapa
-	- leaflet.js (Sitio web: leafletjs.com/)
+	- leaflet.js (Sitio web: https://leafletjs.com/)
  - Iconos
 	-	Font Awesome
  - Fuentes y tipografia
