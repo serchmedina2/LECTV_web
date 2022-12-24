@@ -5,7 +5,7 @@ El proyecto consta de las siguientes carpetas donde se almacena todo el contenid
 | bootstrap | Carpeta del framework de trabajo bootstrap, no modificar a menos que sea para actualizar a la última versión.  |
 | documentation | Contiene el resto de la documentacion de la pagina web |
 | dynamics | Contiene los scripts (programas) que permiten el funcionamiento de varias funcionalidades de la página web, entre ellas el mapa de la seccion de proyectos. La documentación precisa de cada programa está embebida en el propio archivo del script.   |
-| node_modules | Carpeta que contiene utilidades y las [tecnologías](tecnologias.md) (API) que se usaron para dotar de funcionalidades extra a la página |
+| node_modules | Carpeta que contiene utilidades y las [tecnologías](lecvt_tecnologias.md) (API) que se usaron para dotar de funcionalidades extra a la página |
 | statics | Contine los archivos css, que dotan de estilos a cada una de las secciones de la página del laboratorio. También guarda la carpeta de imágenes del laboratorio y los archivos de las fuentes que se utilizan en el proyecto.  |
 | templates | Contiene todos los documentos `.html` que conforman la pagina web, además de las carpetas que contienen cada sección de la página web. Aquí se guardan las plantillas para generar, entre otras cosas, nuevas páginas de biografías y proyectos.   |
 
