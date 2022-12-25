@@ -75,6 +75,7 @@ section#activity-grid {
 .banner > div > img {
 	width: 100%;
 	min-height: 600px;
+	object-fit: cover;
 }
 
 
@@ -93,6 +94,7 @@ section#activity-grid {
                                usar "span" para unir el numero de columnas indicado*/
 	}
 	.banner > div > img {
+		object-fit: cover;
 		max-height: 400px;
 		padding: 0;
 	}
@@ -112,9 +114,7 @@ section#activity-grid {
 		grid-column: 1;
 	}
 	.banner > div > img {
-		max-height: 200px;
-	}
-	.banner > div > img {
+		object-fit: cover;
 		max-height: 400px;
 		padding: 0;
 	}
@@ -202,7 +202,7 @@ News Grid
 }
 /*================================================= 
 Calendar Grid
-================================================*/
+===================================================*/
 
 /* Calendar API */
 #news-calendar div.calendar-container {
@@ -212,4 +212,14 @@ Calendar Grid
 #news-calendar div.calendar iframe {
 	width: 90%;
 	margin: 10px auto;
+}
+/*================================================= 
+Sponsor Carrousel
+===================================================*/
+.bg-sponsors {
+	background-image: url("../../templates/multimedia-section/img-multimedia/galeria/DSC02734.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 2.5rem 0rem 2.5rem;
+	
 }

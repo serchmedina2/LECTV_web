@@ -10,7 +10,28 @@ body {
 	font-family: "Poppins", "Open Sans", "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
 		Verdana, sans-serif;
 }
-
+/* =================================================================
+    Estilos de la Página
+ =================================================================*/
+.presentacion-proyectos {
+	background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Diego/Pinacate 9-22/DSC07183.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 5rem 0rem 5rem;
+}
+.lista-proyectos {
+	background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Diego/Morelos 8-22/DSC06058.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 2.5rem 0rem 2.5rem;
+}
+/*Colores de fondo personalizados*/
+.card {
+	background-color: #ffffffd1;
+}
+.list-group-item {
+	background-color: #ffffff00;
+}
 /* =================================================================
     Seccion de Mapa API LeafLet
  =================================================================*/

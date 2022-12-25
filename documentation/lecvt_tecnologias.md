@@ -5,7 +5,7 @@ Para poder hacer uso de toda la página web, en específico de los archivos en `
 	 - XAMPP
 		 - Página oficial: https://www.apachefriends.org/es/index.html
 	 - Videos
-		 - Como descargar e instalar  XAMPP en W10: https://www.youtube.com/watch?v=DOZPG4V6-JU
+		 - Como descargar e instalar  XAMPP en W10: https://www.youtube.com/watch?v=DOZPG4V6-JU 
 		 - Como descargar e instalar XAMPP en MAC OS X :  https://www.youtube.com/watch?v=hPrgo4fnFSg
 		 - Como descargar e instalar en XAMPP en Ubuntu (Linux): https://www.youtube.com/watch?v=8GvbfMehwZA&t=588s
 ## Consola del navegador

@@ -47,10 +47,8 @@
 		<!--Font Awesome-->
 		<script type="text/javascript" src="https://kit.fontawesome.com/92886b6a4f.js" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="../node_modules/leaflet/dist/leaflet.js"></script>
-
-		<!-- Obtener  coordenadas de grafico svg
-     desplazar caja de texto generado al hacer click x, e y coordenadas
-    --></head>
+		
+	</head>
 	<body>
 		<!--Titulo Principal de la Pagina-->
 		<section class="main-title">
@@ -64,110 +62,114 @@
 		<!--Se utiliza para describir contenidos o para colocar los objetivos de la seccion en cuestion 
     o la de los esfuerzos que se realizan diariamente en el LECVT para lograr los distintos objetivos que 
     el laboratorio se ha planteado -->
-		<section class="container">
-			<div class="col-12">
-				<div class="initial-content">
-					<strong>Objetivo: </strong> construcción de puentes disciplinarios para comprender la complejidad ambiental
-					entre la sociedad y la naturaleza, con la ayuda de las ciencias sociales y naturales. solución de los
-					problemas ambientales del país. Por otra parte se quiere incrementar el impacto científico y social, la
-					calidad de la formación de estudiantes de posgrado.
+		<div class="presentacion-proyectos">
+			<section class="container animate__animated animate__backInUp">
+				<div class="col-12">
+					<div class="initial-content">
+						<strong>Objetivo: </strong> construcción de puentes disciplinarios para comprender la complejidad ambiental
+						entre la sociedad y la naturaleza, con la ayuda de las ciencias sociales y naturales. solución de los
+						problemas ambientales del país. Por otra parte se quiere incrementar el impacto científico y social, la
+						calidad de la formación de estudiantes de posgrado.
+					</div>
+					<div class="initial-content">
+						Aquí mostramos algunos de los proyectos que se están desarrollando actualmente en el Laboratorio y qué
+						instituciones aportan recursos económicos para cada proyecto
+					</div>
+					<div class="initial-content">
+						Para conocer en profundidad a que nos dedicamos visite las páginas de cada uno de los proyectos que lleva a
+						cabo el laboratorio. De click en el mapa interactivo o seleccione algún proyecto en nuestra lista de proyectos.
+					</div>
 				</div>
-				<div class="initial-content">
-					Aquí mostramos algunos de los proyectos que se están desarrollando actualmente en el Laboratorio y qué
-					instituciones aportan recursos económicos para cada proyecto
-				</div>
-				<div class="initial-content">
-					Para conocer en profundidad a que nos dedicamos visite las páginas de cada uno de los proyectos que lleva a
-					cabo el laboratorio. De click en el mapa interactivo o seleccione algún proyecto en nuestra lista de proyectos.
-				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 
 		<section id="map-container" aria-hidden="true">
 			<!-- Contenedor del mapa -->
 			<div id="map"></div>
 		</section>
 
-		<div class="container">
-			<div class="card">
-				<div class="card-body">
-					<div class="card-header text-center h4 bg-success">Lista de nuestros proyectos</div>
+		<div class="lista-proyectos">
+			<div class="container">
+				<div class="card">
+					<div class="card-body">
+						<div class="card-header text-center h4 bg-success">Lista de nuestros proyectos</div>
+					</div>
+					<ul class="list-group">
+						<!--TODO: Proyectos realizados en todo el país-->
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/area-sitios-de-importancia-para-conservacion.html"> Áreas y Sitios de Importancia para la Conservación de Murcielagos</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href=""> Cuevas en México y su diversidad</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/global-south-bats.html"> Global South Bats (En coordinación con otros laboratorios)</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html">
+								Monitoreo de la presencia/ausencia del hongo
+								<i>Pseudogymnoascus destructans</i> en murcielagos hibernantes de México</a
+							>
+						</li>
+						<!--TODO: Proyectos realizados en estados en especifico-->
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/aprovechamiento-sustentable-del-guano.html"> Aprovechamiento sustentable del guano</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="">
+								Evaluación del estado de conservación y amenazas de
+								<i>Cynomys mexicanus</i></a
+							>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/monitoreo-refugio-maternidad.html">
+								Monitoreo del refugio de maternidad de
+								<i>Leptonycteris yerbabuenae</i> en la reserva de la bioesfera el Pinacate y gran desierto de Altar</a
+							>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/murcielago-magueyero.html">
+								Función del murcielago magueyero menor (<i>Leptonycteris yerbabuenae</i>) en las redes de
+								interacciones murciélago-planta</a
+							>
+						</li>
+						<li class="list-group-item text-center h5">
+							<!--*Proyecto agregado-->
+							<a href="projects-section/conservacion-reserva-de-la-biosfera-calakmul.html">
+								Ecología y conservación de murciélagos carnívoros en la Reserva de la Biosfera Calakmul, Campeche</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<!--*Proyecto agregado-->
+							<a href="projects-section/tequilas-bat-friendly.html"> Tequilas y mezcales Bat "Friendly"</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/mina-santa-eulalia.html">
+								Plan de Manejo de la colonia de murcielagos de cola libre en mina Santa Eulalia, Chihuahua</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/ecologia-conservacion-oso-negro.html"> 
+								Ecología y conservación del oso negro en la Sierra del Nido, Chihuahua</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/jaguares-en-la-selva-lacandona.html"> 
+								Conservación y ecología de Jaguares en la selva Lacandona</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/cacos-en-la-cdmx.html"> Cacomixtles en la CDMX</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/murcielagos-citadinos.html"> Murcielnagos citadinos nectarívoros en la CDMX</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/murcielagos-insectivoros.html">
+								Murciélagos insectívoros como depredadores de mosquitos de los géneros Aedes y Culex (Diptera:
+								Culicidae), evaluación de un servicio ecosistémico</a>
+						</li>
+						<li class="list-group-item text-center h5">
+							<a href="projects-section/control-de-plagas.html"> Control de plagas en arroz y casas de murciélagos</a>
+						</li>
+					</ul>
 				</div>
-				<ul class="list-group">
-					<!--TODO: Proyectos realizados en todo el país-->
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/area-sitios-de-importancia-para-conservacion.html"> Áreas y Sitios de Importancia para la Conservación de Murcielagos</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href=""> Cuevas en México y su diversidad</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/global-south-bats.html"> Global South Bats (En coordinación con otros laboratorios)</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/monitoreo-presencia-de-hongo-en-murcielagos-hibernantes.html">
-							Monitoreo de la presencia/ausencia del hongo
-							<i>Pseudogymnoascus destructans</i> en murcielagos hibernantes de México</a
-						>
-					</li>
-					<!--TODO: Proyectos realizados en estados en especifico-->
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/aprovechamiento-sustentable-del-guano.html"> Aprovechamiento sustentable del guano</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="">
-							Evaluación del estado de conservación y amenazas de
-							<i>Cynomys mexicanus</i></a
-						>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/monitoreo-refugio-maternidad.html">
-							Monitoreo del refugio de maternidad de
-							<i>Leptonycteris yerbabuenae</i> en la reserva de la bioesfera el Pinacate y gran desierto de Altar</a
-						>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/murcielago-magueyero.html">
-							Función del murcielago magueyero menor (<i>Leptonycteris yerbabuenae</i>) en las redes de
-							interacciones murciélago-planta</a
-						>
-					</li>
-					<li class="list-group-item text-center h5">
-						<!--*Proyecto agregado-->
-						<a href="projects-section/conservacion-reserva-de-la-biosfera-calakmul.html">
-							Ecología y conservación de murciélagos carnívoros en la Reserva de la Biosfera Calakmul, Campeche</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<!--*Proyecto agregado-->
-						<a href="projects-section/tequilas-bat-friendly.html"> Tequilas y mezcales Bat "Friendly"</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/mina-santa-eulalia.html">
-							Plan de Manejo de la colonia de murcielagos de cola libre en mina Santa Eulalia, Chihuahua</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/ecologia-conservacion-oso-negro.html"> 
-							Ecología y conservación del oso negro en la Sierra del Nido, Chihuahua</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/jaguares-en-la-selva-lacandona.html"> 
-							Conservación y ecología de Jaguares en la selva Lacandona</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/cacos-en-la-cdmx.html"> Cacomixtles en la CDMX</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/murcielagos-citadinos.html"> Murcielnagos citadinos nectarívoros en la CDMX</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/murcielagos-insectivoros.html">
-							Murciélagos insectívoros como depredadores de mosquitos de los géneros Aedes y Culex (Diptera:
-							Culicidae), evaluación de un servicio ecosistémico</a>
-					</li>
-					<li class="list-group-item text-center h5">
-						<a href="projects-section/control-de-plagas.html"> Control de plagas en arroz y casas de murciélagos</a>
-					</li>
-				</ul>
 			</div>
 		</div>
 
