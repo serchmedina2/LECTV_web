@@ -16,13 +16,17 @@ body {
 .presentacion-proyectos {
 	background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Diego/Pinacate 9-22/DSC07183.jpg");
 	background-size: cover;
-	background-position: center;
-	padding: 5rem 0rem 5rem;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 7.5em 0rem 7.5rem;
 }
 .lista-proyectos {
 	background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Diego/Morelos 8-22/DSC06058.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	padding: 2.5rem 0rem 2.5rem;
 }
 /*Colores de fondo personalizados*/
@@ -35,7 +39,8 @@ body {
 /* =================================================================
     Seccion de Mapa API LeafLet
  =================================================================*/
-#map-container {
+
+ #map-container {
 	padding: 1rem;
 	height: 100vh;
 	margin: 5px;

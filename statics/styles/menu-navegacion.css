@@ -23,12 +23,12 @@ header {
 	width: 100%;
 	margin-bottom: 15px;
 }
-header div.logo-lectv {
+header div.logo-LECVT {
 	display: flex;
 	margin: 15px;
 	justify-content: center;
 }
-header div.logo-lectv img {
+header div.logo-LECVT img {
 	height: auto;
 	max-width: 100%;
 }
@@ -169,7 +169,7 @@ perdder */
 		min-width: 100vw;
 		z-index: 1000;
 	}
-	header div.logo-lectv {
+	header div.logo-LECVT {
 		display: flex;
 		margin: 6vh 15px 15px;
 		justify-content: center;

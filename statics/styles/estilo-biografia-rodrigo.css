@@ -5,6 +5,8 @@
 	margin: 15px auto 0px;
 	padding: 15px;
 	background-color: var(--ver-claro-1);
+	background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Diego/Pinacate 9-22/DSC07015.jpg");
+	background-size: cover;
 }
 .img-doctor a {
 	width: 100%;
@@ -12,21 +14,24 @@
 }
 section#presentation-grid {
 	background: var(--ver-claro-1);
+
+	background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Diego/Pinacate 9-22/DSC07015.jpg");
+	background-size: cover;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center center;
-	background-size: contain;
+
 	overflow: hidden;
 	display: flex;
 	flex-wrap: wrap;
 }
 #presentation-grid > div:nth-child(even) {
 	margin: 2.5vh 10vw 2.5vh 1vw;
-	background-color: var(--ocre-2);
+	background-color: var(--ocre-2-transparente);
 }
 #presentation-grid > div:nth-child(odd) {
 	margin: 2.5vh 1vw 2.5vh 10vw;
-	background-color: var(--ocre-2);
+	background-color: var(--ocre-2-transparente);
 }
 section#contact {
 	display: block;

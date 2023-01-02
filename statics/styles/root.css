@@ -28,8 +28,8 @@
 	* Colores transparentes
 	*=================================*
 	*/
-	--ocre-1-trasnparente: #ffea9cb9;
-	--ocre-2-transparente: #f5d08fd8;
+	--ocre-1-trasnparente: #ffea9ca7;
+	--ocre-2-transparente: #f5d08fbc;
 }
 @media (prefers-color-scheme: dark) {
 	:root {

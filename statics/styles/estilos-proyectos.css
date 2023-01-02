@@ -93,9 +93,15 @@ section.quienes-trabajan {
 	margin-bottom: 45px;
     margin-bottom: 0.3vw;
     padding: 1.5vw;
+    background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Diego/Pinacate 5-22/DSC02801.jpg");
+    background-size: cover;
+    background-position: center;
     background-color: var(--ver-claro-5);
+    padding: 2.5rem 0rem 2.5rem;
 }
-
+.card {
+    background-color: #ffffffb3;
+}
 /** ==================================================
 ** Estilos seccion de resultados conclusión e imagenes
 ** ================================================== */

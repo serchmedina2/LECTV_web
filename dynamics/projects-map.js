@@ -1,7 +1,7 @@
 //Se importa el archivo geojason de los estados
 import { mexicoStates } from "./georef-mexico-state-millesime.js";
 
-var map = L.map("map", { minZoom: 3 }).setView([20.5931, -100.392], 4);
+var map = L.map("map", { minZoom: 5 }).setView([20.5931, -100.392], 4);
 
 // Inicio del Mapa
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {

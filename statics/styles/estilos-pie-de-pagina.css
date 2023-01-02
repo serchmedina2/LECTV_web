@@ -75,12 +75,12 @@ footer div.hr {
 	min-height: 5vw;
 }
 
-footer .lectv-map {
+footer .LECVT-map {
 	margin-bottom: 10px;
 	display: flex;
 	justify-content: center;
 }
-footer .lectv-map > iframe {
+footer .LECVT-map > iframe {
 	max-width: 100%;
 	height: auto;
 }

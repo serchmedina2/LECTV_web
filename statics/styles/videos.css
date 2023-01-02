@@ -1,0 +1,11 @@
+.fondo-videos {
+    padding: 2.5rem 0 2.5rem;
+    background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Diego/Morelos 8-22/DSC05945.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.list-group, .list-group-item {
+    background-color: #ffffffc5;
+}

@@ -1,3 +1,3 @@
-# LECTV_web
+# LECVT_web
 
-Website desgined for the LECTV
+Website desgined for the LECVT
