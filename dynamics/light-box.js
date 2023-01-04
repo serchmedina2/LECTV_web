@@ -19,7 +19,6 @@ enlaces.forEach((cadaEnlace, i) => {
 	enlaces[i].addEventListener("click", (e) => {
 		e.preventDefault();
 		let ruta = cadaEnlace.querySelector(".img").src;
-		console.log(ruta);
 		lightbox.classList.add("activo");
 		grande.setAttribute("src", ruta);
 	});
