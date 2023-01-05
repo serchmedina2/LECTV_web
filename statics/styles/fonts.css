@@ -21,12 +21,6 @@ Archivo para agregar definicion de fuentes que se usaran dentro del sitio web
 	font-weight: 300;
 }
 @font-face {
-	font-family: "Open Sans";
-	src: url(../fonts/OpenSans-Regular.ttf);
-	font-style: normal;
-	font-weight: 300;
-}
-@font-face {
 	font-family: "Poiret";
 	src: url(../fonts/PoiretOne-Regular.ttf);
 	font-style: normal;

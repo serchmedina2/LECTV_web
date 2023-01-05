@@ -54,3 +54,25 @@ h3,
 h5 {
 	text-align: center;
 }
+.fondo-academicas {
+	padding: 2.5rem 0 2.5rem;
+    /* background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Sam/Pinacate_SamaraPérezHarp.jpg" ); */
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    padding: 2.5rem 1rem 2.5rem;
+	background-color: #fff243cf;
+
+}
+.fondo-de-vinculacion {
+    padding: 2.5rem 0 2.5rem;
+    /* background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Sam/Pinacate_SamaraPérezHarp.jpg" ); */
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    padding: 2.5rem 1rem 2.5rem;
+	background-color: #538b2c;
+
+}

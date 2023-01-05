@@ -1,0 +1,12 @@
+.nacional {
+    padding: 2.5rem 0 2.5rem;
+    background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Sam/Pinacate_SamaraPérezHarp.jpg" );
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    padding: 2.5rem 1rem 2.5rem;
+}
+.card {
+    background-color: #ffffffd2;
+}

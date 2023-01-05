@@ -221,5 +221,8 @@ Sponsor Carrousel
 	background-size: cover;
 	background-position: center;
 	padding: 2.5rem 0rem 2.5rem;
-	
+	margin-bottom: 2.5rem;
+}
+.card {
+	background-color: #ffffffd8;
 }

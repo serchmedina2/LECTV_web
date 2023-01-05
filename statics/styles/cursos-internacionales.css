@@ -1,0 +1,12 @@
+.internacional {
+    padding: 2.5rem 0 2.5rem;
+    background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Javier/IMG_20210526_055448.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 2.5rem 1rem 2.5rem;
+}
+.card {
+    background-color: #ffffffb3;
+}
