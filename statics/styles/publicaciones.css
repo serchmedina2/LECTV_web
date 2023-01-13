@@ -3,7 +3,7 @@ section#publication-section {
 	display: flex;
 	flex-direction: row;
 
-	background-image: url("../../templates/multimedia-section/img-multimedia/galeria/Fotos Diego/Pinacate 9-22/DSC07385.jpg");
+	background-image: url("../img/img-proyectos/proyecto-bat-friendly/proyecto-bat-friendly-8.JPG");
 	background-size: cover;
 	background-position: center;
 	background-color: var(--ver-claro-1);

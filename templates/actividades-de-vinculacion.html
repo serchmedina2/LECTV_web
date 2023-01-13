@@ -33,6 +33,9 @@
 		<!--Bootstrap 5-->
 		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" />
 
+		<!-- Animations -->
+		<link rel="stylesheet" typer="text/css" href="../statics/styles/animate.css">
+
 		<!--Personalized stylesheet-->
 		<link rel="stylesheet" type="text/css" href="../statics/styles/menu-navegacion.css" />
 		<link rel="stylesheet" type="text/css" href="../statics/styles/estilos-pie-de-pagina.css" />
@@ -43,16 +46,9 @@
 
 	<body>
 		<section class="main-title animate__animated animate__zoomIn">
-			<div class="title animate__animated animate__zoomIn">Actividades Académicas</div>
+			<div class="title animate__animated animate__zoomIn">Actividades de Vinculación</div>
 			<div class="course-category subtitle"> Talleres </div>
 		</section>
-		<div class="container">
-			<div class="col-12">
-				<div class="initial-content">
-					Actividades Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta quasi quae provident consequatur sint, nulla quas corrupti recusandae odit veniam in officia nemo magnam alias! Natus suscipit inventore eos!
-				</div>
-			</div>
-		</div>
 		<!--
             *Importante: Cada nueva linea de actividades debe ir en un nuevo elemento div con clase row
             *y dentro del elemento div con clase container, asimismo cada carta nueva debe tener su 
@@ -60,10 +56,155 @@
             *La tercera carta debe tener un col-md-12 para que ocupe el espacio inferior que queda
             !En cada row agregar clase "fondo-de-vinculacion"
         -->
+		<!-- 
+			!Unidad minima para agregar nuevo contenido a los talleres o a la seccion de educacion ambiental
+			TODO: Colocar la ruta src del mapa embebido de google maps, (etiqueta "iframe").
+			TODO: Colocar la ruta src de la imagen del taller.
+			<div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+					<div class="card" tabindex="0">
+						<div class="card-body">
+							<h4 class="p-2 card-title nombre-curso-nacional">
+								Titulo del Taller							
+							</h4>
+							<ul class="list-group-item list-group-flush">
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Fechas</h5>
+									<p class="card-text form-text">Fecha en que se realizara el taller</p>
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Lugar</h5>
+									<p class="card-text form-text">Lugar donde se realizara el taller</p>
+									<p class="card-text form-text">Dirección donde se realizara el taller</p>
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Organizador </h5>
+									<p class="card-text form-text">
+										Organizador del Taller
+									</p>			
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Link</h5>
+									<p class="card-text form-text">
+										<a href="">
+											Colocar el vinculo de la referencias
+										</a>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<div class="d-flex">
+										<iframe
+										class="d-block w-100"
+										src="">
+										</iframe>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<img src="../statics/img/actividades/actividades-de-vinculacion/" class="card-img-bottom" alt="">
+					</div>
+				</div>
+		 -->
+
+		<section class="main-title animate__animated animate__zoomIn">
+			<div class="title animate__animated animate__zoomIn">Actividades de Vinculación</div>
+			<div class="course-category subtitle"> Talleres </div>
+		</section>
+
 		<div class="container ">
-			<!-- Congresos -->
+			<!-- Talleres -->
 			<div class="row fondo-de-vinculacion">
-				<!-- Carta uno-->
+
+				<div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+					<div class="card" tabindex="0">
+						<div class="card-body">
+							<!-- Titulo -->
+							<h4 class="p-2 card-title nombre-curso-nacional">
+								Taller de Apreciación, Identificación y Manejo de Murciélagos en la Ciudad de México							
+							</h4>
+							<ul class="list-group-item list-group-flush">
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Fechas</h5>
+									<!-- Fecha en que se realizara el taller -->
+									<p class="card-text form-text">El 10 de Febrero del 2023</p>
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Lugar</h5>
+									<!-- Lugar donde se realizara el taller -->
+									<p class="card-text form-text">Teatro Universum</p>
+									<p class="card-text form-text">Dirección: Universidad Nacional Autónoma de México, Ciudad Universitaria, Cto. Centro Cultural, C.U., Coyoacán, 04510 Ciudad de México, CDMX</p>
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Organizador</h5>
+									<p class="card-text form-text">
+										IE, UNAM. 
+									</p>			
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Link</h5>
+									<p class="card-text form-text">
+										<a href="https://www.relcomlatinoamerica.net/colam.html">
+											https://www.relcomlatinoamerica.net/colam.html
+										</a>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<div class="d-flex">
+										<iframe
+										class="d-block w-100"
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.33267987561!2d-99.18270968509516!3d19.311365086953234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0072e0a03bf3%3A0x85c04ba3fd7ff897!2sUniversum!5e0!3m2!1ses-419!2smx!4v1673475900519!5m2!1ses-419!2smx">
+										</iframe>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<img src="../statics/img/actividades/actividades-de-vinculacion/murcielagos_trompudos.jpg" class="card-img-bottom" alt="">
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+					<div class="card" tabindex="0">
+						<div class="card-body">
+							<h4 class="p-2 card-title nombre-curso-nacional">
+								Taller Nivel 1. Diversidad, conservación y aprovechamiento de vida silvestre.
+							</h4>
+							<ul class="list-group-item list-group-flush">
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Fechas</h5>
+									<p class="card-text form-text">Semestre 2023-2</p>
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Lugar</h5>
+									<p class="card-text form-text">Facultad de Ciencias, CU. Sólo para alumnos de la carrera de Biología en la UNAM</p>
+									<p class="card-text form-text">Dirección:</p>
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Organizador</h5>
+									<p class="card-text form-text">
+										FC y el IE , UNAM.
+									</p>			
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Link</h5>
+									<p class="card-text form-text">
+										<a href="https://www.relcomlatinoamerica.net/colam.html">
+											https://www.relcomlatinoamerica.net/colam.html
+										</a>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<div class="d-flex">
+										<iframe 
+											class="d-block w-100"
+											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.0352533264763!2d-99.18132048509496!3d19.324276486945916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce000fdd96288f%3A0x1096af9b5b03d38d!2sFacultad%20de%20Ciencias%20UNAM!5e0!3m2!1ses-419!2smx!4v1673476096138!5m2!1ses-419!2smx" >
+										</iframe>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<img src="../statics/img/actividades/actividades-de-vinculacion/jaguar_taller.jpg" class="card-img-bottom" alt="">
+					</div>
+				</div>
+				
 				<div class="col-lg-4 col-md-6 col-sm-12 mb-2">
 					<div class="card" tabindex="0">
 						<div class="card-body">
@@ -107,73 +248,13 @@
 						<img src="../statics/img/actividades/actividades-academicas/IIICOLAM.png" class="card-img-bottom" alt="">
 					</div>
 				</div>
-				<!--Carta dos-->
-				<div class="col-lg-4 col-md-8 col-sm-12 mb-2 me-md-auto ms-md-auto">
-					<div class="card" tabindex="0">
-						<div class="card-body">
-							<h4 class="p-2 card-title nombre-curso-nacional">
-								Curso de Introducción a la crianza de cacomixtles en cautiverio.
-							</h4>
-							<ul class="list-group-item list-group-flush">
-								<li class="list-group-item">
-									<h5 class="card-subtitle">Fechas</h5>
-									<p class="card-text form-text">Fecha próxima a confirmarse</p>
-								</li>
-								<li class="list-group-item">
-									<h5 class="card-subtitle">Lugar</h5>
-									<p class="card-text form-text">Este curso se realizará en Querétaro, Querétaro</p>
-									<p class="card-text form-text">Dirección:</p>
-								</li>
-								<li class="list-group-item">
-									<div class="d-flex">
-										<iframe
-											class="d-block w-100"
-											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.096047828551!2d-99.19460705017143!3d19.3216380491636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdffe2ff0e5607%3A0xdbbd4ad7ceb4c578!2sInstituto%20de%20Ecolog%C3%ADa%2C%20UNAM!5e0!3m2!1ses-419!2smx!4v1654713495821!5m2!1ses-419!2smx">
-										</iframe>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<img src="../statics/img/200x200.png" class="card-img-bottom" alt="" />
-					</div>
-				</div>
-				<!--Carta tres-->
-				<div class="col-lg-4 col-md-8 col-sm-12 mb-2 me-md-auto ms-md-auto">
-					<div class="card" tabindex="0">
-						<div class="card-body">
-							<h4 class="p-2 card-title nombre-curso-nacional">
-								Curso de Introducción a la crianza de cacomixtles en cautiverio.
-							</h4>
-							<ul class="list-group-item list-group-flush">
-								<li class="list-group-item">
-									<h5 class="card-subtitle">Fechas</h5>
-									<p class="card-text form-text">Fecha próxima a confirmarse</p>
-								</li>
-								<li class="list-group-item">
-									<h5 class="card-subtitle">Lugar</h5>
-									<p class="card-text form-text">Este curso se realizará en Querétaro, Querétaro</p>
-									<p class="card-text form-text">Dirección:</p>
-								</li>
-								<li class="list-group-item">
-									<div class="d-flex">
-										<iframe
-											class="d-block w-100"
-											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.096047828551!2d-99.19460705017143!3d19.3216380491636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdffe2ff0e5607%3A0xdbbd4ad7ceb4c578!2sInstituto%20de%20Ecolog%C3%ADa%2C%20UNAM!5e0!3m2!1ses-419!2smx!4v1654713495821!5m2!1ses-419!2smx">
-										</iframe>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<img src="../statics/img/200x200.png" class="card-img-bottom" alt="" />
-					</div>
-				</div>
 			</div>
 		</div>
 		<section class="main-title animate__animated animate__zoomIn">
 			<div class="course-category subtitle">Educación Ambiental</div>
 		</section>
 		<div class="container">
-			<!--Reuniones-->
+			<!--Educación ambiental-->
 			<div class="row fondo-de-vinculacion">
 				<div class="col-lg-4 col-md-6 col-sm-12 mb-2">
 					<div class="card" tabindex="0">
@@ -190,6 +271,12 @@
 									<h5 class="card-subtitle">Lugar</h5>
 									<p class="card-text form-text">Este curso se realizará en Ciudad de México, México.</p>
 									<p class="card-text form-text">Dirección:</p>
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Organizador</h5>
+									<p class="card-text form-text">
+										Inifap, Gobierno de México
+									</p>			
 								</li>
 								<li class="list-group-item">
 									<h5 class="card-subtitle">Link</h5>
@@ -213,80 +300,94 @@
 						<img src="../statics/img/actividades/actividades-academicas/inifap-2021.png" class="card-img-bottom" alt="" />
 					</div>
 				</div>
+
 				<div class="col-lg-4 col-md-6 col-sm-12 mb-2">
 					<div class="card" tabindex="0">
 						<div class="card-body">
 							<h4 class="p-2 card-title nombre-curso-nacional">
-								Curso de Introducción a la crianza de cacomixtles en cautiverio.
+								Reuniones Nacionales de Investigación e Innovación Pecuario, Agricola, Forestal y Acuícola pesquera.
 							</h4>
 							<ul class="list-group-item list-group-flush">
 								<li class="list-group-item">
 									<h5 class="card-subtitle">Fechas</h5>
-									<p class="card-text form-text">Fecha próxima a confirmarse</p>
+									<p class="card-text form-text">Del 10 al 11 de Noviembre</p>
 								</li>
 								<li class="list-group-item">
 									<h5 class="card-subtitle">Lugar</h5>
-									<p class="card-text form-text">Este curso se realizará en Querétaro, Querétaro</p>
+									<p class="card-text form-text">Este curso se realizará en Ciudad de México, México.</p>
 									<p class="card-text form-text">Dirección:</p>
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Organizador</h5>
+									<p class="card-text form-text">
+										Inifap, Gobierno de México
+									</p>			
 								</li>
 								<li class="list-group-item">
 									<h5 class="card-subtitle">Link</h5>
 									<p class="card-text form-text">
 										<a
-											href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG2-sbD8STixhwFNNbhtecf3r8EtgeKj8RWQ&usqp=CAU"
-											>Pingüino Cute</a
+											href="http://reunionescientificas2021.inifap.gob.mx/"
+											>http://reunionescientificas2021.inifap.gob.mx/</a
 										>
 									</p>
 								</li>
 								<li class="list-group-item">
 									<div class="d-flex">
-										<iframe
-											class="d-block w-100"
-											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.096047828551!2d-99.19460705017143!3d19.3216380491636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdffe2ff0e5607%3A0xdbbd4ad7ceb4c578!2sInstituto%20de%20Ecolog%C3%ADa%2C%20UNAM!5e0!3m2!1ses-419!2smx!4v1654713495821!5m2!1ses-419!2smx">
+										<iframe 
+											class="d-block w-100" 
+											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481728.804584038!2d-99.42380635078402!3d19.390519038362424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1672956798895!5m2!1ses-419!2smx">
 										</iframe>
 									</div>
 								</li>
 							</ul>
 						</div>
-						<img src="../statics/img/200x200.png" class="card-img-bottom" alt="" />
+						<img src="../statics/img/actividades/actividades-academicas/inifap-2021.png" class="card-img-bottom" alt="" />
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 mb-2 me-md-auto ms-md-auto">
+				
+				<div class="col-lg-4 col-md-6 col-sm-12 mb-2">
 					<div class="card" tabindex="0">
 						<div class="card-body">
 							<h4 class="p-2 card-title nombre-curso-nacional">
-								Curso de Introducción a la crianza de cacomixtles en cautiverio.
+								Reuniones Nacionales de Investigación e Innovación Pecuario, Agricola, Forestal y Acuícola pesquera.
 							</h4>
 							<ul class="list-group-item list-group-flush">
 								<li class="list-group-item">
 									<h5 class="card-subtitle">Fechas</h5>
-									<p class="card-text form-text">Fecha próxima a confirmarse</p>
+									<p class="card-text form-text">Del 10 al 11 de Noviembre</p>
 								</li>
 								<li class="list-group-item">
 									<h5 class="card-subtitle">Lugar</h5>
-									<p class="card-text form-text">Este curso se realizará en Querétaro, Querétaro</p>
+									<p class="card-text form-text">Este curso se realizará en Ciudad de México, México.</p>
 									<p class="card-text form-text">Dirección:</p>
+								</li>
+								<li class="list-group-item">
+									<h5 class="card-subtitle">Organizador</h5>
+									<p class="card-text form-text">
+										Inifap, Gobierno de México
+									</p>			
 								</li>
 								<li class="list-group-item">
 									<h5 class="card-subtitle">Link</h5>
 									<p class="card-text form-text">
 										<a
-											href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG2-sbD8STixhwFNNbhtecf3r8EtgeKj8RWQ&usqp=CAU"
-											>Pingüino Cute</a
+											href="http://reunionescientificas2021.inifap.gob.mx/"
+											>http://reunionescientificas2021.inifap.gob.mx/</a
 										>
 									</p>
 								</li>
 								<li class="list-group-item">
 									<div class="d-flex">
-										<iframe
-											class="d-block w-100"
-											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.096047828551!2d-99.19460705017143!3d19.3216380491636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdffe2ff0e5607%3A0xdbbd4ad7ceb4c578!2sInstituto%20de%20Ecolog%C3%ADa%2C%20UNAM!5e0!3m2!1ses-419!2smx!4v1654713495821!5m2!1ses-419!2smx">
+										<iframe 
+											class="d-block w-100" 
+											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481728.804584038!2d-99.42380635078402!3d19.390519038362424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1672956798895!5m2!1ses-419!2smx">
 										</iframe>
 									</div>
 								</li>
 							</ul>
 						</div>
-						<img src="../statics/img/200x200.png" class="card-img-bottom" alt="" />
+						<img src="../statics/img/actividades/actividades-academicas/inifap-2021.png" class="card-img-bottom" alt="" />
 					</div>
 				</div>
 			</div>

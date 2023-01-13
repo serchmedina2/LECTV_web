@@ -4,3 +4,4 @@ dynamics/animation-on-scroll.js
 node_modules
 .prettierignore
 .prettierrc.json
+scripts
