@@ -15,10 +15,8 @@
 	width: 80%;
 	background: lightgrey;
 	padding: 0.75em;
-	display: -ms-grid;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
-	gap: 0.75em;
+	display: flex;
+	justify-content: center;
 	color: var(--negro);
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
@@ -27,7 +25,7 @@
 }
 
 .ul .li {
-	height: 200px;
+	height: fit-content;
 	display: flex;
 	justify-content: center;
 	align-items: center;
